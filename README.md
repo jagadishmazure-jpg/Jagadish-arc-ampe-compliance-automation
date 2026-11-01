@@ -19,12 +19,13 @@ material is a **self-assessment design**.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-1107 tests collected
+2005 tests collected
 ```
 <!-- /run -->
 
 ## Start here: reading order
 
+New here? Start with the numbered learning sequence at [docs/learn/00_START_HERE.md](docs/learn/00_START_HERE.md).
 Read top to bottom; each line says what the file explains. Every number in these files is printed by a
 real run and re-checked in CI.
 
@@ -33,7 +34,7 @@ real run and re-checked in CI.
 | 1 | [README.md](README.md) | This page: summary, architecture, measured results, how to run |
 | 2 | [docs/purpose.md](docs/purpose.md) | The problem, who it is for, and what the three labels mean |
 | 3 | [docs/AUDIT_AUTOMATION_EXPLAINED.md](docs/AUDIT_AUTOMATION_EXPLAINED.md) | **How checklist and audit automation works end to end**, walking control IA-02 (MFA) through every step with real output |
-| 4 | [docs/USE_CASES.md](docs/USE_CASES.md) | **Seven end-to-end use cases** (first ATO, public storage to closure, yearly renewal, new vendor, privacy incident, regulatory change, auditor with AI copilot) with real commands and output |
+| 4 | [docs/USE_CASES.md](docs/USE_CASES.md) | **Fifteen end-to-end use cases** (first ATO, public storage to closure, yearly renewal, new vendor, privacy incident, regulatory change, auditor with AI copilot, leadership report, BU readiness, control drift, PR gate, AI accountability, identity recovery, multi-org industry packs, scanner evidence) with real commands and output |
 | 5 | [docs/glossary.md](docs/glossary.md) | Every acronym (ATO, SSPP, POA&M, CONMON, FAIR ...) in one line |
 | 6 | [docs/architecture.md](docs/architecture.md) | Modules, data flow and where each piece of logic lives |
 | 7 | [docs/how-it-works.md](docs/how-it-works.md) | The pipeline step by step with real command output |
@@ -58,6 +59,64 @@ real run and re-checked in CI.
 | 26 | [docs/trust-pack/architecture_overview_template.md](docs/trust-pack/architecture_overview_template.md) | Template: architecture overview for customers |
 | 27 | [docs/trust-pack/request_checklist.md](docs/trust-pack/request_checklist.md) | Checklist of documents a customer security team usually asks for |
 | 28 | [SECURITY.md](SECURITY.md) | How to report a vulnerability in this repo |
+| 29 | [docs/learn/00_START_HERE.md](docs/learn/00_START_HERE.md) | Learning sequence start: what to read, in order |
+| 30 | [docs/learn/01_THE_PROBLEM.md](docs/learn/01_THE_PROBLEM.md) | Why the yearly compliance cycle is slow |
+| 31 | [docs/learn/02_CONCEPTS.md](docs/learn/02_CONCEPTS.md) | Control, evidence, POA&M, readiness, autonomy level |
+| 32 | [docs/learn/03_ARCHITECTURE.md](docs/learn/03_ARCHITECTURE.md) | Core plus the GRC extension, with a diagram |
+| 33 | [docs/learn/04_AGENTS.md](docs/learn/04_AGENTS.md) | Every agent, its autonomy level and approver; MCP-style server |
+| 34 | [docs/learn/05_WORKFLOWS.md](docs/learn/05_WORKFLOWS.md) | Workflows, expert review, pipeline gate, freshness, owners, scanner import |
+| 35 | [docs/learn/06_FRAMEWORKS_AND_READINESS.md](docs/learn/06_FRAMEWORKS_AND_READINESS.md) | 34 frameworks, readiness rings, industry packs and multi-org mode |
+| 36 | [docs/learn/07_AI_GOVERNANCE.md](docs/learn/07_AI_GOVERNANCE.md) | Model register, shadow AI, decision rights, decision records, replay, 12 KPIs |
+| 37 | [docs/learn/08_IDENTITY_RESILIENCE.md](docs/learn/08_IDENTITY_RESILIENCE.md) | Identity as the first recovery dependency (CP-4, CP-9, CP-10) |
+| 38 | [docs/learn/09_EXECUTIVE_REPORTING.md](docs/learn/09_EXECUTIVE_REPORTING.md) | Daily and weekly leadership reports, previews only |
+| 39 | [docs/learn/10_USE_CASES.md](docs/learn/10_USE_CASES.md) | The fifteen stories |
+| 40 | [docs/learn/11_HOW_TO_RUN.md](docs/learn/11_HOW_TO_RUN.md) | Commands |
+| 41 | [docs/learn/12_RESULTS.md](docs/learn/12_RESULTS.md) | Measured numbers |
+| 42 | [docs/learn/13_LIMITATIONS.md](docs/learn/13_LIMITATIONS.md) | What this is not |
+| 43 | [PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md) | 5- and 15-minute scripts, demo commands, interview Q&A, cheat card |
+| 44 | [examples/reporting/DEPLOY.md](examples/reporting/DEPLOY.md) | Scheduling and (approval-gated) sending: cron, GitHub Actions, Microsoft Foundry, Logic Apps, SendGrid |
+
+## GRC extension (`arcampe/grc/`)
+
+Added on top of the core, offline and synthetic. Each item has tests and a CLI command
+(`python -m arcampe.grc <command> --out out`).
+
+| Area | What it does | Command |
+|---|---|---|
+| BU workspaces | Readiness, owners and exceptions per business unit | `workspaces` |
+| Workflow builder | Event to action rules; actions are logged, never sent | `workflows` |
+| Custom tests, risk registers | Your own checks; registers with formulas, library and snapshots | `custom-tests`, `risk` |
+| Frameworks | 34-framework registry, readiness rings | `frameworks` |
+| Industry packs, multi-org | FFIEC/ACET, CMMC L2, ABA 1.6, SEC Reg S-P (approximate); org-scoped keys | `industry-packs` |
+| Auditor area | Audit-mode freeze, sampling, SHA-256 manifest package | `audit-package` |
+| Expert review | Owner submits, expert approves; edits after approval return to review | `review` |
+| Compliance as code | Fix suggestions and a PR gate on new high findings | `cac` |
+| MCP-style server | Read tools; write tools only create pending changes for human approval | `mcp` |
+| AI policy and governance | AI-DEV-EVAL control, model and app register, shadow AI, decision rights, decision records, replay, 12 KPIs | `ai-policy`, `ai-governance` |
+| SOC 2 path, evidence status, owners | "N of 36 checked", freshness, escalation ladder | `soc2`, `evidence`, `owners` |
+| Vendors, access reviews | Request and questionnaire workflow; access-review import | `vendors`, `access-review` |
+| Scanner evidence | Nessus-style CSV/XML to RA-5 and SI-2 evidence | `scanner` |
+| Identity resilience | Identity backup and drill evidence (CP-4, CP-9, CP-10) | `identity` |
+| Leadership reports | Daily and weekly HTML, PDF, CSV and .eml **previews**; sending needs config + approval + transport | `report`, `schedule` |
+| Trust dashboard | Static HTML with readiness rings | `dashboard` |
+
+<!-- run: python -m arcampe.grc ai-governance --out out -->
+```text
+Agent decision explainability rate: 96.7% [measured, synthetic]
+Decision-audit pass rate: 96.0% (24/25 replayed) [measured, synthetic]
+Agent monitoring coverage: 83.3% (5/6) [measured, synthetic]
+Human-approval SLA and override rate: median 9.0h; 11.7% edited [measured, synthetic]
+Autonomy level mix: suggest_only 5, act_with_approval 1, act_then_notify 0 [configuration]
+AI decision-rights coverage: 80.0% [configuration]
+Shadow AI exposure: 4 unapproved tools; 25.0% triaged within SLA [measured, synthetic]
+AI vendor concentration index: top-1 60.0%, top-2 80.0%, fallback 60.0% [measured, synthetic]
+AI regulatory readiness (approximate): ISO/IEC 42001 27.6%; NIST AI RMF 1.0 29.2%; EU AI Act 23.0% [measured, synthetic]
+Agent legal-risk incidents blocked: 6 blocked (critical 3, high 2, moderate 1) [measured, scripted attempts]
+AI program ROI: 5.8 analyst hours saved; $493 at $85/h; $0.04/run [SIMULATED]
+AI provider outage drill: 2026-08-20: partial (Provider A unavailable for 8 hours) [synthetic]
+register: {"entries": 5, "by_status": {"approved": 3, "conditional": 1, "retired": 1}, "uses": 7, "uses_compliant": 3, "inventory_coverage_pct": 83.3}
+```
+<!-- /run -->
 
 ## Purpose and who it is for
 
@@ -234,6 +293,7 @@ python -m venv .venv && . .venv/bin/activate
 pip install -r requirements-dev.txt
 python -m pytest -q
 python -m arcampe all --out out        # SSPP, POA&M, CONMON, binder and the rest into ./out
+python -m arcampe.grc all --out out    # GRC extension, reports (previews only) and dashboard
 python scripts/render_docs.py --check  # docs still match a fresh run
 ```
 
@@ -251,6 +311,7 @@ az bicep build --file infra/bicep/main.bicep
 - **Prompt hygiene.** Notes are screened for injection and SSNs, phones and emails are redacted before drafting.
 - **Separation of duties.** Owners cannot approve their own policies, validate their own audit fixes or sign off their own evidence.
 - **Reminders are drafts.** Attestation and SLA emails are printed as drafts and never sent.
+- **Reports are previews.** Leadership reports are written to `out/reports/`; `send()` refuses without a config, an approval flag and a transport, and none ships.
 - **IaC is Audit only by default.** Azure Policy effect defaults to `Audit`; there is no deploy workflow.
 
 ## Limitations
@@ -261,6 +322,8 @@ az bicep build --file infra/bicep/main.bicep
 - FAIR inputs, detection scenarios and mapper labels are synthetic and written by the author.
 - RPO under 24 hours cannot be shown from day-level backup data and is reported as **unproven**.
 - Connector payloads are simplified shapes, not real vendor API responses.
+- 30 of 34 registry frameworks and all industry packs are approximate family-level mappings.
+- Workflow actions, questionnaire sends, trust-to-revenue and AI ROI are simulated.
 
 See [docs/limitations.md](docs/limitations.md).
 
@@ -269,6 +332,7 @@ See [docs/limitations.md](docs/limitations.md).
 | Status | Item |
 |---|---|
 | Built | Catalog and labels, 43 checks, attestations, PT and SR modules, POA&M, SSPP, CONMON, binder, crosswalks, AI drafter (stub), integrations, risk, trust proofs T1-T8, Azure Policy, CI |
+| Built (GRC extension) | BU workspaces, workflows, custom tests, risk registers, 34-framework registry, industry packs, multi-org, auditor area, expert review, CaC gate, MCP-style server, AI governance, SOC 2 path, evidence status, ownership, vendor requests, access-review and scanner import, identity resilience, leadership reports, dashboard |
 | Written, not run against Azure | Terraform and Bicep (validated, tested with a mock provider, never applied) |
 | Planned | Microsoft Foundry backend for the drafter, live connectors, a real-time dashboard, verification of the DEE baseline |
 
@@ -281,6 +345,6 @@ See [docs/limitations.md](docs/limitations.md).
 
 - NIST SP 800-53 Rev 5 OSCAL catalog (public domain, NIST).
 - CMS ARC-AMPE Vol II SSPP workbook, ACA AE v1.02 (public CMS document); parameter values restated in `arcampe/params.py`.
-- Capability areas were compared with a commercial GRC vendor's public pages; see [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md).
+- Capability areas were compared with several commercial vendors' public pages; see [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md). No affiliation; no vendor numbers are used as facts.
 
 MIT licence. Not legal or compliance advice.

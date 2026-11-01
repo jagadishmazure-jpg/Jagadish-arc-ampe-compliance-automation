@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "transport": "logic_apps",
+  "to": ["security-leadership@lakehaven-hx.example"],
+  "allowed_domains": ["lakehaven-hx.example"],
+  "note": "No secrets in this file. Credentials live in a managed identity or key vault and are read by YOUR transport, never by this repo."
+}

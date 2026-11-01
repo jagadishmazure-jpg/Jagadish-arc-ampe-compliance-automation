@@ -1,7 +1,8 @@
 # Use cases, end to end
 
-> **In one line:** seven real-world stories (first ATO, daily monitoring, yearly renewal, new vendor, privacy
-> incident, regulatory change, auditor visit), each with who acts, what starts it, the exact commands, the real
+> **In one line:** fifteen real-world stories (first ATO, daily monitoring, yearly renewal, new vendor, privacy
+> incident, regulatory change, auditor visit, leadership report, BU readiness, control drift, PR gate, AI
+> accountability, identity recovery, multi-org industry packs, scanner evidence), each with who acts, what starts it, the exact commands, the real
 > output and the result.
 >
 > **Read this if:** you want to see how a compliance team would actually use this repo day to day.
@@ -20,6 +21,14 @@ authorization or any other certification. The "today" date in the data is 2026-1
 | 5 | [Privacy incident](#5-a-privacy-incident-with-the-1-hour-breach-clock) | Privacy officer | Misdirected mail reported | incident, privacy |
 | 6 | [Regulatory change](#6-a-regulatory-change-hits-controls) | Compliance analyst | New or proposed rule | regchange, crosswalk |
 | 7 | [Auditor with an AI copilot](#7-an-auditor-walkthrough-with-the-ai-copilot) | External assessor and ISSO | Audit fieldwork starts | audit, ai_auditor, agent, rbac |
+| 8 | [Leadership report, previews only](#8-leadership-report-previews-only) | CISO and executives | Weekday 07:00 schedule | grc.reporting, ai_governance, resilience |
+| 9 | [Readiness by business unit and framework](#9-readiness-by-business-unit-and-framework) | CISO | Quarterly planning | grc.workspaces, grc.frameworks |
+| 10 | [Edited after approval goes back to review](#10-edited-after-approval-goes-back-to-review) | Control owner and GRC expert | A passing control's content changes | grc.review |
+| 11 | [PR gate plus sealed audit package](#11-pr-gate-plus-sealed-audit-package) | Platform engineer and auditor | Pull request; audit fieldwork | grc.cac, grc.auditor |
+| 12 | [AI accountability](#12-ai-accountability) | Board member, ISSO | Board asks about AI risk | grc.ai_governance, grc.mcp_server |
+| 13 | [Identity recovery evidence](#13-identity-recovery-evidence) | Infrastructure lead | Annual contingency test | resilience |
+| 14 | [Industry packs and multi-org mode](#14-industry-packs-and-multi-org-mode) | Compliance service team | Onboarding new client organisations | grc.industry_packs |
+| 15 | [Scanner evidence for RA-5 and SI-2](#15-scanner-evidence-for-ra-5-and-si-2) | Vulnerability management lead | Monthly scan export | grc.scanner_import |
 
 How they connect:
 
@@ -361,11 +370,219 @@ and closure carries a human name.
 
 ---
 
+## 8. Leadership report, previews only
+
+- **Actor:** CISO and executives.
+- **Trigger:** Weekday 07:00 schedule.
+- **Goal:** Leadership wants one short email a day and a fuller one on Monday, built from the same data as the audit.
+
+<!-- run: python -m arcampe.usecases leadership_report -->
+```text
+1. Headline KPIs (every value is computed from the synthetic data):
+   Controls passing (tested)          115 / 200                              [measured, synthetic]
+   Failing controls                   85                                     [measured, synthetic]
+   Evidence fresh                     84.3%                                  [measured, synthetic]
+   POA&M overdue                      22                                     [measured, synthetic]
+   Critical + high open               43                                     [measured, synthetic]
+   Access review complete             97.9%                                  [measured, synthetic]
+   SOC 2 path                         3 of 36 SOC 2 requirements checked     [measured, synthetic]
+   Value waiting on security review   $135,000                               [SIMULATED]
+2. Framework readiness rings (tested-pass controls / mapped controls), top 5:
+   APRA CPS 230                        40.5%  (53/131, approximate)
+   ISO/IEC 27018                       29.3%  (22/75, approximate)
+   NIST AI RMF 1.0                     29.2%  (66/226, approximate)
+   DORA                                28.8%  (113/392, approximate)
+   NIST SP 800-53 Rev 5                28.6%  (115/402, native)
+3. AI Governance & Accountability (weekly section):
+   Agent decision explainability rate       96.7%  [measured, synthetic]
+   Decision-audit pass rate                 96.0% (24/25 replayed)  [measured, synthetic]
+   Agent monitoring coverage                83.3% (5/6)  [measured, synthetic]
+   Human-approval SLA and override rate     median 9.0h; 11.7% edited  [measured, synthetic]
+   Autonomy level mix                       suggest_only 5, act_with_approval 1, act_then_notify 0  [configuration]
+   AI decision-rights coverage              80.0%  [configuration]
+   Shadow AI exposure                       4 unapproved tools; 25.0% triaged within SLA  [measured, synthetic]
+   AI vendor concentration index            top-1 60.0%, top-2 80.0%, fallback 60.0%  [measured, synthetic]
+   AI regulatory readiness (approximate)    ISO/IEC 42001 27.6%; NIST AI RMF 1.0 29.2%; EU AI Act 23.0%  [measured, synthetic]
+   Agent legal-risk incidents blocked       6 blocked (critical 3, high 2, moderate 1)  [measured, scripted attempts]
+   AI program ROI                           5.8 analyst hours saved; $493 at $85/h; $0.04/run  [SIMULATED]
+   AI provider outage drill                 2026-08-20: partial (Provider A unavailable for 8 hours)  [synthetic]
+4. Identity recovery: measured 11.5h vs target 8h, 172 days since drill, checks 8/11
+5. Previews written to out/reports/: daily.csv, daily.eml, daily.html, daily.pdf, weekly.csv, weekly.eml, weekly.html, weekly.pdf
+6. Send attempt without config and approval: refused - no send config: previews only; approval flag not set; no transport supplied (this repo ships none)
+```
+<!-- /run -->
+
+**Result:** a CISO reads readiness, trend and AI accountability in two minutes, and nothing is ever emailed without an approval flag, a config and a transport that the team adds itself.
+
+---
+
+## 9. Readiness by business unit and framework
+
+- **Actor:** CISO.
+- **Trigger:** Quarterly planning.
+- **Goal:** The CISO asks which business unit is least ready and which frameworks need the most work.
+
+<!-- run: python -m arcampe.usecases bu_workspaces_and_frameworks -->
+```text
+1. Readiness per business unit (tested-pass / tested):
+   BU-MKT  Marketplace Platform          23.3%  pass 14, fail 46, untested 133, exceptions 1
+   BU-CSO  Consumer Services             55.2%  pass 16, fail 13, untested 15, exceptions 1
+   BU-INF  Infrastructure and Facilities  76.9%  pass 40, fail 12, untested 15, exceptions 0
+   BU-PMO  Program Office                76.3%  pass 45, fail 14, untested 39, exceptions 1
+2. Framework registry: {'frameworks': 34, 'by_coverage': {'native': 1, 'proxy': 1, 'approximate': 30, 'covered': 1, 'gap': 1}}
+3. Three least-ready frameworks: [('Cyber Essentials', 5.7), ('Essential Eight', 8.6), ('SOX IT general controls', 13.0)]
+```
+<!-- /run -->
+
+**Result:** Marketplace Platform (23.3%) gets the next sprint of remediation; framework rings show where approximate mappings are weakest.
+
+---
+
+## 10. Edited after approval goes back to review
+
+- **Actor:** Control owner and GRC expert.
+- **Trigger:** A passing control's content changes.
+- **Goal:** A control was approved as passing, then someone edited its narrative.
+
+<!-- run: python -m arcampe.usecases control_drift_review -->
+```text
+1. Review board: {'not_started': 0, 'in_progress': 1, 'submitted': 1, 'passing': 5, 'returned': 2, 'needs_review': 1}
+2. Drift: AU-06 (owner owner-2) approved 02b84a4b6bd2, now ea9cd6c381ba -> needs_review
+3. Submit with no evidence: refused - attach at least one piece of evidence before submitting
+```
+<!-- /run -->
+
+**Result:** the edit is caught by a content hash and AU-06 drops to needs_review until an expert approves again.
+
+---
+
+## 11. PR gate plus sealed audit package
+
+- **Actor:** Platform engineer and auditor.
+- **Trigger:** Pull request; audit fieldwork.
+- **Goal:** An engineer opens a PR that adds a network rule open to RDP; later the auditor needs a frozen, verifiable evidence set.
+
+<!-- run: python -m arcampe.usecases pr_gate_and_audit_package -->
+```text
+1. Fix suggestions for current findings: 47
+2. Pipeline gate on the PR: {'result': 'fail', 'new_failures': 1, 'blocking': 1, 'fixed': 1, 'blocking_ids': ['AZ-13:nsg-lhx-new'], 'override': 'security lead, with a written reason (logged)'}
+3. Write during audit mode: refused - audit mode is on: AC-02 is read-only
+4. Sampling plan: 22 groups, 66 items sampled
+5. Package verify: intact
+```
+<!-- /run -->
+
+**Result:** the PR is blocked for one new high finding while the fix it also contains is credited; the auditor's package verifies intact and writes during audit mode are refused.
+
+---
+
+## 12. AI accountability
+
+- **Actor:** Board member, ISSO.
+- **Trigger:** Board asks about AI risk.
+- **Goal:** A board member asks whether AI agents can be explained, replayed and stopped.
+
+<!-- run: python -m arcampe.usecases ai_accountability -->
+```text
+1. Copilot proposes a change through MCP: pending_approval CHG-001
+2. Agent tries to approve it: refused - agents cannot approve changes
+3. Human approves: applied
+4. Decision rights gaps: ['AI-VENDOR'] coverage 80.0 %
+5. Replay audit of agent decisions: {'sampled': 25, 'reproduced': 24, 'pass_rate': 96.0, 'failed': ['ev-a3ffd298bec86006'], 'population': 60}
+6. Shadow AI: [('Free chatbot (personal accounts)', 'consumer-services-director', 'triaged'), ('Meeting transcriber app', 'ciso', 'triaged'), ('Slide generator plug-in', 'platform-director', 'overdue'), ('Browser AI extension', 'platform-director', 'open')]
+7. Approved model and app register: {'entries': 5, 'by_status': {'approved': 3, 'conditional': 1, 'retired': 1}, 'uses': 7, 'uses_compliant': 3, 'inventory_coverage_pct': 83.3}
+   BU-MKT                 Code assistant (enterprise tier)   data class pii not allowed; evaluation older than 180 days
+   agent:tprm             Summarizer v0 (retired)            retired entry still in use; data class internal not allowed; evaluation older than 180 days
+   agent:copilot          Foundry-hosted drafter             tool assign_owner not allowed
+   BU-MKT                 Browser AI extension               not in register
+```
+<!-- /run -->
+
+**Result:** agents can only propose; one stored decision that was altered is caught by replay; shadow AI tools have named owners; 3 of 7 AI uses sit inside their approved register scope.
+
+---
+
+## 13. Identity recovery evidence
+
+- **Actor:** Infrastructure lead.
+- **Trigger:** Annual contingency test.
+- **Goal:** If the directory is lost, nothing else can be restored. Prove identity recovery works.
+
+<!-- run: python -m arcampe.usecases identity_recovery -->
+```text
+1. Dependency concentration: {'Identity (AD forest + Entra tenant)': 4, 'Federal data services hub': 1, 'Harbor Identity Proofing': 1, 'Bluequill Print and Mail': 1, 'Northmere Call Center Services': 1}
+2. IDR-BK-ad_forest       CP-09  PASS  ad_forest: hours since good backup = 24
+2. IDR-IMM-ad_forest      CP-09  PASS  ad_forest: immutable = [True]
+2. IDR-ISO-ad_forest      CP-09  PASS  ad_forest: isolated = [True]
+2. IDR-BK-entra_tenant    CP-09  PASS  entra_tenant: hours since good backup = 24
+2. IDR-IMM-entra_tenant   CP-09  PASS  entra_tenant: immutable = [True]
+2. IDR-ISO-entra_tenant   CP-09  FAIL  entra_tenant: isolated = [False]
+2. IDR-ENTRA-COVER        CP-09  FAIL  Entra object types not backed up: ['custom_roles', 'pim_assignments']
+2. IDR-DRILL-365          CP-04  PASS  days since clean-room drill = 172
+2. IDR-RTO                CP-10  FAIL  measured 11.5h vs RTO 8h
+2. IDR-KRBTGT             CP-10  PASS  krbtgt reset twice in the last clean-room drill
+2. IDR-ORDER              CP-10  PASS  AD restored before Entra sync re-enabled
+3. KPIs: {'measured_rto_hours': 11.5, 'target_rto_hours': 8, 'rto_met': False, 'days_since_drill': 172, 'backup_age_hours': 24, 'entra_object_coverage_pct': 75.0, 'checks_passed': 8, 'checks': 11}
+```
+<!-- /run -->
+
+**Result:** 8 of 11 checks pass; measured recovery is 11.5h against an 8h target, so CP-10 stays open with a clear fix list (isolate the Entra backup, add custom roles and PIM assignments).
+
+---
+
+## 14. Industry packs and multi-org mode
+
+- **Actor:** Compliance service team.
+- **Trigger:** Onboarding new client organisations.
+- **Goal:** One team runs compliance for a credit union, a defense supplier, a law firm and an adviser as well as the exchange.
+
+<!-- run: python -m arcampe.usecases industry_packs_multi_org -->
+```text
+1. Lakehaven Health Connector         pack health_exchange        [('NIST_800_53', 28.6), ('HIPAA', 28.6)]
+1. Cedarbrook Community Credit Union  pack banking_credit_union   [('FFIEC_ACET', 49.2), ('NYDFS_500', 49.6), ('SEC_REG_SP', 50.4)]
+1. Ironvale Precision Components      pack defense                [('CMMC_L2', 47.8), ('NIST_800_171', 45.7)]
+1. Marlow and Teague LLP              pack legal                  [('ABA_1_6', 52.4)]
+1. Northgate Harbor Advisers          pack broker_dealer_adviser  [('SEC_REG_SP', 41.5), ('SOX_ITGC', 44.4)]
+2. Credit union key reads the defense org: refused - key k-cedarbrook cannot access org ironvale
+3. Portfolio (counts only): [('lakehaven', 57.5), ('cedarbrook', 69.6), ('ironvale', 72.5), ('marlow', 70.4), ('northgate', 67.1)]
+4. Audit log: (True, '6 entries verified')
+```
+<!-- /run -->
+
+**Result:** each organisation sees only its own data and its industry pack (FFIEC/ACET, CMMC L2, ABA 1.6, SEC Reg S-P, all approximate); a cross-org read is refused and logged.
+
+---
+
+## 15. Scanner evidence for RA-5 and SI-2
+
+- **Actor:** Vulnerability management lead.
+- **Trigger:** Monthly scan export.
+- **Goal:** The monthly Nessus-style export should become audit evidence without copy and paste.
+
+<!-- run: python -m arcampe.usecases scanner_evidence -->
+```text
+1. Imported 11 rows from data/grc/scanner/scan_2026-10.csv; 1 quarantined for injection-like text
+2. Evidence: {'vuln_scan': 6, 'flaw_remediation': 11}
+3. SCAN-COVERAGE      RA-05     FAIL  5/7 hosts scanned in 30 days; never scanned ['vm-lhx-reporting-01']; stale ['vm-lhx-jump-01']
+3. SCAN-CREDENTIALED  RA-05(05) FAIL  83.3% of scanned hosts used credentials
+3. SCAN-SLA           SI-02     FAIL  8 of 11 open findings past SLA
+3. SCAN-KEV           SI-02     FAIL  4 known-exploited findings past SLA
+3. SCAN-SCREEN        SI-10     PASS  1 rows had injection-like text and were quarantined
+4. SCAN-990004:vm-lhx-api-01    high     kev=True  due 2026-09-14 overdue
+4. SCAN-990004:vm-lhx-batch-01  high     kev=True  due 2026-09-14 overdue
+4. SCAN-990004:vm-lhx-db-01     high     kev=True  due 2026-09-14 overdue
+```
+<!-- /run -->
+
+**Result:** 6 scan records and 11 remediation records are created; coverage (71.4%), credentialed scans, SLA and known-exploited checks fail honestly; one row with injection text is quarantined.
+
+---
+
 ## Run them yourself
 
 ```bash
 pip install -r requirements-dev.txt
-python -m arcampe.usecases            # all seven
+python -m arcampe.usecases            # all fifteen
 python -m arcampe.usecases new_vendor # one case
 pytest tests/test_usecases.py -q
 ```

@@ -13,6 +13,7 @@ import copy
 import hashlib
 import io
 import json
+import pathlib
 import sys
 import zipfile
 
@@ -189,8 +190,147 @@ def auditor_copilot() -> None:
     print("   validated by internal-audit, then:", f.advance("internal-audit"))
 
 
+def leadership_report() -> None:
+    """Daily and weekly leadership emails: built from the synthetic data, written as previews, never sent."""
+    import tempfile
+
+    from .grc import reporting
+    m = reporting.metrics()
+    print("1. Headline KPIs (every value is computed from the synthetic data):")
+    for k, v, basis in reporting.headline(m):
+        print(f"   {k:34} {v:38} [{basis}]")
+    print("2. Framework readiness rings (tested-pass controls / mapped controls), top 5:")
+    for r in sorted(m["frameworks"], key=lambda r: -r["ready_pct"])[:5]:
+        print(f"   {r['name']:34} {r['ready_pct']:5}%  ({r['ready']}/{r['controls']}, {r['coverage']})")
+    print("3. AI Governance & Accountability (weekly section):")
+    for k in m["ai_governance"]:
+        print(f"   {k['kpi']:40} {k['value']}  [{k['basis']}]")
+    idk = m["identity"]
+    print(f"4. Identity recovery: measured {idk['measured_rto_hours']}h vs target {idk['target_rto_hours']}h, "
+          f"{idk['days_since_drill']} days since drill, checks {idk['checks_passed']}/{idk['checks']}")
+    with tempfile.TemporaryDirectory() as d:
+        files = sorted(pathlib.Path(f).name for k in ("daily", "weekly") for f in reporting.write_previews(d, k))
+    print("5. Previews written to out/reports/:", ", ".join(files))
+    try:
+        reporting.send(reporting.to_eml(m, "weekly"))
+    except reporting.SendRefused as e:
+        print("6. Send attempt without config and approval: refused -", e)
+
+
+def bu_workspaces_and_frameworks() -> None:
+    """A CISO asks: which business unit is least ready, and how ready are we for each framework?"""
+    from .grc import frameworks, workspaces
+    print("1. Readiness per business unit (tested-pass / tested):")
+    for r in workspaces.readiness():
+        print(f"   {r['unit']:7} {r['name']:28} {r['readiness_pct']:5}%  pass {r['passing']}, fail {r['failing']},"
+              f" untested {r['untested']}, exceptions {r['exceptions']}")
+    print("2. Framework registry:", frameworks.summary())
+    low = sorted(frameworks.readiness(), key=lambda r: r["ready_pct"])[:3]
+    print("3. Three least-ready frameworks:", [(r["name"], r["ready_pct"]) for r in low])
+
+
+def control_drift_review() -> None:
+    """A control marked compliant is edited later; it goes back to expert review automatically."""
+    from .grc import review
+    d = review.demo()
+    print("1. Review board:", d["board"])
+    for f in d["drift"]:
+        print(f"2. Drift: {f['control']} (owner {f['owner']}) approved {f['approved_hash']}, now {f['current_hash']}"
+              " -> needs_review")
+    r = review.ControlReview("AC-02", owner="owner-1")
+    r.start("owner-1")
+    try:
+        r.submit("owner-1")
+    except review.ReviewError as e:
+        print("3. Submit with no evidence: refused -", e)
+
+
+def pr_gate_and_audit_package() -> None:
+    """A pull request adds an RDP-open network rule; the pipeline gate blocks it; the auditor gets a sealed package."""
+    from .grc import auditor, cac
+    from .integrations.connectors import collect_all
+    d = cac.demo()
+    print("1. Fix suggestions for current findings:", d["suggestions"])
+    print("2. Pipeline gate on the PR:", d["gate"])
+    ev = collect_all()
+    st = auditor.AuditStore()
+    st.put("AC-02", "evidence v1", actor="owner-1")
+    st.freeze("isso")
+    try:
+        st.put("AC-02", "evidence v2", actor="owner-1")
+    except auditor.AuditModeError as e:
+        print("3. Write during audit mode: refused -", e)
+    plan = auditor.plan(ev)
+    print("4. Sampling plan:", len(plan), "groups,", sum(p["sample"] for p in plan), "items sampled")
+    blob = auditor.package(ev[:20])
+    print("5. Package verify:", auditor.verify(blob) or "intact")
+
+
+def ai_accountability() -> None:
+    """A board member asks: can we explain and replay what our AI agents decided, and who approved it?"""
+    from .grc import ai_governance as g
+    from .grc import mcp_server
+    s = mcp_server.demo_server()
+    r = s.handle({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {
+        "name": "propose_status_change",
+        "arguments": {"control_id": "AC-02", "status": "passing", "reason": "Q3 review complete"}}}, "k-copilot")
+    print("1. Copilot proposes a change through MCP:", r["result"]["status"], r["result"]["change_id"])
+    try:
+        s.approve(r["result"]["change_id"], "agent:copilot", "isso", is_agent=True, note="ok")
+    except mcp_server.McpError as e:
+        print("2. Agent tries to approve it: refused -", e)
+    print("3. Human approves:", s.approve(r["result"]["change_id"], "Riley Quist", "isso", note="checked")["status"])
+    print("4. Decision rights gaps:", g.decision_rights_gaps(), "coverage", g.decision_rights_coverage(), "%")
+    print("5. Replay audit of agent decisions:", g.replay_audit())
+    print("6. Shadow AI:", [(x["tool"], x["owner"], x["status"]) for x in g.shadow_ai()])
+    print("7. Approved model and app register:", g.register_summary())
+    for c in g.register_checks():
+        if not c["passed"]:
+            print(f"   {c['user']:22} {c['name']:34} {'; '.join(c['problems'])}")
+
+
+def identity_recovery() -> None:
+    """Identity (AD + Entra) is the first dependency of every critical service; prove it can be restored."""
+    from . import resilience
+    print("1. Dependency concentration:", resilience.dependency_concentration())
+    for c in resilience.identity_checks():
+        print(f"2. {c['id']:22} {c['control']:6} {'PASS' if c['passed'] else 'FAIL'}  {c['detail']}")
+    print("3. KPIs:", resilience.identity_kpis())
+
+
+def industry_packs_multi_org() -> None:
+    """A compliance team serves five organisations in different industries from one install, kept apart."""
+    from .grc import industry_packs as ip
+    mo = ip.demo()
+    for o in ip.ORGS:
+        rows = mo.pack_readiness(f"k-{o.id}", o.id)
+        print(f"1. {o.name:34} pack {o.pack:22}", [(r["framework"], r["ready_pct"]) for r in rows])
+    try:
+        mo.status("k-cedarbrook", "ironvale")
+    except ip.TenantIsolationError as e:
+        print("2. Credit union key reads the defense org: refused -", e)
+    print("3. Portfolio (counts only):", [(r["org"], r["readiness_pct"]) for r in mo.portfolio()])
+    print("4. Audit log:", mo.log.verify())
+
+
+def scanner_evidence() -> None:
+    """The monthly vulnerability scan export becomes RA-5 and SI-2 evidence and POA&M rows."""
+    from .grc import scanner_import as s
+    rows = s.load()
+    print("1. Imported", len(rows), "rows from data/grc/scanner/scan_2026-10.csv;",
+          sum(r["quarantined"] for r in rows), "quarantined for injection-like text")
+    ev = s.to_evidence(rows)
+    print("2. Evidence:", {k: sum(e.kind == k for e in ev) for k in ("vuln_scan", "flaw_remediation")})
+    for c in s.checks(rows):
+        print(f"3. {c['id']:18} {c['control']:9} {'PASS' if c['passed'] else 'FAIL'}  {c['detail']}")
+    for i in s.open_items(rows)[:3]:
+        print(f"4. {i['id']:28} {i['severity']:8} kev={i['kev']!s:5} due {i['due']} {i['sla_status']}")
+
+
 CASES = {f.__name__: f for f in (first_ato, conmon_public_storage, annual_renewal, new_vendor, privacy_incident,
-                                 reg_change, auditor_copilot)}
+                                 reg_change, auditor_copilot, leadership_report, bu_workspaces_and_frameworks,
+                                 control_drift_review, pr_gate_and_audit_package, ai_accountability,
+                                 identity_recovery, industry_packs_multi_org, scanner_evidence)}
 
 if __name__ == "__main__":
     for name in sys.argv[1:] or list(CASES):

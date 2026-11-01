@@ -30,13 +30,16 @@ jobs:
       - name: Generated data and policy files match their generators
         run: |
           for s in make_fixtures make_connector_fixtures make_attestations make_poam_history \
-                   make_platform_fixtures make_openapi_specs make_policies make_approvals; do
+                   make_platform_fixtures make_openapi_specs make_policies make_approvals \
+                   make_scanner_fixture; do
             python scripts/$s.py
           done
           python -c "from arcampe.integrations import nocode; nocode.export('examples/nocode')"
           git diff --exit-code -- data policies examples
       - name: Every output builds (SSPP, POA&M, CONMON, binder)
         run: python -m arcampe all --out out
+      - name: Every GRC output builds (reports are previews only, never sent)
+        run: python -m arcampe.grc all --out out
       - name: Documented output matches a fresh run
         run: python scripts/render_docs.py --check
       - name: No real brand names in code or sample data

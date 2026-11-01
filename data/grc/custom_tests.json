@@ -1,0 +1,13 @@
+[
+ {"id": "CT-01", "title": "Storage accounts deny public blob access", "resource_type": "Microsoft.Storage/storageAccounts",
+  "path": "properties.publicNetworkAccess", "op": "eq", "value": "Disabled", "severity": "high", "controls": ["AC-03", "SC-07"],
+  "rationale": "No anonymous reads of enrollment documents"},
+ {"id": "CT-02", "title": "Production resources carry an env tag", "resource_type": "Microsoft.Storage/storageAccounts",
+  "path": "tags.env", "op": "exists", "severity": "low", "controls": ["CM-08"]},
+ {"id": "CT-03", "title": "Key vaults use purge protection", "resource_type": "Microsoft.KeyVault/vaults",
+  "path": "properties.enablePurgeProtection", "op": "truthy", "severity": "moderate", "controls": ["SC-12"]},
+ {"id": "CT-04", "title": "Web apps require TLS 1.2 or newer", "resource_type": "Microsoft.Web/sites",
+  "path": "properties.minTlsVersion", "op": "in", "value": ["1.2", "1.3"], "severity": "high", "controls": ["SC-08"]},
+ {"id": "CT-05", "title": "Data class tag present on SQL servers", "resource_type": "Microsoft.Sql/servers",
+  "path": "tags.data_class", "op": "exists", "severity": "low", "controls": ["RA-02"]}
+]

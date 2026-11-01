@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScanReport name="lhx-monthly-2026-10">
+  <ReportHost name="vm-lhx-web-01" ip="10.20.1.11" scan_start="2026-10-29" credentialed="yes">
+    <ReportItem pluginID="990001" port="443" protocol="tcp" risk="Critical" cve="CVE-2099-0101" cvss3="9.8" first_found="2026-10-10" kev="yes">
+      <name>Web server remote code execution</name><solution>Upgrade to 2.4.99</solution>
+    </ReportItem>
+    <ReportItem pluginID="990002" port="443" protocol="tcp" risk="High" cve="CVE-2099-0202" cvss3="7.5" first_found="2026-09-20" kev="no">
+      <name>TLS library memory disclosure</name><solution>Apply vendor patch</solution>
+    </ReportItem>
+    <ReportItem pluginID="990005" port="80" protocol="tcp" risk="Low" cve="" cvss3="3.1" first_found="2026-05-01" kev="no">
+      <name>HTTP server banner disclosure</name><solution>Hide version banner</solution>
+    </ReportItem>
+  </ReportHost>
+  <ReportHost name="vm-lhx-web-02" ip="10.20.1.12" scan_start="2026-10-29" credentialed="yes">
+    <ReportItem pluginID="990002" port="443" protocol="tcp" risk="High" cve="CVE-2099-0202" cvss3="7.5" first_found="2026-09-20" kev="no">
+      <name>TLS library memory disclosure</name><solution>Apply vendor patch</solution>
+    </ReportItem>
+    <ReportItem pluginID="990005" port="80" protocol="tcp" risk="Low" cve="" cvss3="3.1" first_found="2026-05-01" kev="no">
+      <name>HTTP server banner disclosure</name><solution>Hide version banner</solution>
+    </ReportItem>
+  </ReportHost>
+  <ReportHost name="vm-lhx-api-01" ip="10.20.2.21" scan_start="2026-10-29" credentialed="yes">
+    <ReportItem pluginID="990004" port="0" protocol="tcp" risk="High" cve="CVE-2099-0404" cvss3="8.8" first_found="2026-08-15" kev="yes">
+      <name>OS kernel privilege escalation</name><solution>Install monthly rollup</solution>
+    </ReportItem>
+  </ReportHost>
+</ScanReport>

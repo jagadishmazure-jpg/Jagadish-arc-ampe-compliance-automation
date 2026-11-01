@@ -1,0 +1,513 @@
+{
+ "campaign": "Q3-2026 user access review",
+ "period": "2026-07-01..2026-09-30",
+ "due": "2026-10-25",
+ "apps": [
+  {
+   "id": "APP-EHR",
+   "name": "Claims Workbench",
+   "risk": "high"
+  },
+  {
+   "id": "APP-CRM",
+   "name": "Member CRM",
+   "risk": "moderate"
+  },
+  {
+   "id": "APP-BI",
+   "name": "Analytics Portal",
+   "risk": "moderate"
+  },
+  {
+   "id": "APP-ADM",
+   "name": "Cloud Admin Console",
+   "risk": "high"
+  }
+ ],
+ "rows": [
+  {
+   "app": "APP-EHR",
+   "user": "user001@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-01",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user008@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-02",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user015@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-03",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user022@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-04",
+   "last_login": "2026-04-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user029@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-05",
+   "last_login": "2026-05-15",
+   "employment": "terminated"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user036@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-06",
+   "last_login": "2026-06-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user003@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-07",
+   "last_login": "2026-07-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user010@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-08",
+   "last_login": "2026-08-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user017@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-09",
+   "last_login": "2026-09-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user024@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "revoke",
+   "reviewed_on": "2026-10-10",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user031@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-11",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-EHR",
+   "user": "user038@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "modify",
+   "reviewed_on": "2026-10-12",
+   "last_login": "2026-03-15",
+   "employment": "active",
+   "new_role": "reader"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user004@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-01",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user011@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-02",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user018@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-03",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user025@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-04",
+   "last_login": "2026-04-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user032@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-05",
+   "last_login": "2026-05-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user039@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-06",
+   "last_login": "2026-06-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user006@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-07",
+   "last_login": "2026-07-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user013@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-08",
+   "last_login": "2026-08-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user020@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.santos",
+   "decision": "revoke",
+   "reviewed_on": "2026-10-09",
+   "last_login": "2026-09-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user027@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.santos",
+   "decision": "keep",
+   "reviewed_on": "2026-10-10",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user034@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.santos",
+   "decision": "modify",
+   "reviewed_on": "2026-10-11",
+   "last_login": "2026-02-15",
+   "employment": "active",
+   "new_role": "reader"
+  },
+  {
+   "app": "APP-CRM",
+   "user": "user001@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.santos",
+   "decision": "",
+   "reviewed_on": "2026-10-12",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user007@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-01",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user014@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-02",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user021@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-03",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user028@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-04",
+   "last_login": "2026-04-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user035@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-05",
+   "last_login": "2026-05-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user002@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-06",
+   "last_login": "2026-06-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user009@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "user009",
+   "decision": "keep",
+   "reviewed_on": "2026-10-07",
+   "last_login": "2026-07-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user016@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ng",
+   "decision": "revoke",
+   "reviewed_on": "2026-10-08",
+   "last_login": "2026-08-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user023@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-09",
+   "last_login": "2026-09-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user030@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ng",
+   "decision": "modify",
+   "reviewed_on": "2026-10-10",
+   "last_login": "2026-01-15",
+   "employment": "active",
+   "new_role": "reader"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user037@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-11",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-BI",
+   "user": "user004@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ng",
+   "decision": "keep",
+   "reviewed_on": "2026-10-12",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user010@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-01",
+   "last_login": "2026-01-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user017@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-02",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user024@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-03",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user031@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-04",
+   "last_login": "2026-04-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user038@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-05",
+   "last_login": "2026-05-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user005@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-06",
+   "last_login": "2026-06-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user012@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "revoke",
+   "reviewed_on": "2026-10-07",
+   "last_login": "2026-07-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user019@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-08",
+   "last_login": "2026-08-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user026@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "modify",
+   "reviewed_on": "2026-10-09",
+   "last_login": "2026-09-15",
+   "employment": "active",
+   "new_role": "reader"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user033@lakehaven-hx.example",
+   "role": "reader",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-10",
+   "last_login": "2026-01-15",
+   "employment": "terminated"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user040@lakehaven-hx.example",
+   "role": "editor",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-11",
+   "last_login": "2026-02-15",
+   "employment": "active"
+  },
+  {
+   "app": "APP-ADM",
+   "user": "user007@lakehaven-hx.example",
+   "role": "admin",
+   "reviewer": "rev.ito",
+   "decision": "keep",
+   "reviewed_on": "2026-10-12",
+   "last_login": "2026-03-15",
+   "employment": "active"
+  }
+ ]
+}

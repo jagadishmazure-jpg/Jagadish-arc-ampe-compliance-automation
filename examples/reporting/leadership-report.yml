@@ -1,0 +1,24 @@
+# EXAMPLE ONLY - not active. Copy to .github/workflows/ in your own fork if you want scheduled previews.
+# It builds the daily/weekly leadership report PREVIEWS and uploads them as a build artifact.
+# It never sends email: there is no transport, no secret and no approval flag here.
+name: leadership-report-previews
+on:
+  schedule:
+    - cron: "0 11 * * 1-5"   # 07:00 America/New_York during daylight time (cron runs in UTC)
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: |
+          python -m arcampe.grc report --out out --kind daily
+          if [ "$(date -u +%u)" = "1" ]; then python -m arcampe.grc report --out out --kind weekly; fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with: { name: leadership-report-previews, path: out/reports/, retention-days: 14 }

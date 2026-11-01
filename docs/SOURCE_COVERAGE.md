@@ -50,3 +50,26 @@ Areas: 18 (built 13, partial 5, gap 0)
 3. Each was matched to modules here. **built** means it runs offline and is tested; **partial** means a
    smaller version exists; **gap** would mean nothing exists.
 4. Statements about the vendor's own authorizations were left out: they describe the vendor, not this repo.
+
+## GRC extension sources (2026-10-31)
+
+The GRC extension was shaped by reading the public pages of several more vendors and one survey: three GRC
+platforms, an IT-security managed-service provider, an exposure-management vendor, a data-resilience and an
+identity-recovery vendor, and a CEO survey published by an AI platform company. There is no affiliation with any of
+them. Capabilities were paraphrased, built in our own way on synthetic data, and **no vendor number is used as a
+fact**. Survey figures appear only in [docs/learn/07_AI_GOVERNANCE.md](learn/07_AI_GOVERNANCE.md), labelled as the
+publisher's self-reported claims.
+
+| Capability idea | Built here as | Module |
+|---|---|---|
+| Workspaces per business unit | readiness, owners, exceptions | `arcampe/grc/workspaces.py` |
+| Event-driven workflow builder | simulated, logged actions | `arcampe/grc/workflows.py` |
+| Auditor area and evidence sampling | freeze, sample, sealed package | `arcampe/grc/auditor.py` |
+| Re-review after edit | content-hash drift back to review | `arcampe/grc/review.py` |
+| MCP access for AI assistants | scoped keys, pending changes | `arcampe/grc/mcp_server.py` |
+| Framework library | 34-framework registry, approximate crosswalks | `arcampe/grc/frameworks.py` |
+| Industry packs, multi-client | approximate packs, org-scoped keys | `arcampe/grc/industry_packs.py` |
+| Approved AI model and app register | register checks, shadow AI | `arcampe/grc/ai_governance.py` |
+| Scanner output as evidence | RA-5, SI-2 import | `arcampe/grc/scanner_import.py` |
+| Identity recovery evidence | CP-4, CP-9, CP-10 checks | `arcampe/resilience.py` |
+| Leadership reporting | previews only | `arcampe/grc/reporting.py` |
