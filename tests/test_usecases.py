@@ -34,7 +34,7 @@ def test_incident_clock_and_custody():
     out = _out("privacy_incident")
     assert "met 1-hour clock: True" in out
     assert "Chain of custody intact: True" in out and "After editing one artifact: False" in out
-    assert "123-45-6789" not in out.split("SSN masking")[1]
+    assert "after masking: 0 (before: 1)" in out and "123-45-6789" not in out
 
 
 def test_copilot_never_signs_off():

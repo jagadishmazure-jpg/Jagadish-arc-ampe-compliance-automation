@@ -245,7 +245,7 @@ sequenceDiagram
 2. Classify it (500 or more PII records = high) and follow the matching playbook.
 3. Watch the deadlines: CMS report within 1 hour, post-incident review within 14 days.
 4. Add each piece of evidence to a hash chain so it can be proven unchanged.
-5. Mask SSNs in any notes before they are shared.
+5. Mask SSNs in any notes before they are shared (the output counts full SSNs; it never prints one).
 
 <!-- run: python -m arcampe.usecases privacy_incident -->
 ```text
@@ -256,7 +256,7 @@ CMS report sent 09:58, met 1-hour clock: True
 Post-incident review done yet: False
 Chain of custody intact: True
 After editing one artifact: False
-SSN masking in the incident notes: Consumer SSN ***-**-6789 was printed.
+Full SSNs left in the notes after masking: 0 (before: 1)
 ```
 <!-- /run -->
 

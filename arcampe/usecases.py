@@ -134,7 +134,10 @@ def privacy_incident() -> None:
     inc.add_artifact("mail_log.txt", log, "Riley Quist", "2026-10-29T10:20:00")
     print("Chain of custody intact:", inc.custody_intact({"print_file.txt": letter, "mail_log.txt": log}))
     print("After editing one artifact:", inc.custody_intact({"print_file.txt": letter + b" ", "mail_log.txt": log}))
-    print("SSN masking in the incident notes:", privacy.mask_ssn("Consumer SSN 123-45-6789 was printed."))
+    notes = "Consumer SSN 123-45-6789 was printed."
+    shared = privacy.mask_ssn(notes)
+    print("Full SSNs left in the notes after masking:", len(privacy.find_ssns(shared)),
+          "(before:", str(len(privacy.find_ssns(notes))) + ")")
 
 
 def reg_change() -> None:
