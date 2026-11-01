@@ -1,6 +1,6 @@
 # Use cases, end to end
 
-> **In one line:** fifteen real-world stories (first ATO, daily monitoring, yearly renewal, new vendor, privacy
+> **In one line:** seventeen real-world stories (first ATO, daily monitoring, yearly renewal, new vendor, privacy
 > incident, regulatory change, auditor visit, leadership report, BU readiness, control drift, PR gate, AI
 > accountability, identity recovery, multi-org industry packs, scanner evidence), each with who acts, what starts it, the exact commands, the real
 > output and the result.
@@ -578,11 +578,60 @@ and closure carries a human name.
 
 ---
 
+## 16. Control readiness sign-off, auditor requests and AI-drafted tests
+
+- **Actor:** ISSO, external auditor, controls engineer.
+- **Trigger:** Four weeks before audit fieldwork.
+- **Goal:** Only controls whose evidence, tests, policy and approved statement are all Ready get a named sign-off;
+  auditor requests are mapped to controls; AI-drafted tests wait for a human reviewer.
+
+<!-- run: python -m arcampe.usecases control_readiness_and_audit -->
+```text
+1. Readiness board: {'controls': 402, 'ready_by_part': {'evidence': 46, 'tests': 115, 'policies': 272, 'approvals': 12}, 'all_four_ready': 1}
+2. Signed IA-02(01) by maya.isso covering 8 evidence records
+3. AC-02 refused: not ready: ['tests', 'approvals']
+4. Auditor requests: {'requests': 12, 'auto_mapped': 9, 'mapped_correctly': 9, 'ready': 7, 'label': 'measured on synthetic requests'}
+5. Independence: [('IA-Q1', True), ('IA-Q2', True), ('IA-Q3', True), ('IA-Q4', False)]
+6. AI-drafted tests: {'requests': 10, 'invalid_after_retries': 1, 'duplicates': 2, 'reviewed': 7, 'live': 6, 'rejected': 1, 'edited_before_approval': 1, 'acceptance_pct': 85.7, 'first_try_valid': 4, 'label': 'measured on synthetic requests'}
+```
+<!-- /run -->
+
+**Result:** one control is fully Ready and gets a sign-off bound to the hashes of its 8 evidence records; AC-02 is
+refused with the parts that are missing; 7 of 12 auditor requests are ready; one internal audit fails the
+independence rule; 6 AI-drafted tests go live only after a named auditor approves them.
+
+---
+
+## 17. Leadership scorecards with loss ranges
+
+- **Actor:** CISO and CRO.
+- **Trigger:** Weekly leadership report.
+- **Goal:** Three scorecards (Efficiency, Risk, Trust) with loss ranges instead of red/amber/green.
+
+<!-- run: python -m arcampe.usecases leadership_scorecards -->
+```text
+1. Flipped pass->fail 24h/7d/14d: {'24h': 2, '7d': 22, '14d': 41} MTTR 86.1 h (synthetic history)
+2. RR-AI   95% of simulated years lose no more than $1,662,061 (SIMULATED)
+2. RR-ENT  95% of simulated years lose no more than $6,732,892 (SIMULATED)
+2. RR-PRV  95% of simulated years lose no more than $1,803,977 (SIMULATED)
+2. RR-SEC  95% of simulated years lose no more than $9,185,081 (SIMULATED)
+3. Risk SLA adherence 81.2 %; invalid acceptances ['RR-ENT-07']
+4. efficiency: 7 KPIs, e.g. Evidence automation rate = 86.9% (133 / 153) [measured, synthetic]
+4. risk: 11 KPIs, e.g. Critical + high findings open = 43 [measured, synthetic]
+4. trust: 6 KPIs, e.g. Questionnaire SLA breaches = 1 [measured, synthetic]
+```
+<!-- /run -->
+
+**Result:** each scorecard row is labeled measured, SIMULATED or author judgement; loss ranges come from a
+FAIR-style Monte Carlo on synthetic inputs and are shown as "95% of simulated years lose no more than $X".
+
+---
+
 ## Run them yourself
 
 ```bash
 pip install -r requirements-dev.txt
-python -m arcampe.usecases            # all fifteen
+python -m arcampe.usecases            # all seventeen
 python -m arcampe.usecases new_vendor # one case
 pytest tests/test_usecases.py -q
 ```

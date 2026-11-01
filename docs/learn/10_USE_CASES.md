@@ -1,10 +1,10 @@
 # 10. Use cases
 
-**What you'll learn:** the fifteen end-to-end stories and where to read their real output.
+**What you'll learn:** the seventeen end-to-end stories and where to read their real output.
 
 **Read this after:** [09_EXECUTIVE_REPORTING](09_EXECUTIVE_REPORTING.md)
 
-All fifteen are in [docs/USE_CASES.md](../USE_CASES.md), each printed by `python -m arcampe.usecases <case>`.
+All seventeen are in [docs/USE_CASES.md](../USE_CASES.md), each printed by `python -m arcampe.usecases <case>`.
 
 | # | Story | Case |
 |---:|---|---|
@@ -23,6 +23,8 @@ All fifteen are in [docs/USE_CASES.md](../USE_CASES.md), each printed by `python
 | 13 | Identity recovery evidence | `identity_recovery` |
 | 14 | Industry packs and multi-org isolation | `industry_packs_multi_org` |
 | 15 | Scanner evidence for RA-5 and SI-2 | `scanner_evidence` |
+| 16 | Control readiness sign-off, auditor requests, AI-drafted tests | `control_readiness_and_audit` |
+| 17 | Leadership scorecards with loss ranges | `leadership_scorecards` |
 
 ---
 

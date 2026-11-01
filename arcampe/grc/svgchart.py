@@ -11,8 +11,8 @@ def hbar(rows: list[tuple[str, float]], maximum: float | None = None, unit: str 
     """Horizontal bar chart. rows = [(label, value)]."""
     maximum = maximum or max([v for _, v in rows] + [1])
     h = 22 * len(rows) + (24 if title else 4)
-    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{h}" role="img" '
-             f'aria-label="{escape(title or "bar chart")}">']
+    parts = [(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{h}" role="img" '
+              f'aria-label="{escape(title or "bar chart")}">')]
     y = 4
     if title:
         parts.append(f'<text x="0" y="14" font-family="Arial" font-size="13" font-weight="bold">{escape(title)}</text>')
@@ -31,8 +31,8 @@ def stacked(rows: list[tuple[str, dict]], keys: list[tuple[str, str]], width: in
     """Stacked horizontal bars. keys = [(key, color)]. Each row value is {key: count}."""
     total = max([sum(d.values()) for _, d in rows] + [1])
     h = 22 * len(rows) + 44
-    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{h}" role="img" '
-             f'aria-label="{escape(title or "stacked chart")}">',
+    parts = [(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{h}" role="img" '
+              f'aria-label="{escape(title or "stacked chart")}">'),
              f'<text x="0" y="14" font-family="Arial" font-size="13" font-weight="bold">{escape(title)}</text>']
     y = 24
     for label, d in rows:

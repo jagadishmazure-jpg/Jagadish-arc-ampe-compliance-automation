@@ -40,8 +40,8 @@ def to_markdown(m: dict) -> str:
              f"| Findings (pass / fail) | {a['passed']} / {a['failed']} |",
              f"| Open POA&M items | {p['open']} |",
              f"| POA&M overdue | {p['by_sla']['overdue']} |",
-             f"| Attestations current / due soon / overdue / missing | {t['current']} / {t['due_soon']} / "
-             f"{t['overdue']} / {t['missing']} |",
+             (f"| Attestations current / due soon / overdue / missing | {t['current']} / {t['due_soon']} / "
+              f"{t['overdue']} / {t['missing']} |"),
              f"| Audit readiness score | {m['readiness']['score']} |",
              f"| Security alerts (simulated events) | {m['alerts']} |", "",
              "## POA&M by severity", "", "| Severity | Open |", "|---|---|"]

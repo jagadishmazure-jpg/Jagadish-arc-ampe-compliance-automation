@@ -327,10 +327,42 @@ def scanner_evidence() -> None:
         print(f"4. {i['id']:28} {i['severity']:8} kev={i['kev']!s:5} due {i['due']} {i['sla_status']}")
 
 
+def control_readiness_and_audit() -> None:
+    """Before fieldwork, the ISSO signs off ready controls, the auditor's requests are mapped, and AI-drafted tests
+    wait for a human reviewer."""
+    from .grc import ai_tests, audit_hub, readiness_approval
+    ctx = readiness_approval._context()
+    print("1. Readiness board:", readiness_approval.board(ctx=ctx))
+    s = readiness_approval.sign_off("IA-02(01)", "maya.isso", "isso", ctx=ctx)
+    print("2. Signed IA-02(01) by", s.approver, "covering", len(s.evidence_hashes), "evidence records")
+    try:
+        readiness_approval.sign_off("AC-02", "maya.isso", "isso", ctx=ctx)
+    except readiness_approval.ReadinessError as e:
+        print("3. AC-02 refused:", e)
+    print("4. Auditor requests:", audit_hub.request_summary())
+    print("5. Independence:", [(r["audit"], r["independent"]) for r in audit_hub.check_independence()])
+    print("6. AI-drafted tests:", ai_tests.summary())
+
+
+def leadership_scorecards() -> None:
+    """The CISO wants the weekly scorecards: efficiency, risk with loss ranges, and trust."""
+    from .grc import insights, risk_program, scorecards
+    i = insights.summary()
+    print("1. Flipped pass->fail 24h/7d/14d:", i["flipped"], "MTTR", i["mttr_hours"], "h (synthetic history)")
+    for r in risk_program.board_view():
+        print(f"2. {r['register']:7} {r['sentence']} (SIMULATED)")
+    s = risk_program.sla()
+    print("3. Risk SLA adherence", s["adherence_pct"], "%; invalid acceptances", s["invalid_acceptances"])
+    sc = scorecards.build()
+    for card in ("efficiency", "risk", "trust"):
+        print(f"4. {card}: {len(sc[card])} KPIs, e.g. {sc[card][1][0]} = {sc[card][1][1]} [{sc[card][1][2]}]")
+
+
 CASES = {f.__name__: f for f in (first_ato, conmon_public_storage, annual_renewal, new_vendor, privacy_incident,
                                  reg_change, auditor_copilot, leadership_report, bu_workspaces_and_frameworks,
                                  control_drift_review, pr_gate_and_audit_package, ai_accountability,
-                                 identity_recovery, industry_packs_multi_org, scanner_evidence)}
+                                 identity_recovery, industry_packs_multi_org, scanner_evidence,
+                                 control_readiness_and_audit, leadership_scorecards)}
 
 if __name__ == "__main__":
     for name in sys.argv[1:] or list(CASES):

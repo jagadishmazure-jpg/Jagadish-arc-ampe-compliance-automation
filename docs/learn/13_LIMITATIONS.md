@@ -19,4 +19,4 @@
 
 ---
 
-**Next:** [PRESENTATION_GUIDE.md](../../PRESENTATION_GUIDE.md)
+**Next:** [14_GRC_OPERATIONS](14_GRC_OPERATIONS.md)

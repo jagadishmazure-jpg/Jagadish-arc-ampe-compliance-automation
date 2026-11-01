@@ -17,6 +17,8 @@
 | Identity recovery | yes | yes |
 | Vulnerability scanning evidence (RA-5, SI-2) | yes | yes |
 | Industry packs (approximate) | | yes |
+| Operational deltas (tests flipped in 24h, failing now, MTTR) | yes | |
+| Leadership scorecards: Efficiency, Risk (with FAIR P50/P90/P95 loss ranges, SIMULATED), Trust | | yes |
 
 ## Outputs
 

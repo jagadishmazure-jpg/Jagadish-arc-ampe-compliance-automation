@@ -1,7 +1,7 @@
 import csv
 import email
+import email.policy
 import io
-from email import policy
 
 import pytest
 
@@ -105,7 +105,7 @@ def test_pdf_deterministic(m):
 
 @pytest.mark.parametrize("kind", reporting.KINDS)
 def test_eml_structure(m, kind):
-    msg = email.message_from_bytes(reporting.to_eml(m, kind), policy=policy.default)
+    msg = email.message_from_bytes(reporting.to_eml(m, kind), policy=email.policy.default)
     assert msg["Subject"].startswith("[PREVIEW - NOT SENT]") and msg["X-ARCAMPE-Preview"] == "true"
     names = sorted(p.get_filename() for p in msg.iter_attachments())
     assert names == [f"{kind}-report.csv", f"{kind}-report.pdf"]

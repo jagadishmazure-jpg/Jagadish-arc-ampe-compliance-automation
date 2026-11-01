@@ -94,10 +94,8 @@ def test_evidence_list_is_a_copy(mo):
 
 def test_audit_log_verifies(mo):
     mo.status("k-marlow", "marlow")
-    try:
+    with pytest.raises(ip.TenantIsolationError):
         mo.status("k-marlow", "ironvale")
-    except ip.TenantIsolationError:
-        pass
     assert mo.log.verify()[0]
 
 

@@ -80,8 +80,8 @@ def to_markdown() -> str:
         where = "<br>".join(f"`{m}`" for m in mods.split())
         lines.append(f"| {slug} | {cap} | {where} | `{test}` | {status} | {note} |")
     c = counts()
-    lines += ["", f"Areas: {len(AREAS)} (built {c.get('built', 0)}, partial {c.get('partial', 0)}, "
-                  f"gap {c.get('gap', 0)})"]
+    lines += ["", (f"Areas: {len(AREAS)} (built {c.get('built', 0)}, partial {c.get('partial', 0)}, "
+                   f"gap {c.get('gap', 0)})")]
     return "\n".join(lines) + "\n"
 
 

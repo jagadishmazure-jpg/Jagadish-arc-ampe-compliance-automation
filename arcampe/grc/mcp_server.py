@@ -24,6 +24,9 @@ READ_TOOLS = {
     "framework_readiness": {"framework": str},
     "search_evidence": {"control_id": str},
     "poam_summary": {},
+    "exec_risk_summary": {},
+    "prioritized_test_failures": {"limit": int},
+    "control_mapping_summary": {},
 }
 WRITE_TOOLS = {
     "propose_status_change": {"control_id": str, "status": str, "reason": str},
@@ -88,7 +91,7 @@ class Server:
             raise McpError(-32602, f"unknown arguments {sorted(extra)}")
         for k, t in schema.items():
             if k not in args:
-                if k == "family":
+                if k in ("family", "limit"):
                     continue
                 raise McpError(-32602, f"missing argument {k}")
             if not isinstance(args[k], t):
@@ -139,6 +142,25 @@ class Server:
             from ..integrations.connectors import collect_all
             hits = [e.evidence_id for e in collect_all() if a["control_id"] in e.control_hints]
             return {"control_id": a["control_id"], "evidence": hits}
+        if name == "exec_risk_summary":
+            from . import risk_program
+            return {"label": "SIMULATED loss ranges on synthetic data",
+                    "registers": risk_program.board_view(), "risk_sla": {k: v for k, v in risk_program.sla().items()
+                                                                          if k != "rows"}}
+        if name == "prioritized_test_failures":
+            from .. import poam
+            lim = max(1, min(int(a.get("limit", 10)), 50))
+            order = {"critical": 0, "high": 1, "moderate": 2, "low": 3}
+            items = sorted(poam.build(assess.run_all()), key=lambda p: (order[p.severity], -p.days_open, p.id))
+            return {"count": len(items), "top": [{"id": p.id, "check": p.check_id, "severity": p.severity,
+                                                  "days_open": p.days_open, "sla": p.sla_status,
+                                                  "controls": list(p.controls)} for p in items[:lim]]}
+        if name == "control_mapping_summary":
+            from ..integrations import mapper
+            from . import mapping_eval
+            ev = mapper.evaluate()
+            return {"precision": ev["precision"], "recall": ev["recall"], "review_queue": ev["review"],
+                    "by_type": mapping_eval.run()["by_type"], "label": "measured on synthetic labeled items"}
         from .. import poam
         return poam.summary(poam.build(assess.run_all()))
 

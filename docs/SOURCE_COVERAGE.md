@@ -60,8 +60,13 @@ them. Capabilities were paraphrased, built in our own way on synthetic data, and
 fact**. Survey figures appear only in [docs/learn/07_AI_GOVERNANCE.md](learn/07_AI_GOVERNANCE.md), labelled as the
 publisher's self-reported claims.
 
+A later pass read a GRC platform's public blog (about 200 posts). Fifteen ideas were rebuilt here on synthetic
+data (see [docs/learn/14_GRC_OPERATIONS.md](learn/14_GRC_OPERATIONS.md)); figures quoted in those posts are
+treated as the vendor's claims and are not reused.
+
 | Capability idea | Built here as | Module |
 |---|---|---|
+| Control readiness approval, recipes, insights, policy tiers, risk SLAs and loss ranges, AI-drafted tests, mapping eval, audit hub, AI frameworks and EU CRA clocks, framework roadmap, recurring reviews, MCP read tools, scorecards | measured or SIMULATED, every change human-approved | `readiness_approval.py`, `recipes.py`, `insights.py`, `policy_approvals.py`, `risk_program.py`, `ai_tests.py`, `mapping_eval.py`, `audit_hub.py`, `ai_frameworks.py`, `roadmap.py`, `recurring.py`, `mcp_server.py`, `scorecards.py` |
 | Workspaces per business unit | readiness, owners, exceptions | `arcampe/grc/workspaces.py` |
 | Event-driven workflow builder | simulated, logged actions | `arcampe/grc/workflows.py` |
 | Auditor area and evidence sampling | freeze, sample, sealed package | `arcampe/grc/auditor.py` |

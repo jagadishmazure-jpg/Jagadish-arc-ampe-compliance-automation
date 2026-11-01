@@ -9,7 +9,9 @@ import sys
 from .. import ROOT
 
 COMMANDS = ["workspaces", "workflows", "custom-tests", "risk", "frameworks", "audit-package", "review", "cac",
-            "mcp", "ai-policy", "soc2", "evidence", "owners", "vendors", "access-review", "ai-governance", "identity", "industry-packs", "scanner", "report", "dashboard",
+            "mcp", "ai-policy", "soc2", "evidence", "owners", "vendors", "access-review", "ai-governance", "identity", "industry-packs", "scanner",
+            "readiness-approval", "recipes", "insights", "policy-approvals", "risk-program", "ai-tests", "mapping-eval",
+            "audit-hub", "ai-frameworks", "roadmap", "recurring", "scorecards", "report", "dashboard",
             "schedule", "all"]
 
 
@@ -114,6 +116,59 @@ def main(argv: list[str] | None = None) -> int:
         for r in scanner_import.checks():
             print(f"{r['id']:18} {r['control']:9} {'PASS' if r['passed'] else 'FAIL'}  {r['detail']}")
         print(json.dumps(scanner_import.kpis()))
+    if c == "readiness-approval" or every:
+        from . import readiness_approval
+        print(json.dumps(readiness_approval.board()))
+    if c == "recipes" or every:
+        from . import recipes
+        r = recipes.run()
+        print(json.dumps({k: v for k, v in r.items() if k != "log"}))
+        _write(out, "grc/monday_digest.txt", recipes.monday_digest(recipes.tasks_from_poam()))
+    if c == "insights" or every:
+        from . import insights
+        print(json.dumps(insights.summary()))
+    if c == "policy-approvals" or every:
+        from . import policy_approvals
+        d = policy_approvals.demo()
+        print(json.dumps({"status": d["status"], "votes": d["votes"], "summary": d["summary"]}))
+    if c == "risk-program" or every:
+        from . import risk_program
+        for r in risk_program.board_view():
+            print(f"{r['register']:7} P50 ${r['p50']:>10,}  P90 ${r['p90']:>10,}  P95 ${r['p95']:>10,}  (SIMULATED)")
+        print(json.dumps({k: v for k, v in risk_program.sla().items() if k != "rows"}))
+    if c == "ai-tests" or every:
+        from . import ai_tests
+        print(json.dumps(ai_tests.summary()))
+    if c == "mapping-eval" or every:
+        from . import mapping_eval
+        for t, r in mapping_eval.run()["by_type"].items():
+            print(f"{t:11} top1={r['top1']} top3={r['top3']} mrr={r['mrr']} missed={r['missed']}")
+    if c == "audit-hub" or every:
+        from . import audit_hub
+        print(json.dumps(audit_hub.request_summary()))
+        print(json.dumps(audit_hub.check_independence()))
+    if c == "ai-frameworks" or every:
+        from . import ai_frameworks
+        for r in ai_frameworks.readiness():
+            print(f"{r['name']:16} {r['ready']}/{r['controls']} ready ({r['ready_pct']}%, approximate)")
+        print(json.dumps(ai_frameworks.overlap()["overlap_pct"]), "% ISO 42001 topic overlap (author judgement)")
+        print(json.dumps({k: v for k, v in ai_frameworks.cra_summary().items() if k != "rows"}))
+    if c == "roadmap" or every:
+        from . import roadmap
+        for b in roadmap.BUYER_FIT:
+            print(b, [(r["framework"], r["score"]) for r in roadmap.recommend(b)])
+    if c == "recurring" or every:
+        from . import recurring
+        for r in recurring.status():
+            print(f"{r['id']} {r['cadence']:11} done {r['completed']}/{r['occurrences']} missed {len(r['missed'])} "
+                  f"next {r['next_due']}  {r['title']}")
+    if c == "scorecards" or every:
+        from . import scorecards
+        sc = scorecards.build()
+        for card in ("efficiency", "risk", "trust"):
+            print(f"[{card}]")
+            for k, v, b in sc[card]:
+                print(f"  {k}: {v} [{b}]")
     if c in ("report", "dashboard") or every:
         from . import dashboard, reporting
         m = reporting.metrics()

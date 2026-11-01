@@ -31,6 +31,7 @@ data and re-checked in CI. Numbers marked **SIMULATED** come from stated assumpt
 | 11 | [How To Run](11_HOW_TO_RUN.md) | Commands |
 | 12 | [Results](12_RESULTS.md) | Measured numbers |
 | 13 | [Limitations](13_LIMITATIONS.md) | What this is not |
+| 14 | [GRC operations](14_GRC_OPERATIONS.md) | Readiness sign-off, recipes, insights, scorecards, AI tests, audit hub |
 
 After the sequence, read [PRESENTATION_GUIDE.md](../../PRESENTATION_GUIDE.md) to present the project.
 

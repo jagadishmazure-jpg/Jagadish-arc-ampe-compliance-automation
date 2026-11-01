@@ -175,8 +175,8 @@ REGISTRY = (
      "high-risk obligations Art. 9-17", "approximate"),
     ("AIUC_1", "AIUC-1", "AI agent assurance standard", "AI agent vendors", "6 domains", "approximate"),
     ("CUSTOM", "Custom framework", "your own control set", "anyone", "user defined", "covered (custom.py)"),
-    ("MS_SSPA", "Supplier privacy program (one platform vendor)", "a supplier data-protection program run by one large "
-     "software vendor", "that vendor's suppliers", "vendor-specific requirement list", "gap"),
+    ("MS_SSPA", "Supplier privacy program (one platform vendor)", ("a supplier data-protection program run by one large "
+      "software vendor"), "that vendor's suppliers", "vendor-specific requirement list", "gap"),
 )
 REGISTRY_KEYS = tuple(r[0] for r in REGISTRY)
 CORE = tuple(f for f in crosswalk.FRAMEWORKS)

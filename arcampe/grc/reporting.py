@@ -53,6 +53,7 @@ def metrics(today: str = TODAY) -> dict:
         review,
         risk_registers,
         scanner_import,
+        scorecards,
         soc2_path,
         vendor_requests,
         workspaces,
@@ -77,7 +78,7 @@ def metrics(today: str = TODAY) -> dict:
         vulns[i.severity]["overdue"] += i.sla_status == "overdue"
     done_vr = [r for r in vr if r["state"] in ("approved", "rejected")]
     closed_deals = [d for d in TRUST_PIPELINE if d["security_review"] == "done"]
-    return {
+    out = {
         "as_of": today, "entity": ENTITY,
         "frameworks": fw,
         "business_units": bu,
@@ -111,6 +112,9 @@ def metrics(today: str = TODAY) -> dict:
                              "avg_review_days": round(sum(d["days_in_review"] for d in TRUST_PIPELINE)
                                                       / len(TRUST_PIPELINE), 1)},
     }
+    out["scorecards"] = scorecards.build(out, today)
+    out["daily_deltas"] = scorecards.daily_deltas(today)
+    return out
 
 
 def headline(m: dict) -> list[tuple[str, str, str]]:
@@ -148,12 +152,12 @@ def to_html(m: dict, kind: str = "weekly", top_frameworks: int | None = None) ->
         fw = fw[:top_frameworks]
     h = ['<html><body style="font-family:Arial;max-width:720px">',
          f"<h2>{escape(m['entity'])}: {kind} security and compliance report</h2>",
-         f'<p style="color:#a00">Synthetic data. As of {escape(m["as_of"])}. Not a real system. '
-         f"Numbers are measured on the synthetic run unless marked SIMULATED.</p>",
+         (f'<p style="color:#a00">Synthetic data. As of {escape(m["as_of"])}. Not a real system. '
+          f"Numbers are measured on the synthetic run unless marked SIMULATED.</p>"),
          _table(["KPI", "Value", "Basis"], [list(r) for r in headline(m)]),
          "<h3>Framework readiness (ready controls / mapped controls)</h3>",
-         "<p style='font-size:11px;color:#555'>Ready = tested and passing in the synthetic run. Untested counts as "
-         "not ready. Mappings other than NIST 800-53 are approximate.</p>",
+         ("<p style='font-size:11px;color:#555'>Ready = tested and passing in the synthetic run. Untested counts as "
+          "not ready. Mappings other than NIST 800-53 are approximate.</p>"),
          svgchart.cards(fw)]
     h.append(svgchart.hbar([(r["name"], r["readiness_pct"]) for r in m["business_units"]], 100, "%",
                            title="Readiness by business unit (passing / tested)"))
@@ -189,6 +193,16 @@ def to_html(m: dict, kind: str = "weekly", top_frameworks: int | None = None) ->
         h.append(f"<h3>Trust to revenue (SIMULATED)</h3><p>{t['deals']} simulated deals; "
                  f"${t['value_unblocked']:,} closed after review, ${t['value_waiting']:,} waiting; "
                  f"average review {t['avg_review_days']} days.</p>")
+    if kind == "daily":
+        h.append("<h3>Operational deltas (last 24 hours)</h3>" + _table(["KPI", "Value", "Basis"],
+                                                                      [list(r) for r in m["daily_deltas"]]))
+    else:
+        sc = m["scorecards"]
+        h.append("<h3>Leadership scorecards</h3>")
+        for name in ("efficiency", "risk", "trust"):
+            h.append(f"<h4>{name.title()}</h4>" + _table(["KPI", "Value", "Basis"], [list(r) for r in sc[name]]))
+        h.append("<p style='font-size:11px'>Loss ranges (SIMULATED, FAIR-style, no colors by design): " +
+                 escape("; ".join(f"{k}: {v}" for k, v in sc["fair_sentences"].items())) + ".</p>")
     ag = m["ai_governance"] if kind == "weekly" else [k for k in m["ai_governance"] if "daily" in k["report"]]
     h.append("<h3>AI Governance &amp; Accountability</h3>" + _table(["KPI", "Value", "Basis"],
                                                                  [[k["kpi"], k["value"], k["basis"]] for k in ag]))
@@ -263,6 +277,11 @@ def to_csv(m: dict) -> str:
         w.writerow(["ai_register", k, "value", v, "measured, synthetic"])
     for k, v in m["identity"].items():
         w.writerow(["identity_recovery", k, "value", v, "measured, synthetic"])
+    for card in ("efficiency", "risk", "trust"):
+        for k, v, b in m["scorecards"][card]:
+            w.writerow([f"scorecard_{card}", k, "value", v, b])
+    for k, v, b in m["daily_deltas"]:
+        w.writerow(["daily_delta", k, "value", v, b])
     w.writerow(["trust_to_revenue", "pipeline", "value_waiting", m["trust_to_revenue"]["value_waiting"], "SIMULATED"])
     return buf.getvalue()
 
@@ -284,6 +303,16 @@ def to_pdf(m: dict, kind: str = "weekly") -> bytes:
     d.text("Readiness by business unit", 12, True)
     for r in m["business_units"]:
         d.bar(r["name"], r["readiness_pct"], 100, f"{r['readiness_pct']}%")
+    d.gap()
+    if kind == "daily":
+        d.text("Operational deltas (last 24 hours)", 12, True)
+        for k, v, b in m["daily_deltas"]:
+            d.text(f"{k}: {v} [{b}]", 9)
+    else:
+        for card in ("efficiency", "risk", "trust"):
+            d.text(f"{card.title()} scorecard", 12, True)
+            for k, v, b in m["scorecards"][card]:
+                d.text(f"{k}: {v} [{b}]", 9)
     d.gap()
     d.text("AI Governance & Accountability", 12, True)
     for k in m["ai_governance"]:

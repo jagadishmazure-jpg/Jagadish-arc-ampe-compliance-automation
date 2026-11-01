@@ -3,7 +3,7 @@
 **What you'll learn:** how to present this repo in 5 or 15 minutes, what to show on screen, which commands to
 run live, likely interview questions with short answers, and a one-page cheat card.
 
-**Read this after:** [docs/learn/13_LIMITATIONS.md](docs/learn/13_LIMITATIONS.md)
+**Read this after:** [docs/learn/14_GRC_OPERATIONS.md](docs/learn/14_GRC_OPERATIONS.md)
 
 Everything you show is synthetic and offline. Say so in the first minute.
 
@@ -31,7 +31,10 @@ Everything you show is synthetic and offline. Say so in the first minute.
    (24/25), the deliberate decision-rights gap (AI-VENDOR) and the model register (3 of 7 uses in scope).
 7. **Resilience and scanning (1 min).** `python -m arcampe.usecases identity_recovery` (11.5h vs 8h target) and
    `scanner_evidence`.
-8. **Limits and next steps (1 min).**
+8. **Readiness sign-off and scorecards (1 min, optional swap for 7).** `python -m arcampe.usecases
+   control_readiness_and_audit` then `leadership_scorecards`: named sign-off bound to evidence hashes; loss ranges
+   instead of colors. See [14_GRC_OPERATIONS](docs/learn/14_GRC_OPERATIONS.md).
+9. **Limits and next steps (1 min).**
 
 ## What to have open
 
@@ -48,6 +51,9 @@ python -m arcampe.usecases leadership_report
 python -m arcampe.usecases ai_accountability
 python -m arcampe.usecases industry_packs_multi_org
 python -m arcampe.usecases scanner_evidence
+python -m arcampe.usecases control_readiness_and_audit
+python -m arcampe.usecases leadership_scorecards
+python -m arcampe.grc scorecards
 python -m arcampe.grc report --out out --kind daily
 ```
 
@@ -65,6 +71,10 @@ python -m arcampe.grc report --out out --kind daily
 | What would you do with a real scanner? | Map its export to the same import fields; scan age then drives evidence freshness and SI-2 SLA. |
 | What is hard about identity recovery? | Restore AD before Entra, reset krbtgt twice, and prove it with a timed drill. Ours took 11.5h against 8h. |
 | What is next? | Live connectors, a Microsoft Foundry drafter with an eval set, and verification of the DEE baseline. |
+| Can an AI agent mark a control ready? | No. A named ISSO, CISO or control approver signs, and the sign-off is bound to the evidence hashes; if the evidence changes, it is void. |
+| How do you show risk to the board? | Loss ranges (P50, P90, P95) from a FAIR-style simulation on synthetic inputs, with no red/amber/green, and a CRO-signed appetite. |
+| Do AI-written tests go straight to production? | No. Validator with up to 3 retries, duplicate check, plain-English description, then an auditor or engineer approves. 85.7% acceptance on 7 synthetic reviews. |
+| How good is the evidence mapper on hard inputs? | Measured: MRR 0.983 exact, 0.900 paraphrase, 0.883 partial, 0.400 keyword-only. Low confidence goes to a person. |
 
 ## One-page cheat card
 

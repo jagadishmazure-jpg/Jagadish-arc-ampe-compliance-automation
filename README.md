@@ -19,7 +19,7 @@ material is a **self-assessment design**.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-2005 tests collected
+2175 tests collected
 ```
 <!-- /run -->
 
@@ -34,7 +34,7 @@ real run and re-checked in CI.
 | 1 | [README.md](README.md) | This page: summary, architecture, measured results, how to run |
 | 2 | [docs/purpose.md](docs/purpose.md) | The problem, who it is for, and what the three labels mean |
 | 3 | [docs/AUDIT_AUTOMATION_EXPLAINED.md](docs/AUDIT_AUTOMATION_EXPLAINED.md) | **How checklist and audit automation works end to end**, walking control IA-02 (MFA) through every step with real output |
-| 4 | [docs/USE_CASES.md](docs/USE_CASES.md) | **Fifteen end-to-end use cases** (first ATO, public storage to closure, yearly renewal, new vendor, privacy incident, regulatory change, auditor with AI copilot, leadership report, BU readiness, control drift, PR gate, AI accountability, identity recovery, multi-org industry packs, scanner evidence) with real commands and output |
+| 4 | [docs/USE_CASES.md](docs/USE_CASES.md) | **Seventeen end-to-end use cases** (first ATO, public storage to closure, yearly renewal, new vendor, privacy incident, regulatory change, auditor with AI copilot, leadership report, BU readiness, control drift, PR gate, AI accountability, identity recovery, multi-org industry packs, scanner evidence) with real commands and output |
 | 5 | [docs/glossary.md](docs/glossary.md) | Every acronym (ATO, SSPP, POA&M, CONMON, FAIR ...) in one line |
 | 6 | [docs/architecture.md](docs/architecture.md) | Modules, data flow and where each piece of logic lives |
 | 7 | [docs/how-it-works.md](docs/how-it-works.md) | The pipeline step by step with real command output |
@@ -69,12 +69,13 @@ real run and re-checked in CI.
 | 36 | [docs/learn/07_AI_GOVERNANCE.md](docs/learn/07_AI_GOVERNANCE.md) | Model register, shadow AI, decision rights, decision records, replay, 12 KPIs |
 | 37 | [docs/learn/08_IDENTITY_RESILIENCE.md](docs/learn/08_IDENTITY_RESILIENCE.md) | Identity as the first recovery dependency (CP-4, CP-9, CP-10) |
 | 38 | [docs/learn/09_EXECUTIVE_REPORTING.md](docs/learn/09_EXECUTIVE_REPORTING.md) | Daily and weekly leadership reports, previews only |
-| 39 | [docs/learn/10_USE_CASES.md](docs/learn/10_USE_CASES.md) | The fifteen stories |
+| 39 | [docs/learn/10_USE_CASES.md](docs/learn/10_USE_CASES.md) | The seventeen stories |
 | 40 | [docs/learn/11_HOW_TO_RUN.md](docs/learn/11_HOW_TO_RUN.md) | Commands |
 | 41 | [docs/learn/12_RESULTS.md](docs/learn/12_RESULTS.md) | Measured numbers |
 | 42 | [docs/learn/13_LIMITATIONS.md](docs/learn/13_LIMITATIONS.md) | What this is not |
-| 43 | [PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md) | 5- and 15-minute scripts, demo commands, interview Q&A, cheat card |
-| 44 | [examples/reporting/DEPLOY.md](examples/reporting/DEPLOY.md) | Scheduling and (approval-gated) sending: cron, GitHub Actions, Microsoft Foundry, Logic Apps, SendGrid |
+| 43 | [docs/learn/14_GRC_OPERATIONS.md](docs/learn/14_GRC_OPERATIONS.md) | Readiness sign-off, recipes, insights, scorecards, AI tests, audit hub, EU CRA clocks |
+| 44 | [PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md) | 5- and 15-minute scripts, demo commands, interview Q&A, cheat card |
+| 45 | [examples/reporting/DEPLOY.md](examples/reporting/DEPLOY.md) | Scheduling and (approval-gated) sending: cron, GitHub Actions, Microsoft Foundry, Logic Apps, SendGrid |
 
 ## GRC extension (`arcampe/grc/`)
 
@@ -99,6 +100,13 @@ Added on top of the core, offline and synthetic. Each item has tests and a CLI c
 | Identity resilience | Identity backup and drill evidence (CP-4, CP-9, CP-10) | `identity` |
 | Leadership reports | Daily and weekly HTML, PDF, CSV and .eml **previews**; sending needs config + approval + transport | `report`, `schedule` |
 | Trust dashboard | Static HTML with readiness rings | `dashboard` |
+| Control readiness approval | Evidence + tests + policy + approved statement, then a named sign-off bound to evidence hashes | `readiness-approval` |
+| Workflow recipes, digest, recurring reviews | 10 one-trigger recipes (simulated actions), Monday digest file, cadence engine | `recipes`, `recurring` |
+| Insights and risk program | Pass-to-fail flips and MTTR; register moves; FAIR-style P50/P90/P95 loss ranges; risk SLAs | `insights`, `risk-program` |
+| Policy approval tiers | 1 to 6 tiers (all / any / k-of-n) and a labeled change summary | `policy-approvals` |
+| AI-drafted tests and mapping eval | Validator with 3 retries, dedupe, human review; exact/paraphrase/partial/keyword eval with MRR | `ai-tests`, `mapping-eval` |
+| Audit hub, AI frameworks, roadmap | Auditor requests to controls, hash-chained evidence, AIUC-1 domains, EU CRA clocks, "which framework next" | `audit-hub`, `ai-frameworks`, `roadmap` |
+| Leadership scorecards | Efficiency, Risk (with loss ranges), Trust; every row labeled measured or SIMULATED | `scorecards` |
 
 <!-- run: python -m arcampe.grc ai-governance --out out -->
 ```text

@@ -84,7 +84,7 @@ def _least_privilege():
         authorize(p, "approve_statement", "t1")
         return False, "privileged action without phishing-resistant MFA"
     except AccessDenied:
-        pass
+        pass  # expected: denial is the passing outcome
     agent = Principal("agent:drafter", "t1", ("isso",), mfa=True, phishing_resistant=True, is_agent=True)
     try:
         authorize(agent, "approve_statement", "t1")
