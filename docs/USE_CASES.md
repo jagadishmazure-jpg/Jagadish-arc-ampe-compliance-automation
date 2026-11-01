@@ -364,7 +364,7 @@ and closure carries a human name.
 ## Run them yourself
 
 ```bash
-pip install -e ".[dev]"
+pip install -r requirements-dev.txt
 python -m arcampe.usecases            # all seven
 python -m arcampe.usecases new_vendor # one case
 pytest tests/test_usecases.py -q
