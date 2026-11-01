@@ -19,7 +19,7 @@ import json
 from dataclasses import asdict, dataclass, field, replace
 
 from . import DATA, ENTITY, TODAY, catalog
-from .guards import INJECTION_PATTERNS, screen  # noqa: F401  (re-exported)
+from .guards import screen
 from .ids import base_of
 from .params import PARAMS
 from .redact import redact
