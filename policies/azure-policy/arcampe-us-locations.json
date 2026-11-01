@@ -1,0 +1,64 @@
+{
+  "displayName": "ARC-AMPE: resources stay in U.S. regions",
+  "mode": "Indexed",
+  "metadata": {
+    "category": "ARC-AMPE (synthetic demo)",
+    "version": "1.0.0",
+    "arcampeCheck": "AZ-03",
+    "controls": [
+      "SA-09(05)"
+    ]
+  },
+  "parameters": {
+    "allowedLocations": {
+      "type": "Array",
+      "defaultValue": [
+        "centralus",
+        "eastus",
+        "eastus2",
+        "northcentralus",
+        "southcentralus",
+        "usgovarizona",
+        "usgovtexas",
+        "usgovvirginia",
+        "westcentralus",
+        "westus",
+        "westus2",
+        "westus3"
+      ],
+      "metadata": {
+        "displayName": "Allowed U.S. locations",
+        "strongType": "location"
+      }
+    },
+    "effect": {
+      "type": "String",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit",
+      "metadata": {
+        "displayName": "Effect"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "location",
+          "notIn": "[parameters('allowedLocations')]"
+        },
+        {
+          "field": "location",
+          "notEquals": "global"
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+ "reviews": [
+  {
+   "workspace": "law-lhx-sec-prod",
+   "reviewedOn": "2026-10-29",
+   "reviewer": "soc-analyst-2"
+  },
+  {
+   "workspace": "law-lhx-sec-prod",
+   "reviewedOn": "2026-10-22",
+   "reviewer": "soc-analyst-2"
+  },
+  {
+   "workspace": "law-lhx-sec-prod",
+   "reviewedOn": "2026-10-15",
+   "reviewer": "soc-analyst-2"
+  },
+  {
+   "workspace": "law-lhx-sec-prod",
+   "reviewedOn": "2026-10-08",
+   "reviewer": "soc-analyst-2"
+  }
+ ],
+ "dataConnectors": [
+  "AzureActivity",
+  "EntraID",
+  "DefenderForCloud",
+  "Office365",
+  "PaloAlto"
+ ],
+ "incidents": [
+  {
+   "id": "INC-SIM-101",
+   "severity": "High",
+   "detected": "2026-10-20T14:00",
+   "reportedToCms": "2026-10-20T14:40",
+   "pii": true
+  },
+  {
+   "id": "INC-SIM-102",
+   "severity": "Medium",
+   "detected": "2026-10-25T09:00",
+   "reportedToCms": "2026-10-25T11:30",
+   "pii": true
+  },
+  {
+   "id": "INC-SIM-103",
+   "severity": "Low",
+   "detected": "2026-10-28T08:00",
+   "reportedToCms": null,
+   "pii": false
+  }
+ ]
+}

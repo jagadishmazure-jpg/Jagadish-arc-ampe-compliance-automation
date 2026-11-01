@@ -1,0 +1,248 @@
+{
+ "events": [
+  {
+   "employeeId": "E105",
+   "upn": "user005@lakehaven-hx.example",
+   "event": "termination",
+   "effective": "2026-10-21"
+  },
+  {
+   "employeeId": "E106",
+   "upn": "user006@lakehaven-hx.example",
+   "event": "termination",
+   "effective": "2026-09-21"
+  },
+  {
+   "employeeId": "E109",
+   "upn": "user009@lakehaven-hx.example",
+   "event": "transfer",
+   "effective": "2026-10-16"
+  },
+  {
+   "employeeId": "E112",
+   "upn": "user012@lakehaven-hx.example",
+   "event": "termination",
+   "effective": "2026-10-28"
+  },
+  {
+   "employeeId": "E130",
+   "upn": "user030@lakehaven-hx.example",
+   "event": "hire",
+   "effective": "2026-10-11"
+  },
+  {
+   "employeeId": "E131",
+   "upn": "user031@lakehaven-hx.example",
+   "event": "hire",
+   "effective": "2026-10-23"
+  },
+  {
+   "employeeId": "E114",
+   "upn": "user014@lakehaven-hx.example",
+   "event": "termination",
+   "effective": "2026-10-06"
+  }
+ ],
+ "training": [
+  {
+   "upn": "user000@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-07-03"
+  },
+  {
+   "upn": "user001@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user002@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  },
+  {
+   "upn": "user003@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2025-09-26"
+  },
+  {
+   "upn": "user004@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user005@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user006@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user007@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user008@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-07-03"
+  },
+  {
+   "upn": "user009@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user010@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user011@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user012@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user013@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user014@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user015@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  },
+  {
+   "upn": "user016@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  },
+  {
+   "upn": "user017@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user018@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user019@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user020@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user021@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  },
+  {
+   "upn": "user022@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user023@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user024@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user025@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user026@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2025-09-26"
+  },
+  {
+   "upn": "user027@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2025-09-26"
+  },
+  {
+   "upn": "user028@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user029@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user030@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user031@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user032@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  },
+  {
+   "upn": "user033@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user034@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user035@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-10-11"
+  },
+  {
+   "upn": "user036@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-01-04"
+  },
+  {
+   "upn": "user037@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-09-01"
+  },
+  {
+   "upn": "user038@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-07-03"
+  },
+  {
+   "upn": "user039@lakehaven-hx.example",
+   "course": "security-privacy-awareness",
+   "completed": "2026-04-14"
+  }
+ ]
+}

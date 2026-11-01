@@ -1,0 +1,5050 @@
+{
+"note": "synthetic events; 'scenario' is the ground-truth label used only for scoring",
+"events": [
+{
+"at": "2026-10-30T00:00:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:03:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:07:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 29
+},
+{
+"at": "2026-10-30T00:07:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:07:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:09:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:10:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:12:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:13:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:17:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:20:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:21:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T00:25:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 4
+},
+{
+"at": "2026-10-30T00:25:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 13
+},
+{
+"at": "2026-10-30T00:27:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:28:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 39
+},
+{
+"at": "2026-10-30T00:31:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:31:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:41:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 37
+},
+{
+"at": "2026-10-30T00:44:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:44:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:51:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:52:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:52:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:55:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:56:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:56:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:57:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:59:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T00:59:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 36
+},
+{
+"at": "2026-10-30T01:03:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 2
+},
+{
+"at": "2026-10-30T01:09:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 36
+},
+{
+"at": "2026-10-30T01:09:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:11:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 5
+},
+{
+"at": "2026-10-30T01:13:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:18:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:20:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:20:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:20:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:23:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 14
+},
+{
+"at": "2026-10-30T01:26:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:35:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:38:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:39:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 35
+},
+{
+"at": "2026-10-30T01:41:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:42:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:47:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:50:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:51:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:54:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T01:56:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:00:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:03:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:04:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:06:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:07:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 18
+},
+{
+"at": "2026-10-30T02:07:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:08:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:08:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:11:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 8
+},
+{
+"at": "2026-10-30T02:13:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:18:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:28:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:29:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:33:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:34:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:39:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:41:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:43:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:44:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:45:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 36
+},
+{
+"at": "2026-10-30T02:47:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:47:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:48:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:49:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:51:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:52:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:53:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 33
+},
+{
+"at": "2026-10-30T02:53:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:54:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T02:54:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 25
+},
+{
+"at": "2026-10-30T02:59:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:00:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:04:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:06:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:06:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:11:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:12:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:12:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T03:20:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:26:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:27:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 36
+},
+{
+"at": "2026-10-30T03:28:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:29:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:34:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:34:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:35:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:35:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:37:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:39:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 30
+},
+{
+"at": "2026-10-30T03:39:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:43:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:43:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:44:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:49:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:51:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T03:59:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:01:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 39
+},
+{
+"at": "2026-10-30T04:01:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:02:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:06:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:09:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 29
+},
+{
+"at": "2026-10-30T04:09:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 1
+},
+{
+"at": "2026-10-30T04:10:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:12:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:13:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:14:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 28
+},
+{
+"at": "2026-10-30T04:17:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:22:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:24:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:26:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:28:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:32:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:32:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:41:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 15
+},
+{
+"at": "2026-10-30T04:43:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:44:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:45:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 13
+},
+{
+"at": "2026-10-30T04:50:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:50:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 4
+},
+{
+"at": "2026-10-30T04:54:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 38
+},
+{
+"at": "2026-10-30T04:54:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:55:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:55:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:55:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 16
+},
+{
+"at": "2026-10-30T04:56:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:56:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T04:56:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 10
+},
+{
+"at": "2026-10-30T04:58:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:00:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:01:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:02:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:03:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:04:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:05:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:05:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:06:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:06:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": "S1-bruteforce"
+},
+{
+"at": "2026-10-30T05:06:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:08:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 4
+},
+{
+"at": "2026-10-30T05:09:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:12:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:14:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:16:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:17:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 21
+},
+{
+"at": "2026-10-30T05:20:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 23
+},
+{
+"at": "2026-10-30T05:22:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:27:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:29:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:30:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:32:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:36:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:37:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:38:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:39:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:42:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T05:51:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:04:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:06:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:10:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:10:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:11:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:13:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:20:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:20:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 1
+},
+{
+"at": "2026-10-30T06:24:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:27:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:28:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:32:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:33:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 22
+},
+{
+"at": "2026-10-30T06:34:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:34:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:39:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:40:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:40:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 10
+},
+{
+"at": "2026-10-30T06:40:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": "S2-travel"
+},
+{
+"at": "2026-10-30T06:40:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:41:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 12
+},
+{
+"at": "2026-10-30T06:42:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:43:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:44:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:46:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:47:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:53:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:53:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:54:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 9
+},
+{
+"at": "2026-10-30T06:55:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:56:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T06:57:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:01:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:01:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:06:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:09:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:10:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:12:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:14:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:16:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:17:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:25:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "RO",
+"ok": true,
+"scenario": "S2-travel"
+},
+{
+"at": "2026-10-30T07:26:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:28:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 30
+},
+{
+"at": "2026-10-30T07:34:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:34:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 40
+},
+{
+"at": "2026-10-30T07:37:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:39:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:42:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:44:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:46:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T07:52:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T07:53:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T07:56:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:57:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:58:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:59:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T07:59:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T08:07:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:08:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:09:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 35
+},
+{
+"at": "2026-10-30T08:16:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 12
+},
+{
+"at": "2026-10-30T08:16:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 34
+},
+{
+"at": "2026-10-30T08:16:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 37
+},
+{
+"at": "2026-10-30T08:18:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:26:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 5
+},
+{
+"at": "2026-10-30T08:27:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 26
+},
+{
+"at": "2026-10-30T08:28:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:28:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 26
+},
+{
+"at": "2026-10-30T08:30:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:32:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:35:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:38:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:39:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:40:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:40:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:40:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:41:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:43:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 11
+},
+{
+"at": "2026-10-30T08:46:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 1
+},
+{
+"at": "2026-10-30T08:46:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 8
+},
+{
+"at": "2026-10-30T08:49:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:50:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:51:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 9
+},
+{
+"at": "2026-10-30T08:51:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T08:52:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:01:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:02:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:03:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:10:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:12:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 17
+},
+{
+"at": "2026-10-30T09:21:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 26
+},
+{
+"at": "2026-10-30T09:23:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:29:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:31:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:31:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:33:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:35:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:37:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:38:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:41:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:46:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:48:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T09:52:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:00:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 30
+},
+{
+"at": "2026-10-30T10:01:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:01:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:05:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:10:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "role_assignment",
+"country": "US",
+"ok": true,
+"scenario": "S3-privesc",
+"role": "Global Administrator",
+"via_pim": false
+},
+{
+"at": "2026-10-30T10:12:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:16:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 36
+},
+{
+"at": "2026-10-30T10:18:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:18:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:18:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:32:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+},
+{
+"at": "2026-10-30T10:33:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:38:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:38:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:39:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:42:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:43:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:47:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T10:51:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 31
+},
+{
+"at": "2026-10-30T10:56:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T10:57:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T11:00:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:04:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:07:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:08:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:10:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T11:17:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:23:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:24:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 16
+},
+{
+"at": "2026-10-30T11:25:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:26:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+},
+{
+"at": "2026-10-30T11:33:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:36:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:38:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:40:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:40:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": "S4-exfil",
+"count": 1800
+},
+{
+"at": "2026-10-30T11:41:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:41:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:43:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:43:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T11:44:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:46:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T11:51:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:00:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:04:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 38
+},
+{
+"at": "2026-10-30T12:06:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:07:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:11:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:15:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 34
+},
+{
+"at": "2026-10-30T12:17:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:20:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:24:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:25:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:25:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:26:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 17
+},
+{
+"at": "2026-10-30T12:27:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:28:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:29:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:29:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:32:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 33
+},
+{
+"at": "2026-10-30T12:37:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T12:37:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:46:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:48:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 30
+},
+{
+"at": "2026-10-30T12:49:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:50:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T12:53:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:03:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:06:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:10:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:11:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:13:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 39
+},
+{
+"at": "2026-10-30T13:15:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:15:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 3
+},
+{
+"at": "2026-10-30T13:20:00",
+"user": "admin02@lakehaven-hx.example",
+"kind": "signin",
+"country": "NG",
+"ok": true,
+"scenario": "S5-admin-abroad",
+"admin": true
+},
+{
+"at": "2026-10-30T13:21:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 29
+},
+{
+"at": "2026-10-30T13:25:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:25:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:26:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:27:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:27:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:28:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:29:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 14
+},
+{
+"at": "2026-10-30T13:30:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 26
+},
+{
+"at": "2026-10-30T13:37:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 15
+},
+{
+"at": "2026-10-30T13:39:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:44:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:46:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:51:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:51:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:55:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T13:58:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:01:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 40
+},
+{
+"at": "2026-10-30T14:05:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 27
+},
+{
+"at": "2026-10-30T14:06:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T14:14:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:16:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 16
+},
+{
+"at": "2026-10-30T14:16:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:18:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:18:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:21:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:24:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:25:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:27:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:27:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:29:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:31:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:32:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:36:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:41:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:45:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 35
+},
+{
+"at": "2026-10-30T14:48:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T14:58:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 11
+},
+{
+"at": "2026-10-30T15:00:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "role_assignment",
+"country": "US",
+"ok": true,
+"scenario": null,
+"role": "Global Administrator",
+"via_pim": true
+},
+{
+"at": "2026-10-30T15:01:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:02:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:02:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:06:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:08:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 16
+},
+{
+"at": "2026-10-30T15:13:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 20
+},
+{
+"at": "2026-10-30T15:14:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:15:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:15:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:15:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:15:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:21:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 9
+},
+{
+"at": "2026-10-30T15:24:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:25:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:27:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:35:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:38:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:40:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:43:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:43:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:43:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:51:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 30
+},
+{
+"at": "2026-10-30T15:52:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:53:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T15:58:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T16:06:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:07:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:08:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:09:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:09:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 1
+},
+{
+"at": "2026-10-30T16:10:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:11:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:11:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:12:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:12:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:14:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:23:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:25:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 11
+},
+{
+"at": "2026-10-30T16:28:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:28:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 2
+},
+{
+"at": "2026-10-30T16:35:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 2
+},
+{
+"at": "2026-10-30T16:36:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:39:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 31
+},
+{
+"at": "2026-10-30T16:42:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:46:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:47:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:48:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:49:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:49:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:50:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:52:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:55:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 5
+},
+{
+"at": "2026-10-30T16:55:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:56:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T16:57:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 5
+},
+{
+"at": "2026-10-30T16:58:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:00:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+},
+{
+"at": "2026-10-30T17:00:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:06:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:15:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:15:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:16:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:17:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 18
+},
+{
+"at": "2026-10-30T17:17:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:17:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 12
+},
+{
+"at": "2026-10-30T17:19:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:20:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 33
+},
+{
+"at": "2026-10-30T17:21:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:24:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:25:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 32
+},
+{
+"at": "2026-10-30T17:29:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:30:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 33
+},
+{
+"at": "2026-10-30T17:34:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 21
+},
+{
+"at": "2026-10-30T17:35:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 22
+},
+{
+"at": "2026-10-30T17:38:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 33
+},
+{
+"at": "2026-10-30T17:42:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:48:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:48:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:52:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:52:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:53:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:54:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:54:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 3
+},
+{
+"at": "2026-10-30T17:56:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T17:58:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:06:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:06:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 7
+},
+{
+"at": "2026-10-30T18:08:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:08:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:09:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:13:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:16:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:17:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:18:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:27:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:29:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:33:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 40
+},
+{
+"at": "2026-10-30T18:40:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:40:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:41:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 23
+},
+{
+"at": "2026-10-30T18:42:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:43:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:43:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:45:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:46:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:46:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:52:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 18
+},
+{
+"at": "2026-10-30T18:57:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T18:58:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:07:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:18:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 38
+},
+{
+"at": "2026-10-30T19:21:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:26:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:30:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:31:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:36:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 35
+},
+{
+"at": "2026-10-30T19:38:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 29
+},
+{
+"at": "2026-10-30T19:43:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:44:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:44:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:44:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:53:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T19:57:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 16
+},
+{
+"at": "2026-10-30T19:59:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T19:59:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:06:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:06:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:14:00",
+"user": "user025@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:29:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:29:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:30:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:30:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:33:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:35:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:40:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:45:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:45:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 40
+},
+{
+"at": "2026-10-30T20:45:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:46:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 18
+},
+{
+"at": "2026-10-30T20:49:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:50:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:54:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:56:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T20:57:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:00:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:03:00",
+"user": "user011@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:04:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:06:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:09:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:10:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:11:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:13:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:14:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:15:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:16:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:17:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:20:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 3
+},
+{
+"at": "2026-10-30T21:20:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:21:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 27
+},
+{
+"at": "2026-10-30T21:23:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:27:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:27:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:29:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 31
+},
+{
+"at": "2026-10-30T21:29:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:29:00",
+"user": "user018@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T21:31:00",
+"user": "user029@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:34:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:35:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:37:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 12
+},
+{
+"at": "2026-10-30T21:38:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:39:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:39:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:42:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 34
+},
+{
+"at": "2026-10-30T21:42:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:43:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:43:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+},
+{
+"at": "2026-10-30T21:47:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:49:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:52:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+},
+{
+"at": "2026-10-30T21:52:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T21:57:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:04:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 4
+},
+{
+"at": "2026-10-30T22:04:00",
+"user": "user021@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": false,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:05:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 19
+},
+{
+"at": "2026-10-30T22:05:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 15
+},
+{
+"at": "2026-10-30T22:10:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:10:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:10:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:13:00",
+"user": "user020@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:16:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:16:00",
+"user": "user022@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:16:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:22:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 12
+},
+{
+"at": "2026-10-30T22:23:00",
+"user": "user003@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:23:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:26:00",
+"user": "user001@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:29:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:30:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:35:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:35:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:39:00",
+"user": "user004@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:40:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 24
+},
+{
+"at": "2026-10-30T22:40:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:41:00",
+"user": "user009@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:47:00",
+"user": "user006@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:47:00",
+"user": "user010@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:48:00",
+"user": "user026@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:51:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:54:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T22:56:00",
+"user": "user027@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:06:00",
+"user": "user007@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:13:00",
+"user": "user016@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 21
+},
+{
+"at": "2026-10-30T23:13:00",
+"user": "user028@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 26
+},
+{
+"at": "2026-10-30T23:16:00",
+"user": "user017@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:17:00",
+"user": "user002@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:18:00",
+"user": "user012@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 15
+},
+{
+"at": "2026-10-30T23:18:00",
+"user": "user019@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:27:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:31:00",
+"user": "user015@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:32:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:38:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:43:00",
+"user": "user023@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:43:00",
+"user": "user030@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:44:00",
+"user": "user013@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:50:00",
+"user": "user014@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:51:00",
+"user": "user008@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:55:00",
+"user": "user005@lakehaven-hx.example",
+"kind": "signin",
+"country": "US",
+"ok": true,
+"scenario": null
+},
+{
+"at": "2026-10-30T23:55:00",
+"user": "user024@lakehaven-hx.example",
+"kind": "download",
+"country": "US",
+"ok": true,
+"scenario": null,
+"count": 6
+}
+]
+}

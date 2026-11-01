@@ -1,0 +1,28 @@
+{
+ "Findings": [
+  {
+   "Id": "arn:sim:finding/1",
+   "Title": "S3 bucket allows public read",
+   "Severity": {
+    "Label": "CRITICAL"
+   },
+   "Workflow": {
+    "Status": "NEW"
+   },
+   "Region": "us-east-1",
+   "FirstObservedAt": "2026-10-11"
+  },
+  {
+   "Id": "arn:sim:finding/2",
+   "Title": "Root account MFA enabled",
+   "Severity": {
+    "Label": "INFORMATIONAL"
+   },
+   "Workflow": {
+    "Status": "RESOLVED"
+   },
+   "Region": "us-east-1",
+   "FirstObservedAt": "2026-08-02"
+  }
+ ]
+}

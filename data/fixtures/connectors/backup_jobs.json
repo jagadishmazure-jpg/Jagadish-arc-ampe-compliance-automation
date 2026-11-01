@@ -1,0 +1,81 @@
+{
+ "jobs": [
+  {
+   "target": "sql-lhx-elig",
+   "type": "incremental",
+   "finished": "2026-10-31",
+   "status": "Completed",
+   "restoreTestedOn": "2026-09-21"
+  },
+  {
+   "target": "sql-lhx-elig",
+   "type": "full",
+   "finished": "2026-10-28",
+   "status": "Completed",
+   "restoreTestedOn": "2026-09-21"
+  },
+  {
+   "target": "sql-lhx-elig",
+   "type": "full",
+   "finished": "2026-10-21",
+   "status": "Completed",
+   "restoreTestedOn": "2026-09-21"
+  },
+  {
+   "target": "sql-lhx-elig",
+   "type": "full",
+   "finished": "2026-10-14",
+   "status": "Completed",
+   "restoreTestedOn": "2026-09-21"
+  },
+  {
+   "target": "sql-lhx-enroll",
+   "type": "incremental",
+   "finished": "2026-10-31",
+   "status": "Completed",
+   "restoreTestedOn": "2025-09-26"
+  },
+  {
+   "target": "sql-lhx-enroll",
+   "type": "full",
+   "finished": "2026-10-26",
+   "status": "Completed",
+   "restoreTestedOn": "2025-09-26"
+  },
+  {
+   "target": "sql-lhx-enroll",
+   "type": "full",
+   "finished": "2026-10-19",
+   "status": "Completed",
+   "restoreTestedOn": "2025-09-26"
+  },
+  {
+   "target": "sql-lhx-enroll",
+   "type": "full",
+   "finished": "2026-10-12",
+   "status": "Completed",
+   "restoreTestedOn": "2025-09-26"
+  },
+  {
+   "target": "cosmos-lhx-session",
+   "type": "incremental",
+   "finished": "2026-10-30",
+   "status": "Completed",
+   "restoreTestedOn": "2026-08-02"
+  },
+  {
+   "target": "cosmos-lhx-session",
+   "type": "full",
+   "finished": "2026-10-29",
+   "status": "Completed",
+   "restoreTestedOn": "2026-08-02"
+  },
+  {
+   "target": "vm-lhx-app04",
+   "type": "full",
+   "finished": "2026-10-22",
+   "status": "Failed",
+   "restoreTestedOn": null
+  }
+ ]
+}

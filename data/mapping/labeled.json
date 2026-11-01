@@ -1,0 +1,305 @@
+{
+ "note": "synthetic, author-labelled; written before tuning was checked",
+ "items": [
+  {
+   "id": "L001",
+   "label": "AC-02(03)",
+   "text": "Report of 14 accounts with no sign-in for more than 60 days (dormant accounts)"
+  },
+  {
+   "id": "L002",
+   "label": "AC-02(03)",
+   "text": "Stale account cleanup job disabled 9 inactive users"
+  },
+  {
+   "id": "L003",
+   "label": "AC-07",
+   "text": "Entra ID smart lockout set to 5 failed login attempts and 30 minute lockout"
+  },
+  {
+   "id": "L004",
+   "label": "AC-07",
+   "text": "Count of unsuccessful logon attempts per user, last 24 hours"
+  },
+  {
+   "id": "L005",
+   "label": "AC-11",
+   "text": "Intune profile: screen lock after 15 minutes idle timeout"
+  },
+  {
+   "id": "L006",
+   "label": "AC-06(05)",
+   "text": "PIM shows 2 users with standing Global Admin assignment"
+  },
+  {
+   "id": "L007",
+   "label": "AC-06(05)",
+   "text": "Just-in-time elevation enabled for subscription owners in PIM"
+  },
+  {
+   "id": "L008",
+   "label": "AC-22",
+   "text": "SharePoint site allows anonymous link sharing"
+  },
+  {
+   "id": "L009",
+   "label": "AC-22",
+   "text": "Storage container publicly accessible from the public website"
+  },
+  {
+   "id": "L010",
+   "label": "AT-02",
+   "text": "Annual awareness training completion export: 96 percent complete"
+  },
+  {
+   "id": "L011",
+   "label": "AT-02",
+   "text": "Phishing simulation results for Q3 and course completion list"
+  },
+  {
+   "id": "L012",
+   "label": "AU-02",
+   "text": "Diagnostic settings send audit logging to Log Analytics for Key Vault"
+  },
+  {
+   "id": "L013",
+   "label": "AU-06",
+   "text": "Weekly SIEM review sign-off by SOC analyst"
+  },
+  {
+   "id": "L014",
+   "label": "AU-06",
+   "text": "Reviewed logs for privileged activity; notes attached"
+  },
+  {
+   "id": "L015",
+   "label": "AU-11",
+   "text": "Log Analytics retention set to 90 days with archive to 10 years"
+  },
+  {
+   "id": "L016",
+   "label": "CA-08",
+   "text": "Penetration test report with signed rules of engagement"
+  },
+  {
+   "id": "L017",
+   "label": "CA-08",
+   "text": "External pen test retest letter"
+  },
+  {
+   "id": "L018",
+   "label": "CM-03",
+   "text": "Change ticket CHG0102 approved by CAB with pull request link"
+  },
+  {
+   "id": "L019",
+   "label": "CM-03",
+   "text": "Change request missing change approval"
+  },
+  {
+   "id": "L020",
+   "label": "CM-06",
+   "text": "CIS benchmark hardening scan of Ubuntu hosts"
+  },
+  {
+   "id": "L021",
+   "label": "CM-06",
+   "text": "Azure Policy compliance summary for baseline configuration initiative"
+  },
+  {
+   "id": "L022",
+   "label": "CM-08",
+   "text": "CMDB export of asset inventory with owner and asset tag"
+  },
+  {
+   "id": "L023",
+   "label": "CM-08",
+   "text": "Asset inventory reconciliation: 4 unknown hosts"
+  },
+  {
+   "id": "L024",
+   "label": "CP-09",
+   "text": "Nightly backup job history for SQL databases"
+  },
+  {
+   "id": "L025",
+   "label": "CP-09",
+   "text": "Weekly full backup and daily incremental snapshot list"
+  },
+  {
+   "id": "L026",
+   "label": "CP-09(01)",
+   "text": "Restore test of enrollment database completed in 18 minutes"
+  },
+  {
+   "id": "L027",
+   "label": "CP-09(01)",
+   "text": "Recovery drill: test restore of file share"
+  },
+  {
+   "id": "L028",
+   "label": "IA-02(01)",
+   "text": "Conditional Access requires MFA for all users"
+  },
+  {
+   "id": "L029",
+   "label": "IA-02(01)",
+   "text": "Two-factor authenticator registration report"
+  },
+  {
+   "id": "L030",
+   "label": "IR-06",
+   "text": "Incident INC-102 reported to CMS 2.5 hours after discovery"
+  },
+  {
+   "id": "L031",
+   "label": "IR-06",
+   "text": "Breach notification log; notified within one hour"
+  },
+  {
+   "id": "L032",
+   "label": "PS-04",
+   "text": "HR termination feed compared with account disable times"
+  },
+  {
+   "id": "L033",
+   "label": "PS-04",
+   "text": "Offboarding checklist for leaver signed by manager"
+  },
+  {
+   "id": "L034",
+   "label": "PT-04",
+   "text": "Text message consent records with opt-in date"
+  },
+  {
+   "id": "L035",
+   "label": "PT-05",
+   "text": "Website privacy notice reviewed and posted"
+  },
+  {
+   "id": "L036",
+   "label": "PT-05",
+   "text": "Privacy Act statement on paper application"
+  },
+  {
+   "id": "L037",
+   "label": "RA-05",
+   "text": "Monthly vulnerability scan results with CVE list"
+  },
+  {
+   "id": "L038",
+   "label": "RA-05",
+   "text": "Scanner coverage report for the DMZ network"
+  },
+  {
+   "id": "L039",
+   "label": "SA-09(05)",
+   "text": "Vendor data location is outside the US (offshore analytics)"
+  },
+  {
+   "id": "L040",
+   "label": "SA-11",
+   "text": "Code scanning (SAST) enabled on every repository"
+  },
+  {
+   "id": "L041",
+   "label": "SA-11",
+   "text": "Static analysis and dependency scan results for release 4.2"
+  },
+  {
+   "id": "L042",
+   "label": "SC-07",
+   "text": "Network security group allows RDP from the internet; public network access enabled"
+  },
+  {
+   "id": "L043",
+   "label": "SC-07",
+   "text": "Firewall boundary rule review"
+  },
+  {
+   "id": "L044",
+   "label": "SC-08",
+   "text": "TLS 1.2 minimum enforced on app services; HTTPS only"
+  },
+  {
+   "id": "L045",
+   "label": "SC-28",
+   "text": "Encryption at rest with TDE and CMK on SQL"
+  },
+  {
+   "id": "L046",
+   "label": "SC-28",
+   "text": "Encrypted disk status for VMs"
+  },
+  {
+   "id": "L047",
+   "label": "SI-02",
+   "text": "Patch compliance: 3 servers missing updates older than 30 days"
+  },
+  {
+   "id": "L048",
+   "label": "SI-02",
+   "text": "KB5031234 patched on all hosts"
+  },
+  {
+   "id": "L049",
+   "label": "SI-04",
+   "text": "Detection rule fired anomaly alert in Sentinel"
+  },
+  {
+   "id": "L050",
+   "label": "SR-03",
+   "text": "Third-party supplier security questionnaire responses"
+  },
+  {
+   "id": "L051",
+   "label": "SR-03",
+   "text": "Vendor flow-down terms for subcontractors"
+  },
+  {
+   "id": "L052",
+   "label": "SR-08",
+   "text": "Contract clause: breach notice clause requires 1 hour"
+  },
+  {
+   "id": "L053",
+   "label": "AU-06",
+   "text": "Monitoring alert review notes"
+  },
+  {
+   "id": "L054",
+   "label": "SI-04",
+   "text": "Alert monitoring dashboard screenshot"
+  },
+  {
+   "id": "L055",
+   "label": "CM-03",
+   "text": "Pull request approved by peer"
+  },
+  {
+   "id": "L056",
+   "label": "AC-02",
+   "text": "User list with access request approvals"
+  },
+  {
+   "id": "L057",
+   "label": "SC-08",
+   "text": "Certificate inventory for HTTPS endpoints"
+  },
+  {
+   "id": "L058",
+   "label": "CP-09",
+   "text": "Snapshot policy for disks"
+  },
+  {
+   "id": "L059",
+   "label": "SR-03",
+   "text": "Vendor contract renewal"
+  },
+  {
+   "id": "L060",
+   "label": "AC-06",
+   "text": "Admin rights review for privileged group"
+  }
+ ]
+}

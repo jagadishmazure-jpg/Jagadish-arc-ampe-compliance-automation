@@ -1,0 +1,3 @@
+name: arcampe-codeql
+queries:
+  - uses: security-and-quality

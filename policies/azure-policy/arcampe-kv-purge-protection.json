@@ -1,0 +1,51 @@
+{
+  "displayName": "ARC-AMPE: Key Vault purge protection on",
+  "mode": "Indexed",
+  "metadata": {
+    "category": "ARC-AMPE (synthetic demo)",
+    "version": "1.0.0",
+    "arcampeCheck": "AZ-08",
+    "controls": [
+      "SC-12"
+    ]
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit",
+      "metadata": {
+        "displayName": "Effect"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.KeyVault/vaults"
+        },
+        {
+          "anyOf": [
+            {
+              "field": "Microsoft.KeyVault/vaults/enablePurgeProtection",
+              "exists": false
+            },
+            {
+              "field": "Microsoft.KeyVault/vaults/enablePurgeProtection",
+              "notEquals": true
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

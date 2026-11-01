@@ -1,0 +1,32 @@
+{
+ "value": [
+  {
+   "name": "assess-0",
+   "resourceId": "res-0",
+   "displayName": "Storage should disable public network access",
+   "status": "Unhealthy",
+   "severity": "High"
+  },
+  {
+   "name": "assess-1",
+   "resourceId": "res-1",
+   "displayName": "Machines should have vulnerability findings resolved",
+   "status": "Unhealthy",
+   "severity": "High"
+  },
+  {
+   "name": "assess-2",
+   "resourceId": "res-2",
+   "displayName": "MFA should be enabled on accounts with owner permissions",
+   "status": "Healthy",
+   "severity": "High"
+  },
+  {
+   "name": "assess-3",
+   "resourceId": "res-3",
+   "displayName": "Diagnostic logs in Key Vault should be enabled",
+   "status": "Unhealthy",
+   "severity": "Low"
+  }
+ ]
+}

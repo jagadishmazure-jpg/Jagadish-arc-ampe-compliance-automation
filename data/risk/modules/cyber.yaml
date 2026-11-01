@@ -1,0 +1,50 @@
+# IT & cyber risk module for the fictional Lakehaven Health Connector.
+# All dollar values and frequencies are SYNTHETIC inputs for the demo, not industry data.
+name: it-cyber-risk
+description: Identify, assess, analyze and mitigate cyber risk to the exchange's eligibility and enrollment system.
+scale: {likelihood: 5, impact: 5}
+appetite: {max_inherent_score: 12, max_residual_ale_p90_usd: 1500000}
+assets:
+  - {id: A01, name: Eligibility database, type: data, service: eligibility, pii: true}
+  - {id: A02, name: Enrollment database, type: data, service: enrollment, pii: true}
+  - {id: A03, name: Consumer portal, type: application, service: consumer-portal, pii: true}
+  - {id: A04, name: Call center case system, type: application, service: call-center, pii: true}
+  - {id: A05, name: Identity provider tenant, type: identity, service: corporate, pii: false}
+  - {id: A06, name: Analytics vendor feed, type: third-party, service: analytics, pii: true}
+  - {id: A07, name: Backup vault, type: data, service: enrollment, pii: true}
+  - {id: A08, name: CI/CD pipeline, type: devops, service: corporate, pii: false}
+  - {id: A09, name: AI drafting assistant, type: ai, service: corporate, pii: false}
+threats:
+  - {id: T01, name: Ransomware, category: malware, controls: [CP-09, CP-09(01), SI-03, SI-04, CM-07], tef: [0.1, 0.4, 1.5], vuln: 0.35, loss_usd: [250000, 1200000, 6000000]}
+  - {id: T02, name: Credential phishing leading to account takeover, category: identity, controls: [IA-02(01), IA-02(06), AT-02, AC-07], tef: [2, 6, 15], vuln: 0.08, loss_usd: [20000, 150000, 900000]}
+  - {id: T03, name: Misconfigured public storage exposing PII, category: misconfiguration, controls: [SC-07, AC-03, CM-06, SC-28], tef: [0.2, 1, 3], vuln: 0.3, loss_usd: [100000, 600000, 4000000]}
+  - {id: T04, name: Insider misuse of PII, category: insider, controls: [AC-06, AU-06, PS-04, AC-02(03)], tef: [0.5, 2, 5], vuln: 0.15, loss_usd: [10000, 80000, 500000]}
+  - {id: T05, name: Vendor breach of shared PII, category: third-party, controls: [SR-03, SR-08, SA-09(05)], tef: [0.1, 0.3, 1], vuln: 0.5, loss_usd: [150000, 900000, 5000000]}
+  - {id: T06, name: Unpatched exploitable vulnerability, category: vulnerability, controls: [SI-02, RA-05, CA-08], tef: [1, 4, 10], vuln: 0.1, loss_usd: [30000, 250000, 2000000]}
+  - {id: T07, name: Supply-chain compromise of build pipeline, category: supply-chain, controls: [SA-11, CM-03, SR-03, CM-05], tef: [0.05, 0.2, 0.6], vuln: 0.4, loss_usd: [200000, 1500000, 8000000]}
+  - {id: T08, name: Prompt injection or data leak through AI assistant, category: ai, controls: [SI-10, AC-04, SA-09(05)], tef: [1, 3, 8], vuln: 0.05, loss_usd: [5000, 40000, 300000]}
+  - {id: T09, name: Regional cloud outage, category: availability, controls: [CP-02, CP-06, CP-07, CP-10], tef: [0.1, 0.3, 1], vuln: 0.6, loss_usd: [50000, 300000, 1500000]}
+  - {id: T10, name: Late breach reporting penalty, category: compliance, controls: [IR-06, IR-04, IR-08], tef: [0.2, 0.6, 2], vuln: 0.4, loss_usd: [10000, 75000, 400000]}
+# exposure (optional, default 1.0) scales loss magnitude for this asset.
+scenarios:
+  - {id: R01, asset: A01, threat: T01, likelihood: 3, impact: 5}
+  - {id: R02, asset: A05, threat: T02, likelihood: 4, impact: 4}
+  - {id: R03, asset: A02, threat: T03, likelihood: 3, impact: 5}
+  - {id: R04, asset: A04, threat: T04, likelihood: 3, impact: 3}
+  - {id: R05, asset: A06, threat: T05, likelihood: 3, impact: 4}
+  - {id: R06, asset: A03, threat: T06, likelihood: 4, impact: 4}
+  - {id: R07, asset: A08, threat: T07, likelihood: 2, impact: 5}
+  - {id: R08, asset: A09, threat: T08, likelihood: 3, impact: 2}
+  - {id: R09, asset: A03, threat: T09, likelihood: 2, impact: 4}
+  - {id: R10, asset: A04, threat: T10, likelihood: 3, impact: 3}
+  - {id: R11, asset: A07, threat: T01, likelihood: 2, impact: 5, exposure: 0.6}
+  - {id: R12, asset: A02, threat: T04, likelihood: 2, impact: 4, exposure: 1.4}
+treatments:
+  - {scenario: R01, decision: mitigate, effectiveness: 0.6}
+  - {scenario: R02, decision: mitigate, effectiveness: 0.7}
+  - {scenario: R03, decision: mitigate, effectiveness: 0.7}
+  - {scenario: R05, decision: transfer, effectiveness: 0.3, note: cyber insurance plus contract indemnity}
+  - {scenario: R06, decision: mitigate, effectiveness: 0.6}
+  - {scenario: R07, decision: mitigate, effectiveness: 0.5}
+  - {scenario: R08, decision: mitigate, effectiveness: 0.6}
+  - {scenario: R09, decision: accept, effectiveness: 0.0, note: within appetite after CP tests}

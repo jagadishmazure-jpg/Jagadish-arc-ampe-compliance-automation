@@ -1,0 +1,1268 @@
+[
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxenrolldocs",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxenrolldocs",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Keyvault"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxapplogs",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxapplogs",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxbackup",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxbackup",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxstaticweb",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxstaticweb",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "public",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Enabled",
+   "privateEndpointConnections": [],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxdevscratch",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxdevscratch",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_0",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxarchive",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxarchive",
+  "location": "canadacentral",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Keyvault"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxreports",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxreports",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": true,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Keyvault"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Storage/storageAccounts/stlhxtemp",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxtemp",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": false,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-sec/providers/Microsoft.KeyVault/vaults/kv-lhx-app",
+  "type": "Microsoft.KeyVault/vaults",
+  "name": "kv-lhx-app",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "enableSoftDelete": true,
+   "enablePurgeProtection": true,
+   "enableRbacAuthorization": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-sec/providers/Microsoft.KeyVault/vaults/kv-lhx-cmk",
+  "type": "Microsoft.KeyVault/vaults",
+  "name": "kv-lhx-cmk",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "enableSoftDelete": true,
+   "enablePurgeProtection": true,
+   "enableRbacAuthorization": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-sec/providers/Microsoft.KeyVault/vaults/kv-lhx-legacy",
+  "type": "Microsoft.KeyVault/vaults",
+  "name": "kv-lhx-legacy",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "enableSoftDelete": true,
+   "enablePurgeProtection": false,
+   "enableRbacAuthorization": true,
+   "diagnosticSettings": [],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Sql/servers/sql-lhx-elig",
+  "type": "Microsoft.Sql/servers",
+  "name": "sql-lhx-elig",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimalTlsVersion": "1.2",
+   "azureADOnlyAuthentication": true,
+   "auditing": {
+    "state": "Enabled"
+   },
+   "transparentDataEncryption": {
+    "state": "Enabled"
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Sql/servers/sql-lhx-enroll",
+  "type": "Microsoft.Sql/servers",
+  "name": "sql-lhx-enroll",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimalTlsVersion": "1.2",
+   "azureADOnlyAuthentication": true,
+   "auditing": {
+    "state": "Enabled"
+   },
+   "transparentDataEncryption": {
+    "state": "Enabled"
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.Sql/servers/sql-lhx-reporting",
+  "type": "Microsoft.Sql/servers",
+  "name": "sql-lhx-reporting",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimalTlsVersion": "1.2",
+   "azureADOnlyAuthentication": false,
+   "auditing": {
+    "state": "Disabled"
+   },
+   "transparentDataEncryption": {
+    "state": "Enabled"
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-ai/providers/Microsoft.CognitiveServices/accounts/oai-lhx-assist",
+  "type": "Microsoft.CognitiveServices/accounts",
+  "name": "oai-lhx-assist",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "disableLocalAuth": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-ai/providers/Microsoft.CognitiveServices/accounts/oai-lhx-sandbox",
+  "type": "Microsoft.CognitiveServices/accounts",
+  "name": "oai-lhx-sandbox",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "dev"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "disableLocalAuth": false,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-ai/providers/Microsoft.Search/searchServices/srch-lhx-kb",
+  "type": "Microsoft.Search/searchServices",
+  "name": "srch-lhx-kb",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Enabled",
+   "privateEndpointConnections": [],
+   "disableLocalAuth": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-data/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-lhx-session",
+  "type": "Microsoft.DocumentDB/databaseAccounts",
+  "name": "cosmos-lhx-session",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimalTlsVersion": "Tls12",
+   "disableLocalAuth": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true,
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   }
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-sec/providers/Microsoft.OperationalInsights/workspaces/law-lhx-sec-prod",
+  "type": "Microsoft.OperationalInsights/workspaces",
+  "name": "law-lhx-sec-prod",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "retentionInDays": 90,
+   "totalRetentionInDays": 3650,
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-dev/providers/Microsoft.OperationalInsights/workspaces/law-lhx-dev",
+  "type": "Microsoft.OperationalInsights/workspaces",
+  "name": "law-lhx-dev",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "dev"
+  },
+  "properties": {
+   "retentionInDays": 30,
+   "totalRetentionInDays": 30,
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app00",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app00",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 3,
+   "missingPatches": [],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app01",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app01",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 9,
+   "missingPatches": [],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app02",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app02",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 12,
+   "missingPatches": [],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app03",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app03",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "PII",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 41,
+   "missingPatches": [
+    {
+     "id": "KB-SIM-0001",
+     "severity": "critical",
+     "released_days_ago": 22
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app04",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app04",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": false,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 5,
+   "missingPatches": [],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app05",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app05",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 28,
+   "missingPatches": [
+    {
+     "id": "KB-SIM-0002",
+     "severity": "high",
+     "released_days_ago": 12
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app06",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app06",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": false
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 2,
+   "missingPatches": [],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Compute/virtualMachines/vm-lhx-app07",
+  "type": "Microsoft.Compute/virtualMachines",
+  "name": "vm-lhx-app07",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "diskEncryption": {
+    "osDisk": true,
+    "dataDisks": true
+   },
+   "backup": {
+    "enabled": true,
+    "geoRedundant": true,
+    "pairedRegion": "centralus"
+   },
+   "lastVulnScanDaysAgo": 64,
+   "missingPatches": [
+    {
+     "id": "KB-SIM-0003",
+     "severity": "moderate",
+     "released_days_ago": 120
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/networkSecurityGroups/nsg-lhx-web",
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "name": "nsg-lhx-web",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "securityRules": [
+    {
+     "name": "allow-https-from-agw",
+     "direction": "Inbound",
+     "access": "Allow",
+     "source": "10.20.1.0/24",
+     "port": 443
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/networkSecurityGroups/nsg-lhx-app",
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "name": "nsg-lhx-app",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "securityRules": [
+    {
+     "name": "allow-https-from-agw",
+     "direction": "Inbound",
+     "access": "Allow",
+     "source": "10.20.1.0/24",
+     "port": 443
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/networkSecurityGroups/nsg-lhx-data",
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "name": "nsg-lhx-data",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "securityRules": [
+    {
+     "name": "allow-https-from-agw",
+     "direction": "Inbound",
+     "access": "Allow",
+     "source": "10.20.1.0/24",
+     "port": 443
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/networkSecurityGroups/nsg-lhx-jump",
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "name": "nsg-lhx-jump",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "securityRules": [
+    {
+     "name": "allow-https-from-agw",
+     "direction": "Inbound",
+     "access": "Allow",
+     "source": "10.20.1.0/24",
+     "port": 443
+    },
+    {
+     "name": "temp-rdp",
+     "direction": "Inbound",
+     "access": "Allow",
+     "source": "*",
+     "port": 3389
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Web/sites/app-lhx-portal",
+  "type": "Microsoft.Web/sites",
+  "name": "app-lhx-portal",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "httpsOnly": true,
+   "minTlsVersion": "1.2",
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Web/sites/app-lhx-broker",
+  "type": "Microsoft.Web/sites",
+  "name": "app-lhx-broker",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "httpsOnly": true,
+   "minTlsVersion": "1.2",
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.Web/sites/app-lhx-legacy",
+  "type": "Microsoft.Web/sites",
+  "name": "app-lhx-legacy",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "httpsOnly": false,
+   "minTlsVersion": "1.0",
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/applicationGateways/agw-lhx-edge",
+  "type": "Microsoft.Network/applicationGateways",
+  "name": "agw-lhx-edge",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "waf": {
+    "enabled": true,
+    "mode": "Prevention"
+   },
+   "minProtocol": "TLSv1_2",
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-net/providers/Microsoft.Network/frontDoors/afd-lhx-public",
+  "type": "Microsoft.Network/frontDoors",
+  "name": "afd-lhx-public",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "waf": {
+    "enabled": true,
+    "mode": "Detection"
+   },
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.ContainerService/managedClusters/aks-lhx-api",
+  "type": "Microsoft.ContainerService/managedClusters",
+  "name": "aks-lhx-api",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "apiServerAccessProfile": {
+    "enablePrivateCluster": true
+   },
+   "enableRBAC": true,
+   "disableLocalAccounts": true,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-app/providers/Microsoft.ContainerService/managedClusters/aks-lhx-batch",
+  "type": "Microsoft.ContainerService/managedClusters",
+  "name": "aks-lhx-batch",
+  "location": "eastus2",
+  "tags": {
+   "owner": "platform-team",
+   "data_class": "internal",
+   "env": "prod"
+  },
+  "properties": {
+   "apiServerAccessProfile": {
+    "enablePrivateCluster": false
+   },
+   "enableRBAC": true,
+   "disableLocalAccounts": false,
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": false
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/providers/Microsoft.Security/pricings",
+  "type": "Microsoft.Security/pricings",
+  "name": "defender-plans",
+  "location": "global",
+  "tags": {},
+  "properties": {
+   "plans": {
+    "VirtualMachines": "Standard",
+    "SqlServers": "Standard",
+    "StorageAccounts": "Standard",
+    "KeyVaults": "Standard",
+    "Containers": "Free",
+    "AI": "Standard",
+    "Arm": "Standard"
+   }
+  }
+ },
+ {
+  "id": "/subscriptions/00000000-0000-4000-8000-00000000a1b2/resourceGroups/rg-lhx-dev/providers/Microsoft.Storage/storageAccounts/stlhxorphan",
+  "type": "Microsoft.Storage/storageAccounts",
+  "name": "stlhxorphan",
+  "location": "eastus",
+  "tags": {},
+  "properties": {
+   "publicNetworkAccess": "Disabled",
+   "privateEndpointConnections": [
+    {
+     "name": "pe-1",
+     "status": "Approved"
+    }
+   ],
+   "minimumTlsVersion": "TLS1_2",
+   "supportsHttpsTrafficOnly": true,
+   "allowSharedKeyAccess": false,
+   "encryption": {
+    "enabled": true,
+    "keySource": "Microsoft.Storage"
+   },
+   "diagnosticSettings": [
+    {
+     "workspace": "law-lhx-sec-prod",
+     "categories": [
+      "allLogs"
+     ]
+    }
+   ],
+   "x_policy_compliant": true
+  }
+ }
+]

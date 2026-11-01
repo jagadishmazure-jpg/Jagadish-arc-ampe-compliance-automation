@@ -1,0 +1,44 @@
+{
+ "result": [
+  {
+   "number": "CHG00100",
+   "type": "normal",
+   "approval": "approved",
+   "state": "closed",
+   "env": "prod",
+   "linkedPr": "lhx-portal#41",
+   "testEvidence": true,
+   "closed_at": "2026-10-26"
+  },
+  {
+   "number": "CHG00101",
+   "type": "normal",
+   "approval": "approved",
+   "state": "closed",
+   "env": "prod",
+   "linkedPr": "lhx-portal#44",
+   "testEvidence": true,
+   "closed_at": "2026-10-22"
+  },
+  {
+   "number": "CHG00102",
+   "type": "normal",
+   "approval": "not requested",
+   "state": "closed",
+   "env": "prod",
+   "linkedPr": null,
+   "testEvidence": false,
+   "closed_at": "2026-10-19"
+  },
+  {
+   "number": "CHG00103",
+   "type": "normal",
+   "approval": "approved",
+   "state": "closed",
+   "env": "prod",
+   "linkedPr": "lhx-elig#7",
+   "testEvidence": false,
+   "closed_at": "2026-10-11"
+  }
+ ]
+}

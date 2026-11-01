@@ -1,0 +1,10 @@
+{
+ "endpoint": "https://aif-lhx-prod.services.ai.azure.com",
+ "private_endpoint": true,
+ "public_network_access": "Disabled",
+ "training_on_customer_data": false,
+ "data_retention_days": 0,
+ "region": "eastus2",
+ "redact_before_prompt": true,
+ "local_auth": false
+}

@@ -1,0 +1,62 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Brightpath Learning",
+  "version": "2.0.0",
+  "description": "Fictional learning platform API used to show the OpenAPI connector."
+ },
+ "paths": {
+  "/api/completions": {
+   "get": {
+    "operationId": "listCompletions",
+    "responses": {
+     "200": {
+      "description": "ok",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        },
+        "example": {
+         "items": [
+          {
+           "user": "user001@lakehaven-hx.example",
+           "course": "Privacy and security awareness 2026",
+           "completedOn": "2026-02-11"
+          },
+          {
+           "user": "user002@lakehaven-hx.example",
+           "course": "Privacy and security awareness 2026",
+           "completedOn": "2025-09-03"
+          },
+          {
+           "user": "user003@lakehaven-hx.example",
+           "course": "Role-based training: administrators",
+           "completedOn": "2026-05-19"
+          }
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "x-arcampe": {
+  "name": "brightpath_lms",
+  "category": "openapi",
+  "operationId": "listCompletions",
+  "records": "items",
+  "kind": "training",
+  "subject": "user",
+  "observed_at": "completedOn",
+  "attributes": {
+   "course": "course"
+  },
+  "control_hints": [
+   "AT-02",
+   "AT-03"
+  ]
+ }
+}

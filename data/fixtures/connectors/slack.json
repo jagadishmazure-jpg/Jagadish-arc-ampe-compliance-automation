@@ -1,0 +1,9 @@
+{
+ "workspace": {
+  "name": "lakehaven-hx",
+  "sso_required": true,
+  "external_channels_allowed": true,
+  "retention_days": 400,
+  "dlp_enabled": false
+ }
+}

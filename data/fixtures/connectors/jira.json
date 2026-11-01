@@ -1,0 +1,26 @@
+{
+ "issues": [
+  {
+   "key": "LHX-201",
+   "fields": {
+    "issuetype": "Change",
+    "status": "Done",
+    "approver": "cab-chair",
+    "pr": "lhx-elig#9",
+    "tested": true,
+    "resolved": "2026-10-25"
+   }
+  },
+  {
+   "key": "LHX-202",
+   "fields": {
+    "issuetype": "POAM",
+    "status": "In Progress",
+    "approver": null,
+    "pr": null,
+    "tested": false,
+    "resolved": null
+   }
+  }
+ ]
+}

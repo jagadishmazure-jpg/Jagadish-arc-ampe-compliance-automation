@@ -1,0 +1,28 @@
+{
+ "rules": [
+  {
+   "name": "allow-web",
+   "from": "untrust",
+   "to": "dmz",
+   "source": "any",
+   "application": "ssl",
+   "action": "allow"
+  },
+  {
+   "name": "temp-any-any",
+   "from": "trust",
+   "to": "untrust",
+   "source": "any",
+   "application": "any",
+   "action": "allow"
+  },
+  {
+   "name": "deny-all",
+   "from": "any",
+   "to": "any",
+   "source": "any",
+   "application": "any",
+   "action": "deny"
+  }
+ ]
+}

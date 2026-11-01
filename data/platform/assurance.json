@@ -1,0 +1,10 @@
+{
+ "note": "synthetic assessment register for the fictional exchange",
+ "records": [
+  {"id": "VA-2026-10", "type": "vulnerability_assessment", "label": "vulnerability scan", "scope": ["lhx-prod", "lhx-dmz"], "performer": "internal", "tool": "authenticated network scanner", "date": "2026-10-12", "exploitation": false, "rules_of_engagement": false, "findings": {"critical": 1, "high": 4, "moderate": 19}, "retest_date": null},
+  {"id": "VA-2026-09", "type": "vulnerability_assessment", "label": "vulnerability scan", "scope": ["lhx-prod"], "performer": "internal", "tool": "authenticated network scanner", "date": "2026-09-14", "exploitation": false, "rules_of_engagement": false, "findings": {"critical": 2, "high": 6, "moderate": 22}, "retest_date": null},
+  {"id": "PT-2026-01", "type": "penetration_test", "label": "annual external and web app pen test", "scope": ["lhx-prod", "consumer portal"], "performer": "independent", "tool": "manual testing", "date": "2026-03-20", "exploitation": true, "rules_of_engagement": true, "findings": {"critical": 0, "high": 2, "moderate": 5}, "retest_date": "2026-05-02"},
+  {"id": "PT-2025-02", "type": "penetration_test", "label": "pen test (vendor-labelled)", "scope": ["lhx-dmz"], "performer": "internal", "tool": "automated scanner", "date": "2025-12-01", "exploitation": false, "rules_of_engagement": false, "findings": {"critical": 0, "high": 1, "moderate": 3}, "retest_date": null},
+  {"id": "SCA-2026", "type": "control_assessment", "label": "independent security control assessment", "scope": ["ARC-AMPE AE baseline"], "performer": "independent", "tool": "interview, examine, test", "date": "2026-06-30", "exploitation": false, "rules_of_engagement": false, "findings": {"critical": 0, "high": 3, "moderate": 11}, "retest_date": null}
+ ]
+}

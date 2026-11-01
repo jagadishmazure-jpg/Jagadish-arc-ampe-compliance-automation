@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+out/
+.terraform/
+*.tfstate*
+.terraform.lock.hcl
+infra/bicep/*.json

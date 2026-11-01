@@ -1,0 +1,40 @@
+{
+ "repos": [
+  {
+   "name": "lhx-portal",
+   "code_scanning": true,
+   "secret_scanning": true,
+   "branch_protection": true
+  },
+  {
+   "name": "lhx-elig",
+   "code_scanning": true,
+   "secret_scanning": true,
+   "branch_protection": true
+  },
+  {
+   "name": "lhx-batch",
+   "code_scanning": false,
+   "secret_scanning": true,
+   "branch_protection": false
+  }
+ ],
+ "pulls": [
+  {
+   "ref": "lhx-portal#41",
+   "approved_reviews": 1
+  },
+  {
+   "ref": "lhx-portal#44",
+   "approved_reviews": 2
+  },
+  {
+   "ref": "lhx-elig#7",
+   "approved_reviews": 1
+  },
+  {
+   "ref": "lhx-elig#9",
+   "approved_reviews": 0
+  }
+ ]
+}

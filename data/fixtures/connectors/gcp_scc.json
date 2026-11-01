@@ -1,0 +1,12 @@
+{
+ "findings": [
+  {
+   "name": "organizations/0/sources/1/findings/a",
+   "category": "OPEN_FIREWALL",
+   "severity": "HIGH",
+   "state": "ACTIVE",
+   "eventTime": "2026-10-26",
+   "location": "us-central1"
+  }
+ ]
+}

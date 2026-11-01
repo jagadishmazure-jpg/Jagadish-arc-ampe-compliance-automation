@@ -1,0 +1,43 @@
+{
+  "displayName": "ARC-AMPE: storage accepts HTTPS only",
+  "mode": "Indexed",
+  "metadata": {
+    "category": "ARC-AMPE (synthetic demo)",
+    "version": "1.0.0",
+    "arcampeCheck": "AZ-05",
+    "controls": [
+      "SC-23"
+    ]
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit",
+      "metadata": {
+        "displayName": "Effect"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Storage/storageAccounts"
+        },
+        {
+          "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly",
+          "notEquals": true
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "displayName": "ARC-AMPE: storage shared key access disabled",
+  "mode": "Indexed",
+  "metadata": {
+    "category": "ARC-AMPE (synthetic demo)",
+    "version": "1.0.0",
+    "arcampeCheck": "AZ-11",
+    "controls": [
+      "IA-02",
+      "AC-03"
+    ]
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit",
+      "metadata": {
+        "displayName": "Effect"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Storage/storageAccounts"
+        },
+        {
+          "field": "Microsoft.Storage/storageAccounts/allowSharedKeyAccess",
+          "notEquals": false
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

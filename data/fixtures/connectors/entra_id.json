@@ -1,0 +1,39 @@
+{
+ "value": [
+  {
+   "id": "u-005",
+   "userPrincipalName": "user005@lakehaven-hx.example",
+   "accountEnabled": false,
+   "disabledOn": "2026-10-21",
+   "mfaRegistered": true
+  },
+  {
+   "id": "u-006",
+   "userPrincipalName": "user006@lakehaven-hx.example",
+   "accountEnabled": false,
+   "disabledOn": "2026-09-23",
+   "mfaRegistered": true
+  },
+  {
+   "id": "u-012",
+   "userPrincipalName": "user012@lakehaven-hx.example",
+   "accountEnabled": true,
+   "disabledOn": null,
+   "mfaRegistered": true
+  },
+  {
+   "id": "u-014",
+   "userPrincipalName": "user014@lakehaven-hx.example",
+   "accountEnabled": false,
+   "disabledOn": "2026-10-06",
+   "mfaRegistered": true
+  },
+  {
+   "id": "u-030",
+   "userPrincipalName": "user030@lakehaven-hx.example",
+   "accountEnabled": true,
+   "disabledOn": null,
+   "mfaRegistered": false
+  }
+ ]
+}

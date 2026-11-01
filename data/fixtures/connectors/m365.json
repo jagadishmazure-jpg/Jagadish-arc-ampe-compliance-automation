@@ -1,0 +1,9 @@
+{
+ "auditLogSearch": {
+  "enabled": true,
+  "retentionDays": 365
+ },
+ "externalSharing": {
+  "teamsGuestAccess": false
+ }
+}

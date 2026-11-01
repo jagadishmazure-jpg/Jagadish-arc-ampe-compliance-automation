@@ -1,0 +1,64 @@
+{
+ "endpoint": "https://grc.lakehaven-hx.example/hooks/evidence",
+ "header": "X-ArcAmpe-Signature",
+ "recipes": [
+  {
+   "name": "New HR termination -> evidence",
+   "trigger": "HR system: employee terminated",
+   "action": "Webhooks: POST",
+   "kind": "hr_event",
+   "controls": [
+    "PS-04"
+   ],
+   "map": {
+    "subject": "work email",
+    "observed_at": "termination date",
+    "attributes.event": "'termination'"
+   }
+  },
+  {
+   "name": "Training completed -> evidence",
+   "trigger": "Learning platform: course completed",
+   "action": "Webhooks: POST",
+   "kind": "training",
+   "controls": [
+    "AT-02"
+   ],
+   "map": {
+    "subject": "learner email",
+    "observed_at": "completed date",
+    "attributes.course": "course name"
+   }
+  },
+  {
+   "name": "Vendor contract signed -> evidence",
+   "trigger": "E-signature: envelope completed",
+   "action": "Webhooks: POST",
+   "kind": "vendor_contract",
+   "controls": [
+    "SR-03",
+    "SA-09"
+   ],
+   "map": {
+    "subject": "vendor id",
+    "observed_at": "signed date",
+    "attributes.breach_notify_hours": "clause value"
+   }
+  },
+  {
+   "name": "Policy approved -> evidence",
+   "trigger": "Document library: file approved",
+   "action": "Webhooks: POST",
+   "kind": "policy_doc",
+   "controls": [
+    "PL-01",
+    "PM-01"
+   ],
+   "map": {
+    "subject": "control id",
+    "observed_at": "approved date",
+    "attributes.version": "version"
+   }
+  }
+ ]
+}

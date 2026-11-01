@@ -1,0 +1,219 @@
+{
+ "purposes": [
+  {
+   "id": "eligibility",
+   "text": "Decide eligibility for coverage and subsidies"
+  },
+  {
+   "id": "enrollment",
+   "text": "Enroll in a plan"
+  },
+  {
+   "id": "outreach",
+   "text": "Send renewal reminders"
+  },
+  {
+   "id": "research",
+   "text": "Program evaluation with de-identified data"
+  }
+ ],
+ "processing_activities": [
+  {
+   "id": "PA-01",
+   "name": "Eligibility application",
+   "purposes": [
+    "eligibility"
+   ],
+   "legal_authority": "45 CFR 155.305",
+   "basis": "legal",
+   "data_elements": [
+    "name",
+    "ssn",
+    "income",
+    "address",
+    "household"
+   ],
+   "ssn_justification": "Hub income and citizenship verification",
+   "ssn_masked_nonprod": true,
+   "storage_country": "US",
+   "pia_completed": "2026-03-02",
+   "volume": 420000,
+   "shared_with_vendor": false,
+   "automated_decision": true
+  },
+  {
+   "id": "PA-02",
+   "name": "Plan enrollment",
+   "purposes": [
+    "enrollment"
+   ],
+   "legal_authority": "45 CFR 155.400",
+   "basis": "legal",
+   "data_elements": [
+    "name",
+    "address",
+    "plan"
+   ],
+   "storage_country": "US",
+   "pia_completed": "2026-03-02",
+   "volume": 310000
+  },
+  {
+   "id": "PA-03",
+   "name": "Renewal text reminders",
+   "purposes": [
+    "outreach"
+   ],
+   "legal_authority": "45 CFR 155.335",
+   "basis": "consent",
+   "data_elements": [
+    "name",
+    "phone"
+   ],
+   "storage_country": "US",
+   "pia_completed": "2025-06-11",
+   "volume": 150000,
+   "shared_with_vendor": true
+  },
+  {
+   "id": "PA-04",
+   "name": "Call center case notes",
+   "purposes": [
+    "eligibility",
+    "marketing"
+   ],
+   "legal_authority": "45 CFR 155.205",
+   "basis": "legal",
+   "data_elements": [
+    "name",
+    "ssn",
+    "health"
+   ],
+   "ssn_justification": null,
+   "ssn_masked_nonprod": false,
+   "storage_country": "US",
+   "pia_completed": null,
+   "volume": 90000,
+   "shared_with_vendor": true
+  },
+  {
+   "id": "PA-05",
+   "name": "Program analytics",
+   "purposes": [
+    "research"
+   ],
+   "legal_authority": "45 CFR 155.260(a)",
+   "basis": "legal",
+   "data_elements": [
+    "income",
+    "county"
+   ],
+   "storage_country": "IN",
+   "pia_completed": "2026-08-01",
+   "volume": 420000,
+   "shared_with_vendor": true
+  }
+ ],
+ "notices": [
+  {
+   "id": "N-01",
+   "name": "Website privacy notice",
+   "last_reviewed": "2026-01-15",
+   "readability_grade": 7
+  },
+  {
+   "id": "N-02",
+   "name": "Paper application notice",
+   "last_reviewed": "2025-07-20",
+   "readability_grade": 11
+  }
+ ],
+ "consents": [
+  {
+   "id": "C-000",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-001",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-002",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-003",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-004",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-005",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-006",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-007",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "withdrawn"
+  },
+  {
+   "id": "C-008",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "granted"
+  },
+  {
+   "id": "C-009",
+   "activity": "PA-03",
+   "purpose": "outreach",
+   "status": "expired"
+  }
+ ],
+ "rights_requests": [
+  {
+   "id": "R-01",
+   "type": "access",
+   "received": "2026-10-20",
+   "closed": null
+  },
+  {
+   "id": "R-02",
+   "type": "correction",
+   "received": "2026-09-10",
+   "closed": "2026-09-28"
+  },
+  {
+   "id": "R-03",
+   "type": "access",
+   "received": "2026-09-15",
+   "closed": null
+  },
+  {
+   "id": "R-04",
+   "type": "accounting-of-disclosures",
+   "received": "2026-08-01",
+   "closed": "2026-09-12"
+  }
+ ]
+}

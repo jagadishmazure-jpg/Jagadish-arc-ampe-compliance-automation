@@ -1,0 +1,107 @@
+{
+ "openapi": "3.0.3",
+ "info": {
+  "title": "Pinecrest Asset Registry",
+  "version": "1.4.0",
+  "description": "Fictional CMDB API used to show the OpenAPI connector."
+ },
+ "paths": {
+  "/v1/assets": {
+   "get": {
+    "operationId": "listAssets",
+    "summary": "List assets",
+    "parameters": [
+     {
+      "name": "page",
+      "in": "query",
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "ok",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        },
+        "example": {
+         "data": {
+          "assets": [
+           {
+            "assetTag": "LHX-SRV-001",
+            "hostname": "vm-lhx-app01",
+            "owner": "cloud-platform",
+            "criticality": "high",
+            "lastSeen": "2026-10-30",
+            "os": "Ubuntu 24.04",
+            "pii": true
+           },
+           {
+            "assetTag": "LHX-SRV-002",
+            "hostname": "vm-lhx-app02",
+            "owner": "cloud-platform",
+            "criticality": "high",
+            "lastSeen": "2026-10-30",
+            "os": "Ubuntu 24.04",
+            "pii": true
+           },
+           {
+            "assetTag": "LHX-LAP-114",
+            "hostname": "lt-114",
+            "owner": null,
+            "criticality": "low",
+            "lastSeen": "2026-07-02",
+            "os": "Windows 11",
+            "pii": false
+           },
+           {
+            "assetTag": "LHX-NET-007",
+            "hostname": "fw-lhx-edge",
+            "owner": "network",
+            "criticality": "high",
+            "lastSeen": "2026-10-31",
+            "os": "PAN-OS 11",
+            "pii": false
+           }
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   "post": {
+    "operationId": "createAsset",
+    "responses": {
+     "201": {
+      "description": "created"
+     }
+    }
+   }
+  }
+ },
+ "x-arcampe": {
+  "name": "pinecrest_cmdb",
+  "category": "openapi",
+  "operationId": "listAssets",
+  "records": "data.assets",
+  "kind": "asset",
+  "subject": "hostname",
+  "observed_at": "lastSeen",
+  "attributes": {
+   "owner": "owner",
+   "criticality": "criticality",
+   "os": "os",
+   "pii": "pii",
+   "asset_tag": "assetTag"
+  },
+  "control_hints": [
+   "CM-08",
+   "CM-08(01)"
+  ]
+ }
+}

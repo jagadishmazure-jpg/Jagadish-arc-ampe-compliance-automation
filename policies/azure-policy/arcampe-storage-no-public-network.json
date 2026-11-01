@@ -1,0 +1,44 @@
+{
+  "displayName": "ARC-AMPE: storage public network access disabled",
+  "mode": "Indexed",
+  "metadata": {
+    "category": "ARC-AMPE (synthetic demo)",
+    "version": "1.0.0",
+    "arcampeCheck": "AZ-01",
+    "controls": [
+      "SC-07",
+      "AC-04"
+    ]
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit",
+      "metadata": {
+        "displayName": "Effect"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Storage/storageAccounts"
+        },
+        {
+          "field": "Microsoft.Storage/storageAccounts/publicNetworkAccess",
+          "notEquals": "Disabled"
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+ "note": "Only hosts the AI layer may call. Synthetic names under the reserved .example domain are not used because Azure hosts are fixed; these are fictional resource names.",
+ "hosts": ["aif-lhx-prod.services.ai.azure.com", "aif-lhx-prod.openai.azure.com"]
+}

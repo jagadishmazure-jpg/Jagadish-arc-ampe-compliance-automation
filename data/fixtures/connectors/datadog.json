@@ -1,0 +1,26 @@
+{
+ "monitors": [
+  {
+   "name": "auth-failures-spike",
+   "type": "log alert",
+   "notify": [
+    "@soc-oncall"
+   ],
+   "muted": false
+  },
+  {
+   "name": "portal-uptime",
+   "type": "synthetics alert",
+   "notify": [
+    "@ops-oncall"
+   ],
+   "muted": false
+  },
+  {
+   "name": "waf-blocks-anomaly",
+   "type": "log alert",
+   "notify": [],
+   "muted": true
+  }
+ ]
+}

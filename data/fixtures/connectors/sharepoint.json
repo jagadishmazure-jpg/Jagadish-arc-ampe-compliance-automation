@@ -1,0 +1,19 @@
+{
+ "sites": [
+  {
+   "url": "/sites/enrollment-ops",
+   "sharingCapability": "Disabled",
+   "sensitivity": "PII"
+  },
+  {
+   "url": "/sites/public-notices",
+   "sharingCapability": "ExternalUserAndGuestSharing",
+   "sensitivity": "Public"
+  },
+  {
+   "url": "/sites/appeals",
+   "sharingCapability": "ExternalUserSharingOnly",
+   "sensitivity": "PII"
+  }
+ ]
+}

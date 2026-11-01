@@ -1,0 +1,912 @@
+[
+ {
+  "control": "AC-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "AT-01",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-09-10",
+  "evidence_ref": "evidence/attestations/AT-01.pdf"
+ },
+ {
+  "control": "AT-02(03)",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-10-25",
+  "evidence_ref": "evidence/attestations/AT-02(03).pdf"
+ },
+ {
+  "control": "AT-02(04)",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-10-16",
+  "evidence_ref": "evidence/attestations/AT-02(04).pdf"
+ },
+ {
+  "control": "AT-02(05)",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-08-16",
+  "evidence_ref": "evidence/attestations/AT-02(05).pdf"
+ },
+ {
+  "control": "AT-03",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-07-28",
+  "evidence_ref": "evidence/attestations/AT-03.pdf"
+ },
+ {
+  "control": "AT-03(05)",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "AT-04",
+  "owner": "training-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-10-01",
+  "evidence_ref": "evidence/attestations/AT-04.pdf"
+ },
+ {
+  "control": "AU-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-03-11",
+  "evidence_ref": "evidence/attestations/AU-01.pdf"
+ },
+ {
+  "control": "CA-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-07-14",
+  "evidence_ref": "evidence/attestations/CA-01.pdf"
+ },
+ {
+  "control": "CA-02(01)",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-09-09",
+  "evidence_ref": "evidence/attestations/CA-02(01).pdf"
+ },
+ {
+  "control": "CA-06",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2025-07-24",
+  "evidence_ref": "evidence/attestations/CA-06.pdf"
+ },
+ {
+  "control": "CA-08(01)",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-04-03",
+  "evidence_ref": "evidence/attestations/CA-08(01).pdf"
+ },
+ {
+  "control": "CM-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-07-13",
+  "evidence_ref": "evidence/attestations/CM-01.pdf"
+ },
+ {
+  "control": "CP-01",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-04-23",
+  "evidence_ref": "evidence/attestations/CP-01.pdf"
+ },
+ {
+  "control": "CP-02",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-06-22",
+  "evidence_ref": "evidence/attestations/CP-02.pdf"
+ },
+ {
+  "control": "CP-02(01)",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-11-07",
+  "evidence_ref": "evidence/attestations/CP-02(01).pdf"
+ },
+ {
+  "control": "CP-02(03)",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-01-19",
+  "evidence_ref": "evidence/attestations/CP-02(03).pdf"
+ },
+ {
+  "control": "CP-02(08)",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-10-24",
+  "evidence_ref": "evidence/attestations/CP-02(08).pdf"
+ },
+ {
+  "control": "CP-03",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-04-27",
+  "evidence_ref": "evidence/attestations/CP-03.pdf"
+ },
+ {
+  "control": "CP-04",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-10-12",
+  "evidence_ref": "evidence/attestations/CP-04.pdf"
+ },
+ {
+  "control": "CP-04(01)",
+  "owner": "continuity-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-04-17",
+  "evidence_ref": "evidence/attestations/CP-04(01).pdf"
+ },
+ {
+  "control": "IA-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "IR-01",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-03-16",
+  "evidence_ref": "evidence/attestations/IR-01.pdf"
+ },
+ {
+  "control": "IR-02",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-07",
+  "evidence_ref": "evidence/attestations/IR-02.pdf"
+ },
+ {
+  "control": "IR-02(03)",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-11-14",
+  "evidence_ref": "evidence/attestations/IR-02(03).pdf"
+ },
+ {
+  "control": "IR-03",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-19",
+  "evidence_ref": "evidence/attestations/IR-03.pdf"
+ },
+ {
+  "control": "IR-03(02)",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-06",
+  "evidence_ref": "evidence/attestations/IR-03(02).pdf"
+ },
+ {
+  "control": "IR-08",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-06-14",
+  "evidence_ref": "evidence/attestations/IR-08.pdf"
+ },
+ {
+  "control": "IR-08(01)",
+  "owner": "ir-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-05-08",
+  "evidence_ref": "evidence/attestations/IR-08(01).pdf"
+ },
+ {
+  "control": "MA-01",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-02-22",
+  "evidence_ref": "evidence/attestations/MA-01.pdf"
+ },
+ {
+  "control": "MA-03",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-05-18",
+  "evidence_ref": "evidence/attestations/MA-03.pdf"
+ },
+ {
+  "control": "MA-03(01)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-09-08",
+  "evidence_ref": "evidence/attestations/MA-03(01).pdf"
+ },
+ {
+  "control": "MA-03(02)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-05-23",
+  "evidence_ref": "evidence/attestations/MA-03(02).pdf"
+ },
+ {
+  "control": "MA-03(03)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-01-13",
+  "evidence_ref": "evidence/attestations/MA-03(03).pdf"
+ },
+ {
+  "control": "MA-03(05)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-01-20",
+  "evidence_ref": "evidence/attestations/MA-03(05).pdf"
+ },
+ {
+  "control": "MA-03(06)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-05-28",
+  "evidence_ref": "evidence/attestations/MA-03(06).pdf"
+ },
+ {
+  "control": "MA-04(01)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2025-10-06",
+  "evidence_ref": "evidence/attestations/MA-04(01).pdf"
+ },
+ {
+  "control": "MA-04(04)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "MA-04(07)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-04-18",
+  "evidence_ref": "evidence/attestations/MA-04(07).pdf"
+ },
+ {
+  "control": "MA-05",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-09-08",
+  "evidence_ref": "evidence/attestations/MA-05.pdf"
+ },
+ {
+  "control": "MA-05(01)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-06-03",
+  "evidence_ref": "evidence/attestations/MA-05(01).pdf"
+ },
+ {
+  "control": "MA-06",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-07-18",
+  "evidence_ref": "evidence/attestations/MA-06.pdf"
+ },
+ {
+  "control": "MA-06(01)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2025-10-05",
+  "evidence_ref": "evidence/attestations/MA-06(01).pdf"
+ },
+ {
+  "control": "MP-01",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-03-13",
+  "evidence_ref": "evidence/attestations/MP-01.pdf"
+ },
+ {
+  "control": "MP-02",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-10-02",
+  "evidence_ref": "evidence/attestations/MP-02.pdf"
+ },
+ {
+  "control": "MP-03",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-08-27",
+  "evidence_ref": "evidence/attestations/MP-03.pdf"
+ },
+ {
+  "control": "MP-04",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2025-11-28",
+  "evidence_ref": "evidence/attestations/MP-04.pdf"
+ },
+ {
+  "control": "MP-05",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-08-26",
+  "evidence_ref": "evidence/attestations/MP-05.pdf"
+ },
+ {
+  "control": "MP-06(01)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-07-16",
+  "evidence_ref": "evidence/attestations/MP-06(01).pdf"
+ },
+ {
+  "control": "MP-06(02)",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-08-10",
+  "evidence_ref": "evidence/attestations/MP-06(02).pdf"
+ },
+ {
+  "control": "MP-07",
+  "owner": "it-ops-manager",
+  "frequency_days": 365,
+  "last_attested": "2026-02-13",
+  "evidence_ref": "evidence/attestations/MP-07.pdf"
+ },
+ {
+  "control": "PE-01",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-02-06",
+  "evidence_ref": "evidence/attestations/PE-01.pdf"
+ },
+ {
+  "control": "PE-02",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2025-11-12",
+  "evidence_ref": "evidence/attestations/PE-02.pdf"
+ },
+ {
+  "control": "PE-03",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-02-17",
+  "evidence_ref": "evidence/attestations/PE-03.pdf"
+ },
+ {
+  "control": "PE-04",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-10-07",
+  "evidence_ref": "evidence/attestations/PE-04.pdf"
+ },
+ {
+  "control": "PE-05",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-02-20",
+  "evidence_ref": "evidence/attestations/PE-05.pdf"
+ },
+ {
+  "control": "PE-06",
+  "owner": "facilities-security",
+  "frequency_days": 90,
+  "last_attested": "2026-05-01",
+  "evidence_ref": "evidence/attestations/PE-06.pdf"
+ },
+ {
+  "control": "PE-06(01)",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-02-14",
+  "evidence_ref": "evidence/attestations/PE-06(01).pdf"
+ },
+ {
+  "control": "PE-08",
+  "owner": "facilities-security",
+  "frequency_days": 90,
+  "last_attested": "2026-09-07",
+  "evidence_ref": "evidence/attestations/PE-08.pdf"
+ },
+ {
+  "control": "PE-09",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "PE-10",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-02-28",
+  "evidence_ref": "evidence/attestations/PE-10.pdf"
+ },
+ {
+  "control": "PE-11",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-10-21",
+  "evidence_ref": "evidence/attestations/PE-11.pdf"
+ },
+ {
+  "control": "PE-12",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2025-08-17",
+  "evidence_ref": "evidence/attestations/PE-12.pdf"
+ },
+ {
+  "control": "PE-13",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2025-11-06",
+  "evidence_ref": "evidence/attestations/PE-13.pdf"
+ },
+ {
+  "control": "PE-13(01)",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-08-20",
+  "evidence_ref": "evidence/attestations/PE-13(01).pdf"
+ },
+ {
+  "control": "PE-14",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2025-07-12",
+  "evidence_ref": "evidence/attestations/PE-14.pdf"
+ },
+ {
+  "control": "PE-15",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2025-12-16",
+  "evidence_ref": "evidence/attestations/PE-15.pdf"
+ },
+ {
+  "control": "PE-16",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-07-20",
+  "evidence_ref": "evidence/attestations/PE-16.pdf"
+ },
+ {
+  "control": "PE-17",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-05-27",
+  "evidence_ref": "evidence/attestations/PE-17.pdf"
+ },
+ {
+  "control": "PE-23",
+  "owner": "facilities-security",
+  "frequency_days": 365,
+  "last_attested": "2026-01-16",
+  "evidence_ref": "evidence/attestations/PE-23.pdf"
+ },
+ {
+  "control": "PL-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-02-06",
+  "evidence_ref": "evidence/attestations/PL-01.pdf"
+ },
+ {
+  "control": "PL-04",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-02-11",
+  "evidence_ref": "evidence/attestations/PL-04.pdf"
+ },
+ {
+  "control": "PL-04(01)",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-01-31",
+  "evidence_ref": "evidence/attestations/PL-04(01).pdf"
+ },
+ {
+  "control": "PL-08",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-20",
+  "evidence_ref": "evidence/attestations/PL-08.pdf"
+ },
+ {
+  "control": "PL-11",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-03-01",
+  "evidence_ref": "evidence/attestations/PL-11.pdf"
+ },
+ {
+  "control": "PM-01",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-04-19",
+  "evidence_ref": "evidence/attestations/PM-01.pdf"
+ },
+ {
+  "control": "PM-02",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-07-22",
+  "evidence_ref": "evidence/attestations/PM-02.pdf"
+ },
+ {
+  "control": "PM-03",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-07-20",
+  "evidence_ref": "evidence/attestations/PM-03.pdf"
+ },
+ {
+  "control": "PM-04",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-04-15",
+  "evidence_ref": "evidence/attestations/PM-04.pdf"
+ },
+ {
+  "control": "PM-06",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-08-02",
+  "evidence_ref": "evidence/attestations/PM-06.pdf"
+ },
+ {
+  "control": "PM-07",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "PM-08",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-03-23",
+  "evidence_ref": "evidence/attestations/PM-08.pdf"
+ },
+ {
+  "control": "PM-09",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-08",
+  "evidence_ref": "evidence/attestations/PM-09.pdf"
+ },
+ {
+  "control": "PM-10",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-05-22",
+  "evidence_ref": "evidence/attestations/PM-10.pdf"
+ },
+ {
+  "control": "PM-11",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-29",
+  "evidence_ref": "evidence/attestations/PM-11.pdf"
+ },
+ {
+  "control": "PM-12",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-01-22",
+  "evidence_ref": "evidence/attestations/PM-12.pdf"
+ },
+ {
+  "control": "PM-13",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-06-11",
+  "evidence_ref": "evidence/attestations/PM-13.pdf"
+ },
+ {
+  "control": "PM-14",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-10-07",
+  "evidence_ref": "evidence/attestations/PM-14.pdf"
+ },
+ {
+  "control": "PM-15",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "PM-16",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-06-08",
+  "evidence_ref": "evidence/attestations/PM-16.pdf"
+ },
+ {
+  "control": "PM-18",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-07",
+  "evidence_ref": "evidence/attestations/PM-18.pdf"
+ },
+ {
+  "control": "PM-19",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-04-23",
+  "evidence_ref": "evidence/attestations/PM-19.pdf"
+ },
+ {
+  "control": "PM-20",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-02",
+  "evidence_ref": "evidence/attestations/PM-20.pdf"
+ },
+ {
+  "control": "PM-20(01)",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-04-13",
+  "evidence_ref": "evidence/attestations/PM-20(01).pdf"
+ },
+ {
+  "control": "PM-21",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-06-26",
+  "evidence_ref": "evidence/attestations/PM-21.pdf"
+ },
+ {
+  "control": "PM-22",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-12",
+  "evidence_ref": "evidence/attestations/PM-22.pdf"
+ },
+ {
+  "control": "PM-25",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-12",
+  "evidence_ref": "evidence/attestations/PM-25.pdf"
+ },
+ {
+  "control": "PM-26",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-10-03",
+  "evidence_ref": "evidence/attestations/PM-26.pdf"
+ },
+ {
+  "control": "PM-28",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2025-09-29",
+  "evidence_ref": "evidence/attestations/PM-28.pdf"
+ },
+ {
+  "control": "PM-29",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-02-23",
+  "evidence_ref": "evidence/attestations/PM-29.pdf"
+ },
+ {
+  "control": "PM-31",
+  "owner": "ciso",
+  "frequency_days": 365,
+  "last_attested": "2026-03-09",
+  "evidence_ref": "evidence/attestations/PM-31.pdf"
+ },
+ {
+  "control": "PS-01",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-06-06",
+  "evidence_ref": "evidence/attestations/PS-01.pdf"
+ },
+ {
+  "control": "PS-02",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-03-27",
+  "evidence_ref": "evidence/attestations/PS-02.pdf"
+ },
+ {
+  "control": "PS-03",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "PS-06",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-05-27",
+  "evidence_ref": "evidence/attestations/PS-06.pdf"
+ },
+ {
+  "control": "PS-07",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-10-24",
+  "evidence_ref": "evidence/attestations/PS-07.pdf"
+ },
+ {
+  "control": "PS-08",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-06-07",
+  "evidence_ref": "evidence/attestations/PS-08.pdf"
+ },
+ {
+  "control": "PS-09",
+  "owner": "hr-security-liaison",
+  "frequency_days": 365,
+  "last_attested": "2026-06-03",
+  "evidence_ref": "evidence/attestations/PS-09.pdf"
+ },
+ {
+  "control": "PT-01",
+  "owner": "privacy-officer",
+  "frequency_days": 365,
+  "last_attested": "2026-06-23",
+  "evidence_ref": "evidence/attestations/PT-01.pdf"
+ },
+ {
+  "control": "PT-02",
+  "owner": "privacy-officer",
+  "frequency_days": 365,
+  "last_attested": "2026-04-03",
+  "evidence_ref": "evidence/attestations/PT-02.pdf"
+ },
+ {
+  "control": "PT-03",
+  "owner": "privacy-officer",
+  "frequency_days": 365,
+  "last_attested": "2026-06-29",
+  "evidence_ref": "evidence/attestations/PT-03.pdf"
+ },
+ {
+  "control": "RA-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2025-11-05",
+  "evidence_ref": "evidence/attestations/RA-01.pdf"
+ },
+ {
+  "control": "RA-09",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-01-23",
+  "evidence_ref": "evidence/attestations/RA-09.pdf"
+ },
+ {
+  "control": "SA-01",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-09-07",
+  "evidence_ref": "evidence/attestations/SA-01.pdf"
+ },
+ {
+  "control": "SA-02",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-22",
+  "evidence_ref": "evidence/attestations/SA-02.pdf"
+ },
+ {
+  "control": "SA-03",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "SA-03(01)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-02-16",
+  "evidence_ref": "evidence/attestations/SA-03(01).pdf"
+ },
+ {
+  "control": "SA-03(02)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-02-28",
+  "evidence_ref": "evidence/attestations/SA-03(02).pdf"
+ },
+ {
+  "control": "SA-04",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-06-16",
+  "evidence_ref": "evidence/attestations/SA-04.pdf"
+ },
+ {
+  "control": "SA-04(01)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-04-11",
+  "evidence_ref": "evidence/attestations/SA-04(01).pdf"
+ },
+ {
+  "control": "SA-04(02)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-09",
+  "evidence_ref": "evidence/attestations/SA-04(02).pdf"
+ },
+ {
+  "control": "SA-04(09)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-07-05",
+  "evidence_ref": "evidence/attestations/SA-04(09).pdf"
+ },
+ {
+  "control": "SA-05",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-10-02",
+  "evidence_ref": "evidence/attestations/SA-05.pdf"
+ },
+ {
+  "control": "SA-08",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-06-24",
+  "evidence_ref": "evidence/attestations/SA-08.pdf"
+ },
+ {
+  "control": "SC-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": "2026-06-26",
+  "evidence_ref": "evidence/attestations/SC-01.pdf"
+ },
+ {
+  "control": "SI-01",
+  "owner": "isso",
+  "frequency_days": 365,
+  "last_attested": null,
+  "evidence_ref": null
+ },
+ {
+  "control": "SR-01",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-05-14",
+  "evidence_ref": "evidence/attestations/SR-01.pdf"
+ },
+ {
+  "control": "SR-02",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2025-11-04",
+  "evidence_ref": "evidence/attestations/SR-02.pdf"
+ },
+ {
+  "control": "SR-02(01)",
+  "owner": "procurement-lead",
+  "frequency_days": 365,
+  "last_attested": "2026-09-25",
+  "evidence_ref": "evidence/attestations/SR-02(01).pdf"
+ }
+]

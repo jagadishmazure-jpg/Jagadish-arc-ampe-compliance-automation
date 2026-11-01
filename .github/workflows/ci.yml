@@ -1,0 +1,53 @@
+# Offline CI: lint, tests, documented-output freshness, data rebuild checks, brand check, secret scan.
+# No cloud access, no secrets, nothing deployed.
+name: ci
+on:
+  push: { branches: [main] }
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with: { python-version: "3.12" }
+      - name: Install (pinned)
+        run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check .
+      - name: Tests (offline)
+        run: python -m pytest -q
+      - name: Test count (printed, compared with README)
+        run: |
+          python scripts/count_tests.py | tee count.txt
+          grep -q "$(cut -d' ' -f1 count.txt) tests" README.md || { echo "README test count is stale"; exit 1; }
+      - name: Generated data and policy files match their generators
+        run: |
+          for s in make_fixtures make_connector_fixtures make_attestations make_poam_history \
+                   make_platform_fixtures make_openapi_specs make_policies make_approvals; do
+            python scripts/$s.py
+          done
+          python -c "from arcampe.integrations import nocode; nocode.export('examples/nocode')"
+          git diff --exit-code -- data policies examples
+      - name: Every output builds (SSPP, POA&M, CONMON, binder)
+        run: python -m arcampe all --out out
+      - name: Documented output matches a fresh run
+        run: python scripts/render_docs.py --check
+      - name: No real brand names in code or sample data
+        run: python scripts/check_brands.py
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { fetch-depth: 0 }
+      - name: gitleaks (full history)
+        uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

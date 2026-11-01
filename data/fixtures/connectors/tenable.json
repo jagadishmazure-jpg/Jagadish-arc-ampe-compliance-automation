@@ -1,0 +1,18 @@
+{
+ "scans": [
+  {
+   "name": "lhx-monthly-internal",
+   "last_run": "2026-10-19",
+   "plugin_feed_updated": "2026-10-30",
+   "credentialed": true,
+   "targets": 48
+  },
+  {
+   "name": "lhx-dmz",
+   "last_run": "2026-09-26",
+   "plugin_feed_updated": "2026-10-30",
+   "credentialed": false,
+   "targets": 6
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "users": [
+  {
+   "login": "user005@lakehaven-hx.example",
+   "status": "DEPROVISIONED",
+   "statusChanged": "2026-10-21",
+   "factors": [
+    "push"
+   ]
+  },
+  {
+   "login": "user012@lakehaven-hx.example",
+   "status": "ACTIVE",
+   "statusChanged": "2026-04-14",
+   "factors": [
+    "push",
+    "webauthn"
+   ]
+  },
+  {
+   "login": "user031@lakehaven-hx.example",
+   "status": "ACTIVE",
+   "statusChanged": "2026-10-23",
+   "factors": []
+  }
+ ]
+}

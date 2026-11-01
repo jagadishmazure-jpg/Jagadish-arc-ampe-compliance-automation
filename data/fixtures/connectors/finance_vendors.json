@@ -1,0 +1,59 @@
+{
+ "vendors": [
+  {
+   "vendorId": "V-001",
+   "name": "Northmere Call Center Services",
+   "annualSpend": 1200000,
+   "piiAccess": true,
+   "dataLocation": "US",
+   "contract": {
+    "breachNotifyHours": 1,
+    "flowdown45CFR155260": true
+   }
+  },
+  {
+   "vendorId": "V-002",
+   "name": "Bluequill Print and Mail",
+   "annualSpend": 310000,
+   "piiAccess": true,
+   "dataLocation": "US",
+   "contract": {
+    "breachNotifyHours": 72,
+    "flowdown45CFR155260": true
+   }
+  },
+  {
+   "vendorId": "V-003",
+   "name": "Cedar Analytics Labs",
+   "annualSpend": 95000,
+   "piiAccess": true,
+   "dataLocation": "IN",
+   "contract": {
+    "breachNotifyHours": 24,
+    "flowdown45CFR155260": false
+   }
+  },
+  {
+   "vendorId": "V-004",
+   "name": "Granite Office Supply",
+   "annualSpend": 22000,
+   "piiAccess": false,
+   "dataLocation": "US",
+   "contract": {
+    "breachNotifyHours": null,
+    "flowdown45CFR155260": false
+   }
+  },
+  {
+   "vendorId": "V-005",
+   "name": "Harbor Identity Proofing",
+   "annualSpend": 640000,
+   "piiAccess": true,
+   "dataLocation": "US",
+   "contract": {
+    "breachNotifyHours": 1,
+    "flowdown45CFR155260": true
+   }
+  }
+ ]
+}

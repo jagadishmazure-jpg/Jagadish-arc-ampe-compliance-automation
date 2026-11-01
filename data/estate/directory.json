@@ -1,0 +1,530 @@
+{
+ "tenant": "lakehaven-hx.example",
+ "users": [
+  {
+   "id": "u-000",
+   "displayName": "Avery Ashdown",
+   "upn": "user000@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 8,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-001",
+   "displayName": "Blake Brookfell",
+   "upn": "user001@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-002",
+   "displayName": "Casey Carrow",
+   "upn": "user002@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 21,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-003",
+   "displayName": "Devon Dunmere",
+   "upn": "user003@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 2,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-004",
+   "displayName": "Emery Elstow",
+   "upn": "user004@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 44,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-005",
+   "displayName": "Finley Fenwick",
+   "upn": "user005@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 1,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-006",
+   "displayName": "Gray Greywater",
+   "upn": "user006@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-007",
+   "displayName": "Harper Holloway",
+   "upn": "user007@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 75,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-008",
+   "displayName": "Indy Ashdown",
+   "upn": "user008@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 30,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-009",
+   "displayName": "Jules Brookfell",
+   "upn": "user009@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-010",
+   "displayName": "Kai Carrow",
+   "upn": "user010@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 3,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-011",
+   "displayName": "Lane Dunmere",
+   "upn": "user011@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 2,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-012",
+   "displayName": "Morgan Elstow",
+   "upn": "user012@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 1,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-013",
+   "displayName": "Noel Fenwick",
+   "upn": "user013@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 8,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-014",
+   "displayName": "Oakley Greywater",
+   "upn": "user014@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-015",
+   "displayName": "Parker Holloway",
+   "upn": "user015@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 2,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-016",
+   "displayName": "Quinn Ashdown",
+   "upn": "user016@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-017",
+   "displayName": "Reese Brookfell",
+   "upn": "user017@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 30,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-018",
+   "displayName": "Sage Carrow",
+   "upn": "user018@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 3,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-019",
+   "displayName": "Tatum Dunmere",
+   "upn": "user019@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 91,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-020",
+   "displayName": "Avery Elstow",
+   "upn": "user020@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 13,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-021",
+   "displayName": "Blake Fenwick",
+   "upn": "user021@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 5,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-022",
+   "displayName": "Casey Greywater",
+   "upn": "user022@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": false,
+   "lastSignInDaysAgo": 120,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-023",
+   "displayName": "Devon Holloway",
+   "upn": "user023@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 1,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-024",
+   "displayName": "Emery Ashdown",
+   "upn": "user024@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 21,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-025",
+   "displayName": "Finley Brookfell",
+   "upn": "user025@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 3,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-026",
+   "displayName": "Gray Carrow",
+   "upn": "user026@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 21,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-027",
+   "displayName": "Harper Dunmere",
+   "upn": "user027@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 30,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-028",
+   "displayName": "Indy Elstow",
+   "upn": "user028@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 44,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-029",
+   "displayName": "Jules Fenwick",
+   "upn": "user029@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 13,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-030",
+   "displayName": "Kai Greywater",
+   "upn": "user030@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 30,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-031",
+   "displayName": "Lane Holloway",
+   "upn": "user031@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 13,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-032",
+   "displayName": "Morgan Ashdown",
+   "upn": "user032@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 21,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-033",
+   "displayName": "Noel Brookfell",
+   "upn": "user033@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 13,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-034",
+   "displayName": "Oakley Carrow",
+   "upn": "user034@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 21,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-035",
+   "displayName": "Parker Dunmere",
+   "upn": "user035@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 13,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-036",
+   "displayName": "Quinn Elstow",
+   "upn": "user036@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 2,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-037",
+   "displayName": "Reese Fenwick",
+   "upn": "user037@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 44,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-038",
+   "displayName": "Sage Greywater",
+   "upn": "user038@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 8,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "u-039",
+   "displayName": "Tatum Holloway",
+   "upn": "user039@lakehaven-hx.example",
+   "type": "Member",
+   "enabled": true,
+   "lastSignInDaysAgo": 3,
+   "groups": [
+    "grp-exchange-staff"
+   ]
+  },
+  {
+   "id": "g-001",
+   "displayName": "Vendor Guest",
+   "upn": "guest001@vendor.example",
+   "type": "Guest",
+   "enabled": true,
+   "lastSignInDaysAgo": 4,
+   "groups": [
+    "grp-pii-readers"
+   ]
+  },
+  {
+   "id": "g-002",
+   "displayName": "Auditor Guest",
+   "upn": "guest002@audit.example",
+   "type": "Guest",
+   "enabled": true,
+   "lastSignInDaysAgo": 2,
+   "groups": [
+    "grp-audit-readonly"
+   ]
+  }
+ ],
+ "pii_groups": [
+  "grp-pii-readers"
+ ],
+ "conditionalAccess": [
+  {
+   "name": "CA01-require-mfa-all-users",
+   "state": "enabled",
+   "users": "All",
+   "grant": [
+    "mfa"
+   ]
+  },
+  {
+   "name": "CA02-block-legacy-auth",
+   "state": "enabled",
+   "users": "All",
+   "clientApps": [
+    "legacy"
+   ],
+   "grant": [
+    "block"
+   ]
+  },
+  {
+   "name": "CA03-admin-phishing-resistant",
+   "state": "enabled",
+   "users": "DirectoryRoles",
+   "grant": [
+    "authStrength:phishingResistant"
+   ]
+  }
+ ],
+ "sessionControls": {
+  "signInFrequencyMinutes": 720,
+  "idleTimeoutMinutes": 15
+ },
+ "lockout": {
+  "threshold": 5,
+  "windowMinutes": 15,
+  "durationMinutes": 30
+ },
+ "roleAssignments": [
+  {
+   "principal": "u-001",
+   "role": "Global Administrator",
+   "type": "Eligible"
+  },
+  {
+   "principal": "u-002",
+   "role": "Security Administrator",
+   "type": "Eligible"
+  },
+  {
+   "principal": "u-003",
+   "role": "Global Administrator",
+   "type": "Active-Permanent"
+  },
+  {
+   "principal": "u-004",
+   "role": "Reader",
+   "type": "Active-Permanent"
+  }
+ ]
+}

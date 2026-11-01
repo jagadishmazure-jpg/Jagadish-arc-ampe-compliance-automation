@@ -1,0 +1,20 @@
+{
+ "dlpPolicies": [
+  {
+   "name": "PII-SSN-block-external",
+   "mode": "Enforce",
+   "locations": [
+    "Exchange",
+    "SharePoint",
+    "OneDrive"
+   ]
+  },
+  {
+   "name": "PHI-audit",
+   "mode": "TestWithNotifications",
+   "locations": [
+    "Teams"
+   ]
+  }
+ ]
+}

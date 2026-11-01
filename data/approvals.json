@@ -1,0 +1,287 @@
+[
+ {
+  "control": "AC-02(03)",
+  "text": "Lakehaven Health Connector implements AC-02(03) (Disable Accounts) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks ID-04; results are recorded in the assessment run. Organization-defined value AC-02(03): {\"disable_within_hours\": 24, \"inactive_days\": 60}. Latest run: 0 passing and 1 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "ID-04",
+   "param:AC-02(03)",
+   "catalog:AC-02(03)"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "a4e0cf67c0b04e83c09f60ef7ada056c418de7b1772dce5b72e002a9202be264",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "AC-07",
+  "text": "Lakehaven Health Connector implements AC-07 (Unsuccessful Logon Attempts) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks ID-05; results are recorded in the assessment run. Organization-defined value AC-07: {\"lockout_minutes\": 30, \"max_attempts\": 5, \"window_minutes\": 15}. Latest run: 1 passing and 0 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "ID-05",
+   "param:AC-07",
+   "catalog:AC-07"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "805fa83e446242c4bcc88785be249f40f44595fa4c433660e6abc79328095b8d",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "AC-11",
+  "text": "Lakehaven Health Connector implements AC-11 (Device Lock) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks ID-06; results are recorded in the assessment run. Organization-defined value AC-11: {\"device_lock_minutes\": 15}. Latest run: 1 passing and 0 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "ID-06",
+   "param:AC-11",
+   "catalog:AC-11"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "0e4dee64925da7debb7032ed2d8dcbbf386a290670e3cd5c197b711737fbb99d",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "AU-11",
+  "text": "Lakehaven Health Connector implements AU-11 (Audit Record Retention) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-10; results are recorded in the assessment run. Organization-defined value AU-11: {\"archive_years\": 10, \"online_days\": 90}. Latest run: 1 passing and 1 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-10",
+   "param:AU-11",
+   "catalog:AU-11"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "b37561e446a3de0d21e6585d6a99b1270b9e04566cde16c1585c25551883f39b",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "CP-09",
+  "text": "Lakehaven Health Connector implements CP-09 (System Backup) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-15; results are recorded in the assessment run. Organization-defined value CP-09: {\"full\": \"weekly\", \"generations\": 3, \"incremental\": \"daily\"}. Latest run: 11 passing and 1 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-15",
+   "param:CP-09",
+   "catalog:CP-09"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "e6762cf43be323e2176ac44976bebf9374ff1959369b27bcb4bcee416fdc9c42",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "IA-02(01)",
+  "text": "Lakehaven Health Connector implements IA-02(01) (Multi-factor Authentication to Privileged Accounts) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks ID-01; results are recorded in the assessment run. Latest run: 1 passing and 0 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "ID-01",
+   "catalog:IA-02(01)"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "b77606a4ea735684e4c44cd0d7c6457500a5c36ac8320636c2863c41441c2bf4",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "IR-06",
+  "text": "Lakehaven Health Connector implements IR-06 (Incident Reporting) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks EV-06; results are recorded in the assessment run. Organization-defined value IR-06: {\"report_within_hours\": 1}. Latest run: 1 passing and 1 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "EV-06",
+   "param:IR-06",
+   "catalog:IR-06"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "f8a6ebeb1116332338d4a3aa0028a24c42ce9983f0f2c5e47bae330bf7191d27",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "PS-04",
+  "text": "Lakehaven Health Connector implements PS-04 (Personnel Termination) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks EV-01; results are recorded in the assessment run. Organization-defined value PS-04: {\"disable_same_day\": true}. Latest run: 2 passing and 2 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "EV-01",
+   "param:PS-04",
+   "catalog:PS-04"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "39681828f6733b6a75332c9b0753dbac97c579622c5330509d889d90c16c363a",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "RA-05",
+  "text": "Lakehaven Health Connector implements RA-05 (Vulnerability Monitoring and Scanning) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-18; results are recorded in the assessment run. Organization-defined value RA-05: {\"scan_every_days\": 30}. Latest run: 6 passing and 2 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-18",
+   "param:RA-05",
+   "catalog:RA-05"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "2e36c012b108707e77112c4cad70ca95127a6ea3000f03bdb50440a5f0e8c5d7",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "SC-08",
+  "text": "Lakehaven Health Connector implements SC-08 (Transmission Confidentiality and Integrity) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-04; results are recorded in the assessment run. Latest run: 15 passing and 2 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-04",
+   "catalog:SC-08"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "616a7173f658d5f121a73210959a683bf51b99f6f3e1d38aff7ec03d5a25e17e",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "SC-28",
+  "text": "Lakehaven Health Connector implements SC-28 (Protection of Information at Rest) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-06; results are recorded in the assessment run. Latest run: 19 passing and 1 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-06",
+   "catalog:SC-28"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "8494e8629769a8f9663abcc4ed2310ae09bba584331a7f0a2cba644a4f49bccc",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ },
+ {
+  "control": "SI-02",
+  "text": "Lakehaven Health Connector implements SI-02 (Flaw Remediation) for the eligibility and enrollment system. The control is checked automatically by policy-as-code checks AZ-19; results are recorded in the assessment run. Organization-defined value SI-02: {\"critical_days\": 15, \"high_days\": 30, \"low_days\": 365, \"moderate_days\": 90}. Latest run: 6 passing and 2 failing results; failing results are tracked in the POA&M.",
+  "citations": [
+   "AZ-19",
+   "param:SI-02",
+   "catalog:SI-02"
+  ],
+  "backend": "stub-deterministic",
+  "drafter": "agent:drafter",
+  "input_sha256": "8eecb8015f8eb9786e611fe8e1126f7122b5e6277d4ec45d7e7512018bbe48c5",
+  "redactions": {
+   "ssn": 0,
+   "email": 0,
+   "phone": 0,
+   "dob": 0,
+   "medicaid_id": 0
+  },
+  "blocked": [],
+  "status": "approved",
+  "approver": "r.alvarez",
+  "approved_on": "2026-10-31",
+  "reviewer_note": "Synthetic demo approval: checked text against check output."
+ }
+]

@@ -1,0 +1,144 @@
+{
+ "documents": [
+  {
+   "title": "AC Policy and Procedures",
+   "control": "AC-01",
+   "version": "2.1",
+   "approved": "2026-07-23",
+   "owner": "isso"
+  },
+  {
+   "title": "AT Policy and Procedures",
+   "control": "AT-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "AU Policy and Procedures",
+   "control": "AU-01",
+   "version": "2.1",
+   "approved": "2026-10-01",
+   "owner": "isso"
+  },
+  {
+   "title": "CA Policy and Procedures",
+   "control": "CA-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "CM Policy and Procedures",
+   "control": "CM-01",
+   "version": "2.1",
+   "approved": "2026-04-14",
+   "owner": "isso"
+  },
+  {
+   "title": "CP Policy and Procedures",
+   "control": "CP-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "IA Policy and Procedures",
+   "control": "IA-01",
+   "version": "2.1",
+   "approved": "2026-07-23",
+   "owner": "isso"
+  },
+  {
+   "title": "IR Policy and Procedures",
+   "control": "IR-01",
+   "version": "2.1",
+   "approved": "2026-10-01",
+   "owner": "isso"
+  },
+  {
+   "title": "MA Policy and Procedures",
+   "control": "MA-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "MP Policy and Procedures",
+   "control": "MP-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "PE Policy and Procedures",
+   "control": "PE-01",
+   "version": "2.1",
+   "approved": "2026-07-23",
+   "owner": "isso"
+  },
+  {
+   "title": "PL Policy and Procedures",
+   "control": "PL-01",
+   "version": "2.1",
+   "approved": "2026-04-14",
+   "owner": "isso"
+  },
+  {
+   "title": "PM Policy and Procedures",
+   "control": "PM-01",
+   "version": "2.1",
+   "approved": "2026-10-01",
+   "owner": "isso"
+  },
+  {
+   "title": "PS Policy and Procedures",
+   "control": "PS-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "PT Policy and Procedures",
+   "control": "PT-01",
+   "version": "2.1",
+   "approved": "2026-10-01",
+   "owner": "isso"
+  },
+  {
+   "title": "RA Policy and Procedures",
+   "control": "RA-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "SA Policy and Procedures",
+   "control": "SA-01",
+   "version": "2.1",
+   "approved": "2026-10-01",
+   "owner": "isso"
+  },
+  {
+   "title": "SC Policy and Procedures",
+   "control": "SC-01",
+   "version": "2.1",
+   "approved": "2025-06-18",
+   "owner": "isso"
+  },
+  {
+   "title": "SI Policy and Procedures",
+   "control": "SI-01",
+   "version": "2.1",
+   "approved": "2026-07-23",
+   "owner": "isso"
+  },
+  {
+   "title": "SR Policy and Procedures",
+   "control": "SR-01",
+   "version": "2.1",
+   "approved": "2025-10-16",
+   "owner": "isso"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+family,family_name,controls,platform_vendor,azure,customer,notes
+AC,Access Control,51,S,S,P,Vendor builds RBAC and tenant isolation; Azure provides Entra ID; customer assigns roles and reviews access
+AT,Awareness and Training,9,S,-,P,Vendor trains its own staff; customer trains its workforce
+AU,Audit and Accountability,19,P,S,S,Vendor keeps the hash-chained audit trail; Azure Monitor stores logs; customer reviews weekly
+CA,"Assessment, Authorization, and Monitoring",12,S,I,P,Customer owns the ATO and assessments; vendor supplies its own assessment evidence
+CM,Configuration Management,31,P,S,S,Vendor runs change control for the platform; customer controls its own configs
+CP,Contingency Planning,23,P,S,S,Vendor backs up and restore-tests the platform; Azure supplies zone redundancy
+IA,Identification and Authentication,24,S,P,S,Entra ID authenticates; vendor enforces MFA for privileged actions; customer manages users
+IR,Incident Response,16,S,S,P,Each party handles its own incidents; vendor notifies customer within 1 hour
+MA,Maintenance,16,S,P,-,Azure maintains hardware; vendor patches platform software
+MP,Media Protection,9,-,P,S,Azure sanitizes physical media; customer handles its own exports
+PE,Physical and Environmental Protection,19,-,P,-,Fully inherited from Azure data centers
+PL,Planning,6,S,-,P,Customer owns the SSPP; vendor provides the platform system description
+PM,Program Management,28,-,-,P,Program management is the customer's
+PS,Personnel Security,9,S,S,P,Each party screens and offboards its own people
+PT,Personally Identifiable Information Processing and Transparency,10,S,-,P,Customer decides PII purposes and notices; vendor redacts PII before AI prompts
+RA,Risk Assessment,12,S,S,P,Customer owns risk decisions; vendor scans the platform
+SA,System and Services Acquisition,34,P,S,S,Vendor runs secure development; customer manages acquisition of the platform
+SC,System and Communications Protection,34,P,S,S,Vendor encrypts and isolates; Azure supplies network and key services
+SI,System and Information Integrity,34,P,S,S,Vendor patches and monitors the platform; customer monitors its own estate
+SR,Supply Chain Risk Management,6,S,S,P,Customer manages its supply chain; vendor manages its own sub-processors
