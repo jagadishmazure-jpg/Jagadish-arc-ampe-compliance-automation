@@ -16,6 +16,7 @@ from arcampe.grc import (
     readiness_approval,
     recipes,
     recurring,
+    reporting,
     risk_program,
     risk_registers,
     roadmap,
@@ -685,7 +686,7 @@ def test_mcp_limit_type_checked():
 # ------------------------------------------------------------------ scorecards
 @pytest.fixture(scope="module")
 def cards():
-    return scorecards.build()
+    return reporting.metrics()["scorecards"]
 
 
 @pytest.mark.parametrize("card", ["efficiency", "risk", "trust"])

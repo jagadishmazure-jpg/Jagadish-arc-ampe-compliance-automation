@@ -18,10 +18,10 @@ def _ms(v) -> tuple:
     return (v, "measured, synthetic")
 
 
-def build(m: dict | None = None, today: str = TODAY) -> dict:
+def build(m: dict, today: str = TODAY) -> dict:
+    """m = the metrics dict from reporting.metrics(); call reporting.metrics()["scorecards"] for the full set."""
     from ..integrations.connectors import collect_all
-    from . import ai_frameworks, ai_tests, audit_hub, insights, recurring, reporting, risk_program
-    m = reporting.metrics(today) if m is None else m
+    from . import ai_frameworks, ai_tests, audit_hub, insights, recurring, risk_program
     ev = collect_all()
     auto = sum(e.source not in MANUAL_SOURCES for e in ev)
     ins = insights.summary(today=today)

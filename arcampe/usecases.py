@@ -346,14 +346,14 @@ def control_readiness_and_audit() -> None:
 
 def leadership_scorecards() -> None:
     """The CISO wants the weekly scorecards: efficiency, risk with loss ranges, and trust."""
-    from .grc import insights, risk_program, scorecards
+    from .grc import insights, reporting, risk_program
     i = insights.summary()
     print("1. Flipped pass->fail 24h/7d/14d:", i["flipped"], "MTTR", i["mttr_hours"], "h (synthetic history)")
     for r in risk_program.board_view():
         print(f"2. {r['register']:7} {r['sentence']} (SIMULATED)")
     s = risk_program.sla()
     print("3. Risk SLA adherence", s["adherence_pct"], "%; invalid acceptances", s["invalid_acceptances"])
-    sc = scorecards.build()
+    sc = reporting.metrics()["scorecards"]
     for card in ("efficiency", "risk", "trust"):
         print(f"4. {card}: {len(sc[card])} KPIs, e.g. {sc[card][1][0]} = {sc[card][1][1]} [{sc[card][1][2]}]")
 

@@ -163,8 +163,8 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{r['id']} {r['cadence']:11} done {r['completed']}/{r['occurrences']} missed {len(r['missed'])} "
                   f"next {r['next_due']}  {r['title']}")
     if c == "scorecards" or every:
-        from . import scorecards
-        sc = scorecards.build()
+        from . import reporting
+        sc = reporting.metrics()["scorecards"]
         for card in ("efficiency", "risk", "trust"):
             print(f"[{card}]")
             for k, v, b in sc[card]:
