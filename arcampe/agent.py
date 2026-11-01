@@ -16,26 +16,15 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
-import re
 from dataclasses import asdict, dataclass, field, replace
 
 from . import DATA, ENTITY, TODAY, catalog
+from .guards import INJECTION_PATTERNS, screen  # noqa: F401  (re-exported)
 from .ids import base_of
 from .params import PARAMS
 from .redact import redact
 
-INJECTION_PATTERNS = [
-    r"ignore (all|any|the)? ?(previous|prior|above) instructions", r"disregard (the )?(system|previous)",
-    r"you are now", r"act as (an? )?(admin|administrator|system)", r"reveal (the |your |any )?(system prompt|secrets?|keys?)",
-    r"mark (this|all|the) controls? as (pass|passed|compliant|implemented)", r"approve (this|it) automatically",
-    r"<\s*/?\s*(system|assistant)\s*>", r"BEGIN (SYSTEM|ADMIN) PROMPT",
-]
-_INJ = re.compile("|".join(INJECTION_PATTERNS), re.I)
 APPROVER_ROLES = {"isso", "ciso", "privacy-officer", "system-owner"}
-
-
-def screen(text: str) -> list[str]:
-    return [m.group(0) for m in _INJ.finditer(text)]
 
 
 @dataclass(frozen=True)
@@ -83,8 +72,8 @@ class FoundryBackend:  # pragma: no cover - planned, intentionally not runnable 
     name = "microsoft-foundry"
 
     def __init__(self, endpoint: str):
-        from .platform.secure_ai import assert_egress_allowed
-        assert_egress_allowed(endpoint)
+        from .platform import secure_ai
+        secure_ai.assert_egress_allowed(endpoint)
         self.endpoint = endpoint
 
     def complete(self, ctx: dict) -> str:

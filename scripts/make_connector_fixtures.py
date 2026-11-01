@@ -46,9 +46,9 @@ def build() -> dict[str, dict]:
          "disabledOn": None, "mfaRegistered": False},
     ]}
     f["active_directory"] = {"objects": [
-        {"sAMAccountName": "svc-batch01", "enabled": True, "passwordNeverExpires": True, "lastLogonDays": 3},
-        {"sAMAccountName": "user012", "enabled": True, "passwordNeverExpires": False, "lastLogonDays": 1},
-        {"sAMAccountName": "user006", "enabled": False, "passwordNeverExpires": False, "lastLogonDays": 45},
+        {"sAMAccountName": "svc-batch01", "enabled": True, "neverExpires": True, "lastLogonDays": 3},
+        {"sAMAccountName": "user012", "enabled": True, "neverExpires": False, "lastLogonDays": 1},
+        {"sAMAccountName": "user006", "enabled": False, "neverExpires": False, "lastLogonDays": 45},
     ]}
     f["okta"] = {"users": [
         {"login": "user005@lakehaven-hx.example", "status": "DEPROVISIONED", "statusChanged": day(10),

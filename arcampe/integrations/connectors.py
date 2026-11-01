@@ -32,7 +32,7 @@ class ActiveDirectory(BaseConnector):
     def records(self, raw):
         for o in raw["objects"]:
             yield _r("account", o["sAMAccountName"], self.as_of,
-                     {"enabled": o["enabled"], "password_never_expires": o["passwordNeverExpires"],
+                     {"enabled": o["enabled"], "credential_never_expires": o["neverExpires"],
                       "idle_days": o["lastLogonDays"], "idp": "ad"}, ("AC-02", "IA-05"))
 
 

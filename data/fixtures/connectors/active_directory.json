@@ -3,19 +3,19 @@
   {
    "sAMAccountName": "svc-batch01",
    "enabled": true,
-   "passwordNeverExpires": true,
+   "neverExpires": true,
    "lastLogonDays": 3
   },
   {
    "sAMAccountName": "user012",
    "enabled": true,
-   "passwordNeverExpires": false,
+   "neverExpires": false,
    "lastLogonDays": 1
   },
   {
    "sAMAccountName": "user006",
    "enabled": false,
-   "passwordNeverExpires": false,
+   "neverExpires": false,
    "lastLogonDays": 45
   }
  ]

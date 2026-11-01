@@ -19,7 +19,7 @@ material is a **self-assessment design**.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-1075 tests collected
+1076 tests collected
 ```
 <!-- /run -->
 

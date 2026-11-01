@@ -109,8 +109,9 @@ def top10(rows: list[dict]) -> list[dict]:
 
 
 def top10_markdown(rows: list[dict]) -> str:
-    out = ["| # | Risk | Inherent (LxI) | Chance of any loss / yr | ALE P10 | ALE P50 | ALE mean | ALE P90 | Treatment "
-           "| Control health | Residual P90 | Over appetite |",
+    header = ("| # | Risk | Inherent (LxI) | Chance of any loss / yr | ALE P10 | ALE P50 | ALE mean | ALE P90 | Treatment "
+              + "| Control health | Residual P90 | Over appetite |")
+    out = [header,
            "|---:|---|---:|---:|---:|---:|---:|---:|---|---:|---:|:-:|"]
     for i, r in enumerate(top10(rows), 1):
         a, ra = r["ale"], r["residual_ale"]
