@@ -1,5 +1,9 @@
 # Security & Trust
 
+> **In one line:** eight security claims (T1-T8), each proven by code and a test, plus shared responsibility and AI safety rules.
+>
+> **Read this if:** a customer's security team asks how the platform itself is secured.
+
 > **Do not claim any real certification. This is a self-assessment design.** Every result below is a
 > function in this repo running on synthetic data. No auditor, 3PAO, QSA or covered entity has reviewed it.
 

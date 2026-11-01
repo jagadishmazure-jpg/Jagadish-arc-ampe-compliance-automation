@@ -1,5 +1,9 @@
 # How to run
 
+> **In one line:** the exact commands to install, test and run everything offline, plus the optional cloud steps.
+>
+> **Read this if:** you want to run it yourself.
+
 ## Offline (default)
 ```bash
 python -m venv .venv && . .venv/bin/activate

@@ -50,3 +50,16 @@ def test_source_coverage_paths_exist():
         for m in mods.split() + [test]:
             assert (ROOT / m).exists(), (slug, m)
     assert len(source_coverage.AREAS) == 18
+
+
+def test_readme_start_here_lists_every_markdown_file():
+    import subprocess
+
+    from arcampe import ROOT
+    tracked = subprocess.run(["git", "ls-files", "*.md"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    on_disk = {str(p.relative_to(ROOT)) for p in ROOT.rglob("*.md")
+               if not any(part.startswith(".") or part in ("out", "node_modules") for part in p.relative_to(ROOT).parts)}
+    readme = (ROOT / "README.md").read_text()
+    section = readme.split("## Start here: reading order", 1)[1].split("\n## ", 1)[0]
+    missing = sorted(f for f in set(tracked) | on_disk if f"]({f})" not in section)
+    assert not missing, missing

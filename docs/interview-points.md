@@ -1,5 +1,9 @@
 # Interview points
 
+> **In one line:** short answers to the questions a reviewer or interviewer is likely to ask.
+>
+> **Read this if:** you are preparing to explain this work out loud.
+
 | Topic | 30-second answer |
 |---|---|
 | Why three labels? | Not every control can be automated. Saying "65 automated, 207 hybrid, 130 attestation" is honest and tells the team where people are still needed. |

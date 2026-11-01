@@ -1,5 +1,9 @@
 # Cyber risk lifecycle and FAQ
 
+> **In one line:** how cyber risk is identified, scored in dollars, treated and monitored, plus answers to six common risk questions.
+>
+> **Read this if:** you want to understand the risk numbers or run your own risk module.
+
 > All dollar values and frequencies in `data/risk/modules/cyber.yaml` are **synthetic inputs**.
 > The simulation is seeded (20261031, 10,000 years per scenario) so results repeat exactly.
 

@@ -1,5 +1,7 @@
 # ADR 0002: Azure Policy JSON is the single source for Terraform and Bicep
 
+> An ADR (architecture decision record) explains one design choice: the problem, what was decided and what it costs.
+
 **Status:** accepted
 
 **Context.** Python checks, Terraform and Bicep can drift.

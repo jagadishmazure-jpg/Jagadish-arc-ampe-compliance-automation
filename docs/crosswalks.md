@@ -1,5 +1,9 @@
 # Crosswalks
 
+> **In one line:** how one NIST control maps to HIPAA, SOC 2, ISO 27001, PCI DSS, GDPR, CCPA, COBIT and a FedRAMP proxy.
+>
+> **Read this if:** you need one test result to count for several frameworks.
+
 > Author-built, not official. Family-level maps with control-level overrides where the match is specific.
 > Reference IDs only; no framework text is copied.
 

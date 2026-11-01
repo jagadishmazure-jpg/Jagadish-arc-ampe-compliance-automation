@@ -1,5 +1,7 @@
 # ADR 0004: Every generated artefact is deterministic
 
+> An ADR (architecture decision record) explains one design choice: the problem, what was decided and what it costs.
+
 **Status:** accepted
 
 **Context.** Evidence must be reproducible and CI must detect drift.

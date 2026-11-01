@@ -19,9 +19,44 @@ material is a **self-assessment design**.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-1076 tests collected
+1094 tests collected
 ```
 <!-- /run -->
+
+## Start here: reading order
+
+Read top to bottom; each line says what the file explains. Every number in these files is printed by a
+real run and re-checked in CI.
+
+| # | File | What it explains |
+|---:|---|---|
+| 1 | [README.md](README.md) | This page: summary, architecture, measured results, how to run |
+| 2 | [docs/purpose.md](docs/purpose.md) | The problem, who it is for, and what the three labels mean |
+| 3 | [docs/AUDIT_AUTOMATION_EXPLAINED.md](docs/AUDIT_AUTOMATION_EXPLAINED.md) | **How checklist and audit automation works end to end**, walking control IA-02 (MFA) through every step with real output |
+| 4 | [docs/glossary.md](docs/glossary.md) | Every acronym (ATO, SSPP, POA&M, CONMON, FAIR ...) in one line |
+| 5 | [docs/architecture.md](docs/architecture.md) | Modules, data flow and where each piece of logic lives |
+| 6 | [docs/how-it-works.md](docs/how-it-works.md) | The pipeline step by step with real command output |
+| 7 | [docs/how-to-run.md](docs/how-to-run.md) | Commands to install, test and run offline |
+| 8 | [docs/control-catalog.md](docs/control-catalog.md) | Where the 402 controls come from and how labels are decided |
+| 9 | [docs/crosswalks.md](docs/crosswalks.md) | One control mapped to HIPAA, SOC 2, ISO 27001, PCI DSS, GDPR, CCPA, COBIT, FedRAMP proxy |
+| 10 | [docs/INTEGRATIONS.md](docs/INTEGRATIONS.md) | Connectors, evidence record and hashing, webhooks, AI mapper |
+| 11 | [AGENTIC_AI_PLAN.md](AGENTIC_AI_PLAN.md) | Where AI helps, where it must not decide, and the human approval flow |
+| 12 | [docs/SECURITY_AND_TRUST.md](docs/SECURITY_AND_TRUST.md) | Eight security claims proven by code, shared responsibility, AI safety rules |
+| 13 | [docs/risk-faq.md](docs/risk-faq.md) | Cyber risk in dollars, the top 10, and six common risk questions answered |
+| 14 | [docs/guardrails.md](docs/guardrails.md) | Every safety rule, the file that enforces it and its test |
+| 15 | [docs/threat-model.md](docs/threat-model.md) | STRIDE and OWASP LLM threats and their controls |
+| 16 | [docs/limitations.md](docs/limitations.md) | What is synthetic, simplified or unproven |
+| 17 | [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md) | Capability areas of a commercial GRC product vs this repo |
+| 18 | [docs/implementation-guide.md](docs/implementation-guide.md) | Steps to adapt it to a real organisation |
+| 19 | [docs/interview-points.md](docs/interview-points.md) | Short answers for reviewers and interviews |
+| 20 | [docs/adr/0001-three-labels.md](docs/adr/0001-three-labels.md) | Decision: three labels, with "automated" computed from tests |
+| 21 | [docs/adr/0002-policy-json-single-source.md](docs/adr/0002-policy-json-single-source.md) | Decision: one policy JSON feeds Terraform, Bicep and the parity test |
+| 22 | [docs/adr/0003-human-approval-for-ai.md](docs/adr/0003-human-approval-for-ai.md) | Decision: AI only drafts; a human approves |
+| 23 | [docs/adr/0004-deterministic-outputs.md](docs/adr/0004-deterministic-outputs.md) | Decision: every output is reproducible byte for byte |
+| 24 | [docs/trust-pack/whitepaper_template.md](docs/trust-pack/whitepaper_template.md) | Template: security whitepaper for customers |
+| 25 | [docs/trust-pack/architecture_overview_template.md](docs/trust-pack/architecture_overview_template.md) | Template: architecture overview for customers |
+| 26 | [docs/trust-pack/request_checklist.md](docs/trust-pack/request_checklist.md) | Checklist of documents a customer security team usually asks for |
+| 27 | [SECURITY.md](SECURITY.md) | How to report a vulnerability in this repo |
 
 ## Purpose and who it is for
 
@@ -235,24 +270,6 @@ See [docs/limitations.md](docs/limitations.md).
 | Built | Catalog and labels, 43 checks, attestations, PT and SR modules, POA&M, SSPP, CONMON, binder, crosswalks, AI drafter (stub), integrations, risk, trust proofs T1-T8, Azure Policy, CI |
 | Written, not run against Azure | Terraform and Bicep (validated, tested with a mock provider, never applied) |
 | Planned | Microsoft Foundry backend for the drafter, live connectors, a real-time dashboard, verification of the DEE baseline |
-
-## Docs
-
-| Doc | What it covers |
-|---|---|
-| [AGENTIC_AI_PLAN.md](AGENTIC_AI_PLAN.md) | The three platform areas and the agent plan |
-| [docs/purpose.md](docs/purpose.md) | Problem, users, scope |
-| [docs/architecture.md](docs/architecture.md) | Modules and data flow |
-| [docs/how-it-works.md](docs/how-it-works.md) | Step by step with real output |
-| [docs/how-to-run.md](docs/how-to-run.md) | Commands |
-| [docs/control-catalog.md](docs/control-catalog.md) | Labels and why |
-| [docs/crosswalks.md](docs/crosswalks.md) | HIPAA, FedRAMP proxy, SOC 2 and more |
-| [docs/SECURITY_AND_TRUST.md](docs/SECURITY_AND_TRUST.md) | T1-T8 proofs, responsibility, attestations map |
-| [docs/INTEGRATIONS.md](docs/INTEGRATIONS.md) | 4 methods, evidence schema, mapper |
-| [docs/risk-faq.md](docs/risk-faq.md) | Cyber risk lifecycle and 6 FAQs |
-| [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md) | Reference capability areas vs this repo |
-| [docs/guardrails.md](docs/guardrails.md) · [docs/threat-model.md](docs/threat-model.md) · [docs/limitations.md](docs/limitations.md) | Safety |
-| [docs/implementation-guide.md](docs/implementation-guide.md) · [docs/interview-points.md](docs/interview-points.md) · [docs/adr/](docs/adr/) | Adoption and decisions |
 
 ## Related repos
 

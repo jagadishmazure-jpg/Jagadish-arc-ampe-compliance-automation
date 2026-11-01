@@ -1,5 +1,9 @@
 # Implementation guide (for adopters)
 
+> **In one line:** the steps to adapt this repo to a real organisation.
+>
+> **Read this if:** you want to adopt it, not just read it.
+
 ```mermaid
 flowchart LR
   S1[1. Fork, run tests] --> S2[2. Replace params.py with your workbook values]

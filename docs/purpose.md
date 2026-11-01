@@ -1,5 +1,9 @@
 # Purpose
 
+> **In one line:** why this repo exists, who it is for and what each of the three control labels means.
+>
+> **Read this if:** you are new here and want the problem and the approach before any code.
+
 ## The problem
 A state-based exchange or Medicaid eligibility vendor (an "Administering Entity", AE) must protect
 consumer data under CMS ARC-AMPE. ARC-AMPE is built on NIST SP 800-53 Rev 5. Each year teams rebuild

@@ -1,5 +1,9 @@
 # Threat model
 
+> **In one line:** how the system could be attacked (STRIDE and OWASP LLM risks) and which control and test answer each threat.
+>
+> **Read this if:** you are reviewing the security design.
+
 ## STRIDE
 
 | Threat | Example here | Control | Test |

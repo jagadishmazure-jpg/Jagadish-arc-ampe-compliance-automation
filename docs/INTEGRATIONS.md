@@ -1,5 +1,9 @@
 # Integrations
 
+> **In one line:** how evidence gets in: four connection methods, the evidence record, webhooks and the AI mapper.
+>
+> **Read this if:** you need to connect a new system or understand evidence hashing and lineage.
+
 > Generic fixture data only and no real API calls. Every connector reads a JSON file in
 > `data/fixtures/connectors/`. `call_api()` raises `NetworkDisabled`.
 

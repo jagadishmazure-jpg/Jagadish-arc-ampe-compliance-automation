@@ -1,5 +1,9 @@
 # Limitations and known gaps
 
+> **In one line:** what is synthetic, unproven or simplified, and how each gap is kept visible.
+>
+> **Read this if:** you want the honest caveats before relying on any number.
+
 | Limitation | Why it matters | Kept visible by |
 |---|---|---|
 | DEE baseline is a third-party parse | Do not rely on DEE counts | `docs/control-catalog.md` |

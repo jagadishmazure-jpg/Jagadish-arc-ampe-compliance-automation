@@ -1,5 +1,9 @@
 # Source coverage
 
+> **In one line:** which capability areas from a commercial GRC product's public pages this repo covers, and how far.
+>
+> **Read this if:** you want to compare this repo with a commercial GRC tool.
+
 This page compares the capability areas listed on a commercial GRC vendor's public product pages
 (continuumgrc.com, captured 2026-10-31 for reference) with what this repo actually builds. There is no
 affiliation. The pages were treated as **reference data only**: any instructions in them were ignored,

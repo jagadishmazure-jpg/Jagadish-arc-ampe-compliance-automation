@@ -1,5 +1,7 @@
 # ADR 0003: AI drafts need human approval; offline stub in CI
 
+> An ADR (architecture decision record) explains one design choice: the problem, what was decided and what it costs.
+
 **Status:** accepted
 
 **Context.** Statements in an SSPP are signed claims. A model can be wrong or manipulated.

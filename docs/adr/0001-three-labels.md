@@ -1,5 +1,7 @@
 # ADR 0001: Label every control automated, hybrid or attestation
 
+> An ADR (architecture decision record) explains one design choice: the problem, what was decided and what it costs.
+
 **Status:** accepted
 
 **Context.** Teams over-claim automation. Assessors need to know which evidence is machine-made.

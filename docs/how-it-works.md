@@ -1,5 +1,9 @@
 # How it works
 
+> **In one line:** the pipeline step by step, with real command output for each step.
+>
+> **Read this if:** you want to know what happens between the input data and the binder.
+
 ## 1. Catalog and labels
 The AE baseline (402 controls) is loaded from an OSCAL-shaped JSON file built from the NIST catalog and
 the public CMS workbook. "Automated" is computed: a control is automated only if a tested check maps to it.

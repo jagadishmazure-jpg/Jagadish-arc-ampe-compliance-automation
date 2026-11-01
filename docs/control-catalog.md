@@ -1,5 +1,9 @@
 # Control catalog
 
+> **In one line:** where the 402 controls come from, how each gets its label, and which parameters were set.
+>
+> **Read this if:** you want to trust (or challenge) the control counts.
+
 ## Sources
 - **Control text and structure:** NIST SP 800-53 Rev 5 OSCAL catalog (public domain).
 - **AE baseline (402 controls):** the public CMS ARC-AMPE Vol II SSPP workbook (ACA AE v1.02).

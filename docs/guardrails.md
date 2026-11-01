@@ -1,5 +1,9 @@
 # Guardrails
 
+> **In one line:** every safety rule (AI, privacy, access, logs, docs) with the file that enforces it and the test that proves it.
+>
+> **Read this if:** you want to know what stops this system from doing harm.
+
 | Risk | Guardrail | Where | Test |
 |---|---|---|---|
 | AI writes something wrong into the SSPP | Only approved drafts reach the SSPP; approver must be a human in an approver role, not the drafter, with a note | `agent.py`, `sspp.py` | `tests/test_agent.py` |
