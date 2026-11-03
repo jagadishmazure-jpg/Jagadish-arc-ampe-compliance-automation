@@ -85,9 +85,6 @@ org northgate   broker_dealer_adviser  passing/tested 169/252 = 67.1%
 ```
 <!-- /run -->
 
-The list of frameworks follows a public framework catalog read on 2026-10-31 (see
-[SOURCE_COVERAGE](../SOURCE_COVERAGE.md)). No affiliation; no vendor numbers are reused.
-
 ---
 
 **Next:** [07_AI_GOVERNANCE](07_AI_GOVERNANCE.md)

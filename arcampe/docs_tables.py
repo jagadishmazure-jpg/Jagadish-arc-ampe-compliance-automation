@@ -98,10 +98,9 @@ def crosswalks() -> str:
     return "\n".join(rows)
 
 
-def sources() -> str:
-    from .source_coverage import NOT_USED_AS_FACT, to_markdown
-    return to_markdown().rstrip() + "\n\n**Vendor claims seen on the pages and not used as facts:**\n\n" + \
-        "\n".join(f"- {c}" for c in NOT_USED_AS_FACT)
+def capabilities() -> str:
+    from .capability_coverage import to_markdown
+    return to_markdown().rstrip()
 
 
 TABLES = {n: f for n, f in globals().items() if callable(f) and n not in ("annotations",) and not n.startswith("_")

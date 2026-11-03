@@ -43,13 +43,13 @@ def test_referenced_code_and_tests_exist(owner, ref):
         assert re.search(rf"^def {node}\b", p.read_text(), re.M), f"{owner}: {ref} missing"
 
 
-def test_source_coverage_paths_exist():
-    from arcampe import ROOT, source_coverage
-    for slug, _, mods, test, status, _ in source_coverage.AREAS:
+def test_capability_coverage_paths_exist():
+    from arcampe import ROOT, capability_coverage
+    for slug, _, mods, test, status, _ in capability_coverage.AREAS:
         assert status in ("built", "partial", "gap"), slug
         for m in mods.split() + [test]:
             assert (ROOT / m).exists(), (slug, m)
-    assert len(source_coverage.AREAS) == 18
+    assert len(capability_coverage.AREAS) == 18
 
 
 def test_readme_start_here_lists_every_markdown_file():

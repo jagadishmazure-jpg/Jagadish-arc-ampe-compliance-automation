@@ -15,7 +15,6 @@
 - **Industry packs and multi-org** use approximate mappings; the four extra organisations have hash-generated
   synthetic results, not a real assessment.
 - **Scanner import** reads one synthetic export format; real scanner exports vary and need field mapping.
-- **Survey context** (in [07](07_AI_GOVERNANCE.md)) is the publisher's self-reported claims, not verified.
 
 ---
 

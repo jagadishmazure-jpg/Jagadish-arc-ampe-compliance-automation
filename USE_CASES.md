@@ -34,7 +34,7 @@ python -m arcampe.grc all --out out    # GRC extension, reports (previews only) 
 python scripts/render_docs.py --check  # docs still match a fresh run
 ```
 
-The suite has 2175 tests (measured: collected by pytest and checked against the README in CI).
+The suite has 2174 tests (measured: collected by pytest and checked against the README in CI).
 
 ## When not to use it
 

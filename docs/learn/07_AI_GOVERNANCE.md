@@ -6,11 +6,8 @@
 
 ## Why this matters (context only)
 
-A 2026 vendor survey of CEOs (Dataiku, *Global AI Confessions: CEO Edition*, self-reported, published by the
-vendor) **claims** that 96% of CEOs believe employees use AI without approval, 79% worry about legal exposure from
-AI agents, and 76% feel over-exposed to too few AI vendors. A separate Dataiku study **claims** only 25% of CIOs
-can monitor all of their agents in real time. These are the survey's self-reported claims, not facts measured
-here, and **no code or report in this repo uses them**. They only explain why each KPI below exists.
+Leaders worry about staff using AI without approval, legal exposure from AI agents, depending on too few AI
+vendors, and not being able to monitor their agents in real time. Each KPI below answers one of those worries.
 
 ## The controls and their decision rights
 

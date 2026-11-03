@@ -19,7 +19,7 @@ material is a **self-assessment design**.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-2175 tests collected
+2174 tests collected
 ```
 <!-- /run -->
 
@@ -48,7 +48,7 @@ real run and re-checked in CI.
 | 15 | [docs/guardrails.md](docs/guardrails.md) | Every safety rule, the file that enforces it and its test |
 | 16 | [docs/threat-model.md](docs/threat-model.md) | STRIDE and OWASP LLM threats and their controls |
 | 17 | [docs/limitations.md](docs/limitations.md) | What is synthetic, simplified or unproven |
-| 18 | [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md) | Capability areas of a commercial GRC product vs this repo |
+| 18 | [docs/CAPABILITY_COVERAGE.md](docs/CAPABILITY_COVERAGE.md) | GRC capability areas and where this repo covers each |
 | 19 | [docs/implementation-guide.md](docs/implementation-guide.md) | Steps to adapt it to a real organisation |
 | 20 | [docs/interview-points.md](docs/interview-points.md) | Short answers for reviewers and interviews |
 | 21 | [docs/adr/0001-three-labels.md](docs/adr/0001-three-labels.md) | Decision: three labels, with "automated" computed from tests |
@@ -350,10 +350,9 @@ See [docs/limitations.md](docs/limitations.md).
 - [Jagadish-enterprise-ai-trust-pack](https://github.com/jagadishmazure-jpg/Jagadish-enterprise-ai-trust-pack): buyer-facing trust evidence for AI vendors; this repo reuses its doc rendering and brand-check approach.
 - [Jagadish-ml-threat-model-lab](https://github.com/jagadishmazure-jpg/Jagadish-ml-threat-model-lab): threat modelling for ML systems.
 
-## Sources
+## Standards used
 
 - NIST SP 800-53 Rev 5 OSCAL catalog (public domain, NIST).
 - CMS ARC-AMPE Vol II SSPP workbook, ACA AE v1.02 (public CMS document); parameter values restated in `arcampe/params.py`.
-- Capability areas were compared with several commercial vendors' public pages; see [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md). No affiliation; no vendor numbers are used as facts.
 
 MIT licence. Not legal or compliance advice.

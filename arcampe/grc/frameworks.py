@@ -6,9 +6,8 @@ FedRAMP proxy. This module adds 24 more frameworks at NIST 800-53 family level. 
 framework text), not an official mapping from the framework owner. A family that has no sensible match maps to
 nothing and shows up as a gap.
 
-The registry lists 34 frameworks. It is checked against the public framework list of one commercial GRC product
-(see docs/SOURCE_COVERAGE.md; no affiliation). "Public size" is the structure of the public standard itself,
-never a vendor number.
+The registry lists 34 frameworks. "Public size" is the structure of the public standard itself, never a
+vendor number.
 """
 from __future__ import annotations
 

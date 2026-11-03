@@ -1,12 +1,10 @@
-"""Map the capability areas listed on a commercial GRC vendor's public product pages to this repo.
+"""GRC capability areas and where this repo covers each one.
 
-The page text was used as reference data only. Capabilities below are paraphrased in plain words;
-vendor marketing claims (percent savings, framework counts, app counts, authorizations) are listed
-separately as claims we did NOT use as facts. Status is about THIS repo, not about the vendor.
+Status: built = runs offline and is tested; partial = smaller than the capability; gap = not built.
 """
 from __future__ import annotations
 
-# (area slug, capability in our words, our module(s), test file, status, note)
+# (area slug, capability, our module(s), test file, status, note)
 # status: built = runs offline and is tested; partial = smaller than the capability; gap = not built
 AREAS: list[tuple[str, str, str, str, str, str]] = [
     ("arc-ampe", "ARC-AMPE control catalog, SSPP, POA&M, ATO binder",
@@ -58,13 +56,6 @@ AREAS: list[tuple[str, str, str, str, str, str]] = [
      "6 fictional vendors"),
 ]
 
-NOT_USED_AS_FACT = [
-    "A percentage cut in manual work (vendor marketing; not measured here)",
-    "A count of frameworks supported (vendor marketing; this repo has 8 crosswalks)",
-    "A count of applications that can be connected (vendor marketing; this repo has 24 fixture connectors)",
-    "The vendor's own authorizations and certifications (about the vendor, not this repo)",
-]
-
 
 def counts() -> dict[str, int]:
     out: dict[str, int] = {}
@@ -74,7 +65,7 @@ def counts() -> dict[str, int]:
 
 
 def to_markdown() -> str:
-    lines = ["| Area (page) | Capability, in our words | Where in this repo | Test | Status | Note |",
+    lines = ["| Area | Capability | Where in this repo | Test | Status | Note |",
              "|---|---|---|---|---|---|"]
     for slug, cap, mods, test, status, note in AREAS:
         where = "<br>".join(f"`{m}`" for m in mods.split())

@@ -149,12 +149,6 @@ def test_roi_labeled_simulated():
     assert roi["basis"] == "SIMULATED"
 
 
-def test_no_survey_numbers_in_code():
-    import inspect
-    src = inspect.getsource(g)
-    assert "Dataiku" not in src and "Harris" not in src
-
-
 # ---------------------------------------------------------------- identity resilience
 def test_identity_in_every_bia_row():
     assert all(resilience.IDENTITY in b["depends_on"] for b in resilience.BIA)

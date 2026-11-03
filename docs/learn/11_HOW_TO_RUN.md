@@ -19,7 +19,7 @@ report, dashboard, schedule`.
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-2175 tests collected
+2174 tests collected
 ```
 <!-- /run -->
 

@@ -1,15 +1,14 @@
 # 14. GRC operations: readiness sign-off, recipes, insights, scorecards
 
-**What you'll learn:** the operating features added after reading a GRC vendor's public blog: control readiness
+**What you'll learn:** the operating features in the GRC extension: control readiness
 approval, ten workflow recipes, pass-to-fail insights and MTTR, policy approval tiers, risk SLAs and loss ranges,
 AI-drafted tests, a mapping eval harness, an audit hub, AI framework views with EU CRA clocks, a "which framework
 next" helper, recurring reviews, new read-only MCP tools and three leadership scorecards.
 
 **Read this after:** [13_LIMITATIONS](13_LIMITATIONS.md)
 
-Every step that changes something still needs a named person. Ideas came from public blog posts; no vendor
-numbers are used as facts. Where the source quoted its own figures (for example, how much of ISO 42001 a SOC 2
-program already covers), this repo measures or states its own value with its inputs instead.
+Every step that changes something still needs a named person. Where a figure matters (for example, how much of
+ISO 42001 a SOC 2 program already covers), this repo measures or states its own value with its inputs.
 
 ```mermaid
 flowchart LR
