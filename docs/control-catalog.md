@@ -4,7 +4,7 @@
 >
 > **Read this if:** you want to trust (or challenge) the control counts.
 
-## Sources
+## Baselines and control text
 - **Control text and structure:** NIST SP 800-53 Rev 5 OSCAL catalog (public domain).
 - **AE baseline (402 controls):** the public CMS ARC-AMPE Vol II SSPP workbook (ACA AE v1.02).
   This is the official list used here.
