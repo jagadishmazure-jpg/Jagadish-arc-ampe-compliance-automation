@@ -76,6 +76,7 @@ real run and re-checked in CI.
 | 43 | [docs/learn/14_GRC_OPERATIONS.md](docs/learn/14_GRC_OPERATIONS.md) | Readiness sign-off, recipes, insights, scorecards, AI tests, audit hub, EU CRA clocks |
 | 44 | [PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md) | 5- and 15-minute scripts, demo commands, interview Q&A, cheat card |
 | 45 | [examples/reporting/DEPLOY.md](examples/reporting/DEPLOY.md) | Scheduling and (approval-gated) sending: cron, GitHub Actions, Microsoft Foundry, Logic Apps, SendGrid |
+| 46 | [USE_CASES.md](USE_CASES.md) | One-page summary: who the repo is for, what to try offline, and when not to use it |
 
 ## GRC extension (`arcampe/grc/`)
 
